@@ -1,6 +1,6 @@
 """Strict Hafner bullet cohort; literal rank1 choices in Senate and governor.
 
-Only Rachel's pinned November11 CSVs are inputs. No source/notebook mutation.
+Only FairVote's pinned November11 CSVs are inputs. No source/notebook mutation.
 """
 from pathlib import Path
 from collections import Counter
@@ -60,7 +60,7 @@ def main():
                      'senate':other['us_senate'].get(uid),'governor':other['governor'].get(uid)})+'\n')
     result={'cohort':'Literal House rank1 Hafner; ranks2–5 all skipped (blank)',
             'definition':'Strict bullet; excludes repeated Hafner rankings, write-ins and overvotes at later ranks.',
-            'snapshot':'Rachel/FairVote November11,2026','source_files':{race:{'path':str(source_path(race)),
+            'snapshot':'FairVote November11,2026','source_files':{race:{'path':str(source_path(race)),
             'sha256':sha256(source_path(race))} for race in ['us_house','us_senate','governor']},
             'cohort_n':n,'all_hafner_literal_first':hafner_first,'share_of_hafner_first':100*n/hafner_first,
             'all_house_records':total,'joins':joins,'counts':counts,'missing':missing,
