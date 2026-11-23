@@ -5,7 +5,7 @@ import {Presentation, PresentationFile} from '@oai/artifact-tool';
 const ROOT='/Users/pejmonshariati/.codex/.chatgpt-projects/g-p-6a7f49ff7aec8191b1e23d45a2922c23';
 const W=path.join(ROOT,'alaska_presentation_20261117');
 const BUILD=path.join(W,'.build');
-const SOURCE=path.join(ROOT,'alaska_2026_sam_followup_20261116');
+const SOURCE=path.join(ROOT,'statewide_analysis');
 const SKILL='/Users/pejmonshariati/.codex/plugins/cache/openai-primary-runtime/presentations/26.1112.11011/skills/presentations';
 process.env.RUNTIME_NODE_MODULES='/Users/pejmonshariati/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const {finalizePresentation}=await import(path.join(SKILL,'container_tools/artifact_tool_utils.mjs'));
