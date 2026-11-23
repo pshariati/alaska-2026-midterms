@@ -15,7 +15,7 @@ cells=[
 md('''<div class="sam-kicker">Alaska ranked-ballot analysis</div>
 <div class="sam-title">Alaska 2026: voter distributions across three candidate axes</div>
 
-**Rachel’s November 11 CSV snapshot · Alaska counting rules · original one-dimensional method**
+**FairVote’s November 11 CSV snapshot · Alaska counting rules · original one-dimensional method**
 
 **Historical saved fits:** the axes below were fitted with scikit-learn 1.6.1. Later releases corrected nonmetric-MDS behavior. No controlled corrected-solver Alaska comparison has been completed; matrix and gamma checks do not resolve this issue. See `docs/KNOWN_ISSUES.md`.
 
@@ -39,7 +39,7 @@ assert ROOT is not None, 'Open this notebook within the alaska-2026-midterms che
 sys.path.insert(0,str(ROOT))
 from analysis.shared.paths import INPUTS_ROOT, REPORTING_ROOT, model_dir
 assert (INPUTS_ROOT/'Alaska_20261103_US_Senate_11_11.csv').is_file(), 'Supply the pinned November 11 inputs in data/nov11; see docs/DATA.md.'
-RACHEL_INPUT_READS=set()
+FAIRVOTE_INPUT_READS=set()
 def source_guard(event,args):
     if event!='open' or not args or not isinstance(args[0],(str,bytes,os.PathLike)):return
     try:p=Path(os.fsdecode(args[0])).resolve()
@@ -47,12 +47,12 @@ def source_guard(event,args):
     mode=args[1] if len(args)>1 else None
     reading=not isinstance(mode,str) or 'r' in mode
     if ROOT.parent in p.parents and ROOT not in p.parents and p.suffix.lower() in {'.csv','.tsv','.gz','.zip','.json','.sqlite','.xlsx'} and reading:
-        raise PermissionError('Rachel-only analysis: external workspace data access blocked: '+str(p))
+        raise PermissionError('FairVote-only analysis: external workspace data access blocked: '+str(p))
     if ROOT/'data' in p.parents and INPUTS_ROOT not in p.parents and p.suffix.lower() in {'.csv','.tsv','.gz','.zip','.json','.sqlite','.xlsx'} and reading:
-        raise PermissionError('Rachel-only analysis: external workspace data access blocked: '+str(p))
-    if INPUTS_ROOT in p.parents and p.suffix.lower()=='.csv' and reading:RACHEL_INPUT_READS.add(p.name)
+        raise PermissionError('FairVote-only analysis: external workspace data access blocked: '+str(p))
+    if INPUTS_ROOT in p.parents and p.suffix.lower()=='.csv' and reading:FAIRVOTE_INPUT_READS.add(p.name)
 sys.addaudithook(source_guard)
-from analysis.reporting import presentation as show
+from analysis.reporting import display as show
 from analysis.shared.data import RACES,profile,sha256
 show.theme()
 '''),
@@ -68,7 +68,7 @@ show.first_choice_comparison()
 '''),
 md('''### Governor and House first choices
 
-Affiliation refers to the **chosen candidate or ticket**, not voter party registration. Rachel’s files contain no voter-registration party field. Original blank first ranks, overvotes, write-ins, and absent Governor rows remain in the cohort denominator. The Governor ticket labels include the Democrat/Nonpartisan Kreiss-Tomkins/Johnson ticket; House nonpartisan is Bill Hill.
+Affiliation refers to the **chosen candidate or ticket**, not voter party registration. FairVote’s files contain no voter-registration party field. Original blank first ranks, overvotes, write-ins, and absent Governor rows remain in the cohort denominator. The Governor ticket labels include the Democrat/Nonpartisan Kreiss-Tomkins/Johnson ticket; House nonpartisan is Bill Hill.
 
 The first figure presents the four cohorts equally spaced. The second places the same paired bars at their actual Senate MDS coordinates. Both include the presentation edits: **Governor first choice**, **House first choice**, **Senate 1st choice:**, and Libertarian below Republican in the House stacks.'''),
 code('''from analysis.cross_race.first_choices.figures import build_vertical,build_axis
@@ -84,7 +84,7 @@ Each cell is ballots and the percentage of the **full Senate first-choice cohort
 code("show.cross_table('governor')\nshow.cross_table('us_house')\nshow.cross_table('governor',party=True)\nshow.cross_table('us_house',party=True)",'full_tables'),
 md('''## 2 · Senate Sankey and actual transfers
 
-The completed Sankey retains **all 244,705 Senate records** through its four display stages: initial allocation, generic write-in exclusion, Daniel J. elimination, and Heikes elimination. It follows countable preferences. Candidate order and flow conservation have been rechecked from Rachel’s source rows.
+The completed Sankey retains **all 244,705 Senate records** through its four display stages: initial allocation, generic write-in exclusion, Daniel J. elimination, and Heikes elimination. It follows countable preferences. Candidate order and flow conservation have been rechecked from FairVote’s source rows.
 
 Daniel’s **literal first-choice cohort is 3,940**. His **first-structurally-usable-choice cohort is 3,992**; after write-in transfers, his replay node is **4,055**. Those are different denominators. The diagram’s initial write-in stage is explanatory; unresolved generic write-ins are excluded from the four-candidate named model.
 
@@ -203,21 +203,21 @@ The broader all-Daniel-first scenario has a ceiling of **3,036 additional incumb
 code('show.upper_bounds()'),
 md('''### Identified ballot examples
 
-Sam’s “ballot #34” is treated as an illustration because no corresponding source ID was supplied. The examples below instead use actual anonymous Rachel ballot IDs and show their source rank cells and replay path. A source row index is explicitly zero-based; it is not a voter identity or a claim to have identified Sam’s #34.''','examples'),
+Sam’s “ballot #34” is treated as an illustration because no corresponding source ID was supplied. The examples below instead use actual anonymous FairVote ballot IDs and show their source rank cells and replay path. A source row index is explicitly zero-based; it is not a voter identity or a claim to have identified Sam’s #34.''','examples'),
 code('''examples=pd.read_csv(ROOT/'analysis/senate/rankings/anonymous_example_ballots.csv').head(5)
 show.table(examples[['illustration','source_ballotID','rank1','rank2','rank3','rank4','rank5','after_Daniel_elimination','after_Heikes_elimination']],'Actual source records illustrating the mechanisms')
 ''','examples'),
 md('''## 8 · Sources, versioning and reproducibility
 
-All ballot analyses use only the three unmodified Rachel/FairVote **November 11** CSVs, placed locally under `data/nov11/` with exact hashes. This remains the selected input version even though later election data may exist. Every original rank cell and metadata column is preserved. Candidate IDs and affiliation labels are reference annotations, not fields invented as Rachel-supplied IDs or voter registration.
+All ballot analyses use only the three unmodified FairVote **November 11** CSVs, placed locally under `data/nov11/` with exact hashes. This remains the selected input version even though later election data may exist. Every original rank cell and metadata column is preserved. Candidate IDs and affiliation labels are reference annotations, not fields invented as FairVote-supplied IDs or voter registration.
 
 Alaska-countable prefixes keep earlier valid choices, stop before an overvote, cross one internal skipped rank, stop at two consecutive internal skips, and collapse repeat candidates. A generic write-in occupies its original rank while barriers are evaluated, then is excluded from the four-candidate models. The [Alaska Division of Elections](https://www.elections.alaska.gov/election-results/e/?id=26genr) documents these rules.
 
 The source files have **244,705 Senate/House** rows and **244,575 Governor** rows; **130 Governor rows are absent** from the federal ID universe. These are scanned CVR records, not all statewide or certified ballots. The archived November 11 FairVote-linked round tables match all 54 available numeric cells; that validation does not turn the scanned snapshot into a certified tally. The older article’s visible-name subgroup comparison remains supplementary and does not enter these main results.
 
 **Run All:** revalidates the completed descriptive/Sankey outputs from source, rebuilds both presentation figures, reconstructs voter placements and densities, recomputes confusion permutations/scenarios, and rebuilds the Hafner analysis with an independent source audit. By default, the unchanged, independently audited spatial fits are reused; set `REFIT_NEW_AXES=True` to repeat Governor/House observed and all 98 null fits. The completed Senate fit is explicitly carried forward and checked against the exact current source profile. Independent audit scripts and machine-readable tables are included. Python 3.11+ is required; the pinned execution environment uses Python 3.12.14.''','provenance'),
-code('''assert RACHEL_INPUT_READS=={meta['filename'] for meta in RACES.values()}
-source_audit={'source_policy':'Rachel November11CSV inputs only','observed_input_files':sorted(RACHEL_INPUT_READS),
+code('''assert FAIRVOTE_INPUT_READS=={meta['filename'] for meta in RACES.values()}
+source_audit={'source_policy':'FairVote November11CSV inputs only','observed_input_files':sorted(FAIRVOTE_INPUT_READS),
  'old_workspace_ballot_inputs_blocked':True,'completed_results_revalidated':completed_check['status']=='passed',
  'new_Governor_House_models_refitted':REFIT_NEW_AXES,'Senate_model_carried_forward_with_exact_profile_verification':True,
  'unchanged_audited_spatial_models_reused':not REFIT_NEW_AXES,
@@ -225,8 +225,8 @@ source_audit={'source_policy':'Rachel November11CSV inputs only','observed_input
  'both_finalists_routes_independently_verified':peltola_route_audit['status']=='passed',
  'hafner_geography_recomputed_and_reconciled':hafner_geography_results['status']=='passed'}
 (ROOT/'analysis/cross_race/validation/notebook_source_audit.json').write_text(json.dumps(source_audit,indent=2))
-show.table([{'Rachel input':slug,'Rows':completed_check['sources'][slug]['rows'],'SHA-256':meta['sha256']} for slug,meta in RACES.items()],'Exact source versions')
-print('All notebook analyses completed using Rachel’s selected source version.')
+show.table([{'FairVote input':slug,'Rows':completed_check['sources'][slug]['rows'],'SHA-256':meta['sha256']} for slug,meta in RACES.items()],'Exact source versions')
+print('All notebook analyses completed using FairVote’s selected source version.')
 ''','provenance')]
 
 from analysis.reporting.hafner_section import notebook_cells as hafner_notebook_cells
@@ -236,7 +236,7 @@ cells[insertion:insertion]=hafner_notebook_cells()
 def build_document():
  nb=nbf.v4.new_notebook(cells=cells,metadata={'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'},
  'language_info':{'name':'python','version':'3.12.14'},'title':'Alaska2026 — voter distributions and ranking scenarios',
- 'authors':[{'name':'Princeton research analysis'}],'source_version':'Rachel November11CSV files only',
+ 'authors':[{'name':'Princeton research analysis'}],'source_version':'FairVote November11CSV files only',
  'analysis_date':'2026-11-16','hafner_section_added':'2026-11-16'})
  nbf.validate(nb)
  return nb
