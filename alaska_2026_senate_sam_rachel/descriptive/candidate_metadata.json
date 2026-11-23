@@ -1,0 +1,107 @@
+{
+  "524": {
+    "name": "Heikes, Gerald L.",
+    "party_label": "Republican",
+    "contest": "us_senate",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "525": {
+    "name": "Peltola, Mary",
+    "party_label": "Democrat",
+    "contest": "us_senate",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "526": {
+    "name": "Sullivan, Daniel J. Jr.",
+    "party_label": "No listed affiliation",
+    "contest": "us_senate",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "527": {
+    "name": "Sullivan, Dan S.",
+    "party_label": "Republican",
+    "contest": "us_senate",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "373": {
+    "name": "Write-in",
+    "party_label": "Write-in",
+    "contest": "us_senate",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "528": {
+    "name": "Begich, Nick",
+    "party_label": "Republican",
+    "contest": "us_house",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "529": {
+    "name": "Hafner, Eric",
+    "party_label": "Democrat",
+    "contest": "us_house",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "530": {
+    "name": "Hill, Bill",
+    "party_label": "Nonpartisan",
+    "contest": "us_house",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "531": {
+    "name": "McDermott, James C. \"Jim\"",
+    "party_label": "Libertarian",
+    "contest": "us_house",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "374": {
+    "name": "Write-in",
+    "party_label": "Write-in",
+    "contest": "us_house",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "537": {
+    "name": "Bronson/Church",
+    "party_label": "Republican",
+    "contest": "governor",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "538": {
+    "name": "Kreiss-Tomkins/Johnson",
+    "party_label": "Democrat/Nonpartisan",
+    "contest": "governor",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "536": {
+    "name": "Taylor/English",
+    "party_label": "Republican",
+    "contest": "governor",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "539": {
+    "name": "Wilson/Shower",
+    "party_label": "Republican",
+    "contest": "governor",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  },
+  "380": {
+    "name": "Write-in",
+    "party_label": "Write-in",
+    "contest": "governor",
+    "annotation_source": "Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration",
+    "id_source": "Stable internal analysis identifier assigned explicitly by this script"
+  }
+}
