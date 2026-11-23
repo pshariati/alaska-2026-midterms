@@ -24,8 +24,8 @@ s=(BASE/'flows/senate_sankey.svg').read_text()
 s=s.replace('Daniel J. Sullivan Jr.','Dan J.').replace('Dan S. Sullivan','Daniel S.')
 s=s.replace('Daniel J. removed','Dan J. removed')
 s=s.replace('Alaska Senate: how recorded preferences transfer','Senate: hypothetical transfers in the November 11 snapshot')
-s=s.replace('Rachel/FairVote November 11 CSV · all 244,705 ballot rows · four-stage replay · prepared November 13',
-            'Rachel/FairVote November 11 CSV · all 244,705 ballot records · Alaska-rule replay')
+s=s.replace('FairVote November 11 CSV · all 244,705 ballot rows · four-stage replay · prepared November 13',
+            'FairVote November 11 CSV · all 244,705 ballot records · Alaska-rule replay')
 s=s.replace('Ribbon width is proportional to ballots. Hover over a ribbon to see its exact count.',
             'Ribbon width is proportional to ballots. Dan J.’s 4,055-ballot node includes incoming transfers.')
 s=s.replace('This is a preliminary replay, not certified election results.',
