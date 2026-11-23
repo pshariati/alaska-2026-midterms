@@ -4,7 +4,7 @@ import json,hashlib,re,shutil,datetime
 from bs4 import BeautifulSoup
 import nbformat
 R=Path(__file__).resolve().parent.parent
-p=R/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+p=R/'Alaska_2026_Senate_FairVote.ipynb'
 backup=R/'render/before_layout_fix';backup.mkdir(exist_ok=True)
 if not (backup/p.name).exists():shutil.copy2(p,backup/p.name)
 nb=nbformat.read(p,as_version=4)
@@ -16,12 +16,12 @@ for c in nb.cells:
   if 'text/html' in data:
    for t in BeautifulSoup(data['text/html'],'html.parser').find_all('table'):values_before.append(t.get_text(' ',strip=True))
   if 'image/png' in data:values_before.append(hashlib.sha256(data['image/png'].encode()).hexdigest())
-nb.cells[0].source='''<div class="sam-kicker">Princeton · Rachel / FairVote data · November 13, 2026</div>
+nb.cells[0].source='''<div class="sam-kicker">Princeton · FairVote data · November 13, 2026</div>
 <div class="sam-title">Alaska 2026: crossover preferences,<br>vote transfers, and a single candidate axis</div>
 
-**Prepared for Sam · Rachel’s November 11 ballot files**
+**Prepared for Sam · FairVote’s November 11 ballot files**
 
-This notebook answers the ballot questions and repeats the original one-axis Senate analysis using Rachel’s three CSVs only. **Daniel J. Sullivan Jr. is the outsider; Dan S. Sullivan is the incumbent senator.** The source covers 244,705 scanned Senate ballots and is preliminary.
+This notebook answers the ballot questions and repeats the original one-axis Senate analysis using FairVote’s three CSVs only. **Daniel J. Sullivan Jr. is the outsider; Dan S. Sullivan is the incumbent senator.** The source covers 244,705 scanned Senate ballots and is preliminary.
 
 <div class="sam-cards"><div class="sam-card"><div class="n">568</div><div class="l">Peltola above Dan S. · both legally usable</div></div><div class="sam-card"><div class="n">765</div><div class="l">Only Peltola in usable finalist rankings</div></div><div class="sam-card"><div class="n">61.5%</div><div class="l">Observed consistency · 3–4 named ranks</div></div><div class="sam-card"><div class="n">41.6%</div><div class="l">Random consistency · 49 fresh profiles</div></div></div>
 
@@ -43,9 +43,9 @@ for c in nb.cells[2:]:
   elif s.startswith(('## 2 · Governor','## 3 · Governor')):current=None;c.source=s.replace('## 3 ·','## 2 ·',1)
   elif s.startswith('### First-usable-choice sensitivity'):current='sensitivity'
   elif s.startswith(('## 4 · Visible','## Supplementary audit')):current='definitions'
-  elif s.startswith(('## 5 · Rachel-only','## 3 · Sankey')):current=None;c.source=s.replace('## 5 · Rachel-only Sankey: all Senate ballot paths','## 3 · Sankey: how Senate ballots transfer',1)
+  elif s.startswith(('## 5 · FairVote-only','## 3 · Sankey')):current=None;c.source=s.replace('## 5 · FairVote-only Sankey: all Senate ballot paths','## 3 · Sankey: how Senate ballots transfer',1)
   elif s.startswith('## 6 · Original'):current='method'
-  elif s.startswith('The fresh Rachel-only results'):current=None
+  elif s.startswith('The fresh FairVote-only results'):current=None
   elif s.startswith('## 7 · Source'):current='provenance'
   elif s.startswith('## Supplemental'):current='provenance'
  if c.cell_type=='code' and c.source.startswith('import run_mds,check_mds'):current=None

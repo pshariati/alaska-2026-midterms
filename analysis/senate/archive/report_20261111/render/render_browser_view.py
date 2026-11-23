@@ -6,7 +6,7 @@ import nbformat
 from nbconvert import HTMLExporter
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parent.parent
-p=R/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+p=R/'Alaska_2026_Senate_FairVote.ipynb'
 nb=nbformat.read(p,as_version=4)
 exporter=HTMLExporter(template_name='classic');exporter.exclude_input=False;exporter.exclude_input_prompt=False;exporter.exclude_output_prompt=True;exporter.embed_images=True
 html,_=exporter.from_notebook_node(nb)
@@ -44,12 +44,12 @@ h2{font-size:24px!important;line-height:1.35!important;color:#193f5b!important;b
 @media print{body{padding-top:0!important}.sam-browser-bar,.input{display:none!important}#notebook-container{max-width:none!important;width:100%!important}.sam-details{break-inside:avoid}.sam-scroll{overflow:visible!important}.sam-wide-table{min-width:0!important;font-size:10px!important}}
 '''
 soup.head.append(soup.new_tag('meta',attrs={'name':'color-scheme','content':'light'}));soup.head.append(style)
-bar=BeautifulSoup('''<header class="sam-browser-bar"><div class="sam-browser-brand"><span class="sam-browser-dot" aria-hidden="true">◉</span><span>Jupyter Notebook <span class="sam-browser-sub">&nbsp;/&nbsp; Alaska 2026 Senate · Rachel / FairVote</span></span></div><button class="sam-browser-button" type="button" id="sam-code-toggle" aria-pressed="false">Show code</button></header>''','html.parser').header
+bar=BeautifulSoup('''<header class="sam-browser-bar"><div class="sam-browser-brand"><span class="sam-browser-dot" aria-hidden="true">◉</span><span>Jupyter Notebook <span class="sam-browser-sub">&nbsp;/&nbsp; Alaska 2026 Senate · FairVote</span></span></div><button class="sam-browser-button" type="button" id="sam-code-toggle" aria-pressed="false">Show code</button></header>''','html.parser').header
 soup.body.insert(0,bar)
 script=soup.new_tag('script');script.string="document.getElementById('sam-code-toggle').addEventListener('click',function(){const on=document.body.classList.toggle('show-code');this.textContent=on?'Hide code':'Show code';this.setAttribute('aria-pressed',String(on));if(on)document.querySelectorAll('details.sam-details').forEach(d=>d.open=true);});";soup.body.append(script)
-if soup.title:soup.title.string='Alaska 2026 Senate — Rachel / FairVote notebook'
-out=R/'Alaska_2026_Senate_Rachel_FairVote.html';out.write_text(str(soup),encoding='utf-8')
-readable=R/'Alaska_2026_Senate_Rachel_FairVote_Readable.html';shutil.copy2(out,readable)
+if soup.title:soup.title.string='Alaska 2026 Senate — FairVote notebook'
+out=R/'Alaska_2026_Senate_FairVote.html';out.write_text(str(soup),encoding='utf-8')
+readable=R/'Alaska_2026_Senate_FairVote_Readable.html';shutil.copy2(out,readable)
 expected_tables=sum(len(BeautifulSoup(o.get('data',{}).get('text/html',''),'html.parser').select('table')) for c in nb.cells for o in c.get('outputs',[]))
 assert len(soup.select('table'))==expected_tables
 assert len(soup.select('img[src^="data:image/png;base64,"]'))==4
