@@ -1,4 +1,4 @@
-"""Recompute Alaska Senate flows from Rachel's CSV only, with no prior-data fallback.
+"""Recompute Alaska Senate flows from FairVote's CSV only, with no prior-data fallback.
 
 The four stages replay the predeclared write-in, Daniel J., Heikes removal order.
 All source rows remain; generic overvote tokens stop transfers; two internal skips
@@ -60,13 +60,13 @@ def benchmark(counts):
         for stage,expected in enumerate(values):
             if expected is None:continue
             value=counts[stage][key]-(counts[0][None] if key is None else 0)
-            checks.append(dict(stage=stage+1,candidate=name,rachel_replay=value,published_benchmark=expected,difference=value-expected,match=value==expected))
+            checks.append(dict(stage=stage+1,candidate=name,fairvote_replay=value,published_benchmark=expected,difference=value-expected,match=value==expected))
     assert len(checks)==18, 'Unexpected published reference schema'
     writecsv(R/'fairvote_benchmark_comparison.csv',checks)
     return dict(available=True,role='External published benchmark only; no source counts borrowed',numeric_cells=len(checks),matches=sum(x['match'] for x in checks),mismatches=[x for x in checks if not x['match']],reference_sha256=hashlib.sha256(REFERENCE.read_bytes()).hexdigest())
 
 def build():
-    if not SOURCE.is_file():raise FileNotFoundError(f'Rachel-only input required: {SOURCE}')
+    if not SOURCE.is_file():raise FileNotFoundError(f'FairVote-only input required: {SOURCE}')
     source_hash=hashlib.sha256(SOURCE.read_bytes()).hexdigest()
     counts=[Counter() for _ in CONT];links=[Counter() for _ in CONT[:-1]];paths=Counter();patterns=Counter();seen=set();token_counts=Counter()
     with SOURCE.open(encoding='utf-8-sig',newline='') as f:
@@ -76,7 +76,7 @@ def build():
             uid=row['ballotID'];assert uid not in seen, f'Duplicate ballotID: {uid}';seen.add(uid)
             tokens=tuple(row[f'rank{i}'].strip() for i in range(1,6))
             unknown=set(tokens)-set(TOKEN_TO_KEY)-{'skipped','overvote'}
-            if unknown:raise ValueError(f'Unknown Rachel rank tokens: {unknown}')
+            if unknown:raise ValueError(f'Unknown FairVote rank tokens: {unknown}')
             token_counts.update(tokens);patterns[tokens]+=1
             p=prefix(tokens)
             path=tuple(next((candidate for candidate in p if candidate in active),None) for active in CONT)
@@ -98,13 +98,13 @@ def build():
         for (a,b),n in sorted(counter.items(),key=lambda x:(ORDER.index(x[0][0]),ORDER.index(x[0][1]))):
             linkrows.append(dict(source=f'{stage}:{a}',target=f'{stage+1}:{b}',stage_from=stage+1,stage_to=stage+2,source_candidate_key=a,target_candidate_key=b,source_candidate=NAMES[a],target_candidate=NAMES[b],ballots=n,is_transfer=a!=b))
     pathrows=[dict(stage1=NAMES[p[0]],stage2=NAMES[p[1]],stage3=NAMES[p[2]],stage4=NAMES[p[3]],ballots=n) for p,n in paths.items()]
-    result=dict(source_file=str(SOURCE.relative_to(R.parent)),source_sha256=source_hash,source_only='Every count derived from Rachel CSV rank1-rank5; no old raw ZIP, cleaned CVR, ranking patterns or old result counts are loaded.',total_ballots=total,initial_inactive=counts[0][None],final_inactive=counts[-1][None],additional_inactive=counts[-1][None]-counts[0][None],token_counts=dict(token_counts),mass_conservation_passed=True,round_counts=[{str(k):v for k,v in x.items()} for x in counts],nodes=nodes,links=linkrows,paths=pathrows,scope='Rachel/FairVote November 11 CSV, analyzed November 13. Predeclared four-stage replay, including initially inactive ballots. Not certified results.',benchmark=benchmark(counts))
+    result=dict(source_file=str(SOURCE.relative_to(R.parent)),source_sha256=source_hash,source_only='Every count derived from FairVote CSV rank1-rank5; no old raw ZIP, cleaned CVR, ranking patterns or old result counts are loaded.',total_ballots=total,initial_inactive=counts[0][None],final_inactive=counts[-1][None],additional_inactive=counts[-1][None]-counts[0][None],token_counts=dict(token_counts),mass_conservation_passed=True,round_counts=[{str(k):v for k,v in x.items()} for x in counts],nodes=nodes,links=linkrows,paths=pathrows,scope='FairVote November 11 CSV, analyzed November 13. Predeclared four-stage replay, including initially inactive ballots. Not certified results.',benchmark=benchmark(counts))
     (R/'senate_sankey.json').write_text(json.dumps(result,indent=2))
     writecsv(R/'senate_flow_nodes.csv',nodes);writecsv(R/'senate_flow_links.csv',linkrows);writecsv(R/'senate_flow_paths.csv',pathrows)
-    writecsv(R/'rachel_rank_patterns.csv',[dict(**{f'rank{i+1}':v for i,v in enumerate(tokens)},ballots=n) for tokens,n in patterns.items()])
+    writecsv(R/'fairvote_rank_patterns.csv',[dict(**{f'rank{i+1}':v for i,v in enumerate(tokens)},ballots=n) for tokens,n in patterns.items()])
     render(counts,links,total)
     print(json.dumps({k:v for k,v in result.items() if k not in ['nodes','links','paths','token_counts','round_counts']},indent=2))
-    print('Rachel-only stage counts:',json.dumps(result['round_counts']))
+    print('FairVote-only stage counts:',json.dumps(result['round_counts']))
     return result
 
 def render(counts,links,total):
@@ -130,7 +130,7 @@ def render(counts,links,total):
          '<style>text{font-family:Arial,sans-serif;fill:#24354A}.title{font-size:32px;font-weight:700}.sub{font-size:19px;fill:#55677B}.stage{font-size:21px;font-weight:700}.label{font-size:16px;font-weight:600;paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}.count{font-size:16px;fill:#536579}.foot{font-size:17px;fill:#536579}path:hover{fill-opacity:.72}</style>',
          f'<rect width="{W}" height="{H}" fill="#FFFFFF"/>',
          '<text class="title" x="48" y="55">Alaska Senate: how recorded preferences transfer</text>',
-         f'<text class="sub" x="48" y="91">Rachel/FairVote November 11 CSV · all {total:,} ballot rows · four-stage replay · prepared November 13</text>',
+         f'<text class="sub" x="48" y="91">FairVote November 11 CSV · all {total:,} ballot rows · four-stage replay · prepared November 13</text>',
          '<text class="sub" x="48" y="123">Ribbon width is proportional to ballots. Hover over a ribbon to see its exact count.</text>']
     for i,title in enumerate(TITLES):
         svg.append(f'<text class="stage" text-anchor="middle" x="{xvals[i]}" y="182">{title}</text>')
@@ -168,7 +168,7 @@ def render(counts,links,total):
             return ImageFont.load_default()
         def txt(x,y,text,n=17,fill='#24354A',bold=False,anchor=None,stroke=0):draw.text((x*S,y*S),text,font=font(n,bold),fill=fill,anchor=anchor,stroke_width=round(stroke*S),stroke_fill='white')
         txt(48,29,'Alaska Senate: how recorded preferences transfer',32,bold=True)
-        txt(48,73,f'Rachel/FairVote November 11 CSV · all {total:,} ballot rows · four-stage replay · prepared November 13',19,fill='#55677B')
+        txt(48,73,f'FairVote November 11 CSV · all {total:,} ballot rows · four-stage replay · prepared November 13',19,fill='#55677B')
         txt(48,105,'Ribbon width is proportional to ballots. Exact transfers are supplied in the accompanying tables.',19,fill='#55677B')
         for i,title in enumerate(TITLES):txt(xvals[i],182,title,21,bold=True,anchor='mm');txt(xvals[i],210,f'Stage {i+1}',19,fill='#55677B',anchor='mm')
         for x0,x1,y0,y1,h,dx,a,b,n,stage in bands:
