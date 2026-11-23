@@ -4484,7 +4484,7 @@
   "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
   "source_rows": 244705,
   "candidate_ids_are_internal_lookup_labels": true,
-  "sole_ballot_source": "Rachel Senate CSV; no previous profile, fitted axis or randomized result read",
+  "sole_ballot_source": "FairVote Senate CSV; no previous profile, fitted axis or randomized result read",
   "ranking_interpreter_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
   "cohort": "All nonempty Alaska unresolved-writein prefix ballots; empties retained and reported; ranked-only distances, no constraints on omitted candidates.",
   "summary": [

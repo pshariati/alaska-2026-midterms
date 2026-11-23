@@ -5,7 +5,7 @@
   "core_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
   "core_copied_unchanged": true,
   "only_prior_material_reused": "Pure OG mathematical method code and independent checking code; no prior ballot data, profiles, fitted axes or randomized results reused",
-  "ranking_interpretation": "Rachel CSV rank1..rank5 tokens; literal overvote barrier; two internal skipped tokens barrier; repeats collapse; generic Write-in occupies rank before removal from four-candidate model",
+  "ranking_interpretation": "FairVote CSV rank1..rank5 tokens; literal overvote barrier; two internal skipped tokens barrier; repeats collapse; generic Write-in occupies rank before removal from four-candidate model",
   "candidate_ids_are_internal_lookup_labels": true,
   "settings": {
     "n_runs": 20,
@@ -19,5 +19,5 @@
     "n_runs": 100,
     "n_init": 16
   },
-  "cohort": "Full nonempty interpreted Rachel Senate collection, fitted and scored on same collection; same fullfit and scoring protocol separately on every randomized profile; no 80/20 split"
+  "cohort": "Full nonempty interpreted FairVote Senate collection, fitted and scored on same collection; same fullfit and scoring protocol separately on every randomized profile; no 80/20 split"
 }

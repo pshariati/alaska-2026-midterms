@@ -537,5 +537,5 @@
   "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
   "source_rows": 244705,
   "candidate_ids_are_internal_lookup_labels": true,
-  "cohort": "All Rachel Senate CSV rows, Alaska-interpretable prefix; generic unresolved write-in excluded only after barriers; empty prefixes retained separately"
+  "cohort": "All FairVote Senate CSV rows, Alaska-interpretable prefix; generic unresolved write-in excluded only after barriers; empty prefixes retained separately"
 }
