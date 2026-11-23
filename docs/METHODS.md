@@ -5,7 +5,7 @@ candidates on a single line; its coordinates are not a calibrated ideology scale
 
 ## Ranking interpretation
 
-The historical main inputs are Rachel/FairVote's three November 11 CSVs. Original
+The historical main inputs are FairVote's three November 11 CSVs. Original
 rank cells are preserved outside the model. The interpreter keeps preferences
 before the first overvote or two consecutive internal skipped ranks, crosses one
 skip, and collapses repeated candidate names. A generic write-in keeps its rank
