@@ -2,166 +2,197 @@
   "scope": "Source packaging and saved aggregate results; no new election fits.",
   "files": [
     {
-      "path": "alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb",
+      "path": "statewide_analysis/Alaska_2026_Statewide_Analysis.ipynb",
       "source_sha256": "b723fa2af8b0b4c1d60faa79ef4a3a6ea1995086bf7b5d36fb0653a6523d342c",
       "release_sha256": "52bbd8d4f3e8efc9130673ca4ce8f063891032e541acf05a1a43336c29651099",
-      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved."
+      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/audit_axes.py",
+      "path": "statewide_analysis/axis_models/audit_axes.py",
       "source_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
       "release_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/audit_axes.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/run_axes.py",
+      "path": "statewide_analysis/axis_models/run_axes.py",
       "source_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
       "release_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/run_axes.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/build_notebook.py",
+      "path": "statewide_analysis/build_notebook.py",
       "source_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
-      "release_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "2e2a320878596be5384078aa88e7e05c5019f5cc3917a965b41855bc66e66b45",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
+      "original_source_path": "alaska_2026_sam_followup_20261116/build_notebook.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/common/data.py",
+      "path": "statewide_analysis/common/data.py",
       "source_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
       "release_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/data.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/common/og_axis.py",
+      "path": "statewide_analysis/common/og_axis.py",
       "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
       "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/og_axis.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/confusion/run_confusion.py",
+      "path": "statewide_analysis/confusion/run_confusion.py",
       "source_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
       "release_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/run_confusion.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/confusion/verify_confusion.py",
+      "path": "statewide_analysis/confusion/verify_confusion.py",
       "source_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
       "release_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/verify_confusion.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/execute_notebook.py",
+      "path": "statewide_analysis/execute_notebook.py",
       "source_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
-      "release_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "8b38f6303db6340cc04f3f42bb26e427709e2330eee477ab50560a6e727e5b6e",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
+      "original_source_path": "alaska_2026_sam_followup_20261116/execute_notebook.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/hafner/run_hafner.py",
+      "path": "statewide_analysis/hafner/run_hafner.py",
       "source_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
       "release_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner/run_hafner.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/hafner_geography.py",
+      "path": "statewide_analysis/hafner_geography.py",
       "source_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
       "release_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_geography.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/hafner_notebook.py",
+      "path": "statewide_analysis/hafner_notebook.py",
       "source_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
       "release_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_notebook.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/package_results.py",
+      "path": "statewide_analysis/package_results.py",
       "source_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
-      "release_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "a4b593270750c7ef0f17c80ac98ab31bcf30395ec0adab6f193c05b2a15636c7",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
+      "original_source_path": "alaska_2026_sam_followup_20261116/package_results.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/presentation.py",
+      "path": "statewide_analysis/presentation.py",
       "source_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
       "release_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/presentation_figures/build_axis.py",
+      "path": "statewide_analysis/presentation_figures/build_axis.py",
       "source_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
       "release_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_axis.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/presentation_figures/build_vertical.py",
+      "path": "statewide_analysis/presentation_figures/build_vertical.py",
       "source_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
       "release_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_vertical.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/render/render_browser_view.py",
+      "path": "statewide_analysis/render/render_browser_view.py",
       "source_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
-      "release_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "3a0dd6a02be6475b9c7edde10a3b00c2a888b9833566105af6a115e6b0b922f7",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
+      "original_source_path": "alaska_2026_sam_followup_20261116/render/render_browser_view.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/requirements.txt",
+      "path": "statewide_analysis/requirements.txt",
       "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
       "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/requirements.txt"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/validation/audit_hafner.py",
+      "path": "statewide_analysis/validation/audit_hafner.py",
       "source_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
       "release_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/audit_hafner.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/validation/independent_voter_audit.py",
+      "path": "statewide_analysis/validation/independent_voter_audit.py",
       "source_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
       "release_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/independent_voter_audit.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/validation/validate_archived_benchmarks.py",
+      "path": "statewide_analysis/validation/validate_archived_benchmarks.py",
       "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
       "release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/validate_archived_benchmarks.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/validation/verify_completed.py",
+      "path": "statewide_analysis/validation/verify_completed.py",
       "source_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
       "release_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_completed.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/validation/verify_peltola_routes.py",
+      "path": "statewide_analysis/validation/verify_peltola_routes.py",
       "source_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
       "release_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_peltola_routes.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/MDS_analysis.py",
+      "path": "statewide_analysis/voter_distributions/method_references/MDS_analysis.py",
       "source_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
       "release_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/MDS_analysis.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/consistency.py",
+      "path": "statewide_analysis/voter_distributions/method_references/consistency.py",
       "source_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
       "release_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/consistency.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/rcv_distribution.py",
+      "path": "statewide_analysis/voter_distributions/method_references/rcv_distribution.py",
       "source_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
       "release_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/rcv_distribution.py"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/voter_distributions/run_distributions.py",
+      "path": "statewide_analysis/voter_distributions/run_distributions.py",
       "source_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
       "release_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/run_distributions.py"
     },
     {
       "path": "alaska_2026_senate_sam_rachel/Alaska_2026_Senate_Rachel_FairVote.ipynb",
@@ -334,32 +365,37 @@
     {
       "path": "alaska_presentation_20261117/.build/build_deck.mjs",
       "source_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
-      "release_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "d4fb4f16a2bf781a19f5e5750fc370adafe8217a086b4a83f9a4889fa8e20240",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0"
     },
     {
       "path": "alaska_presentation_20261117/.build/finalize_only.mjs",
       "source_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
-      "release_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "ccf450445b17e4d59c4206ebc1ce3f620f33abd4b7ab9cc468a8582780b5912e",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204"
     },
     {
       "path": "alaska_presentation_20261117/assets/build_presentation_figures.py",
       "source_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
-      "release_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "c9c02ca59dd12a914cb356d901b5a6ebf836c90c395adf45ea23480038cfe4c3",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18"
     },
     {
       "path": "alaska_presentation_20261117/counting_rules_audit/recheck.py",
       "source_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
-      "release_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "a2436a22a6b37f438c9e86f56569181f2ca941e7243fb0ad318519d328f4b131",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51"
     },
     {
       "path": "alaska_presentation_20261117/flow_assets/build_flow_assets.py",
       "source_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
-      "release_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "d7354b0f1a2bd3d7271c5d98778cb069678a681ab0a56f298bafa94a599db1da",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3"
     },
     {
       "path": "alaska_presentation_20261117/flow_assets/build_slide_crops.py",
@@ -376,8 +412,9 @@
     {
       "path": "alaska_presentation_20261117/hafner_bullet_analysis/analyze_bullets.py",
       "source_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
-      "release_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "13afd063807bcefd372310f6d3a8f33be3a2dc17af4b3186661e139828643aac",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0"
     },
     {
       "path": "alaska_presentation_20261117/hafner_bullet_analysis/build_slide.mjs",
@@ -388,8 +425,9 @@
     {
       "path": "alaska_presentation_20261117/house_sankey/build_house_sankey.py",
       "source_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
-      "release_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "6d347743d333900086855df6f4606c77a887dde435b8ff2d0fb424abe23b1db9",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3"
     },
     {
       "path": "alaska_presentation_20261117/house_sankey/render_house_sankey.mjs",
@@ -400,8 +438,9 @@
     {
       "path": "alaska_presentation_20261117/math_qr/audit_review/reconcile_saved_math.py",
       "source_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
-      "release_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "4b9f068a29607cab9dbbcb08224f35fa3be0c4d4dba6bf78803f98d49e9241c1",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3"
     },
     {
       "path": "alaska_presentation_20261117/math_qr/build_math.py",
@@ -412,8 +451,9 @@
     {
       "path": "alaska_presentation_20261117/math_qr/build_pdf.py",
       "source_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
-      "release_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "dd3ad2189ef0991cdf750af19b452a8b5c590fbde79d87eeae6b3cc980b7e643",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe"
     },
     {
       "path": "alaska_presentation_20261117/math_qr/build_qr_slide.mjs",
@@ -460,8 +500,9 @@
     {
       "path": "alaska_presentation_20261117/ranking_tables/build_tables.py",
       "source_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
-      "release_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
-      "transformation": "Byte-for-byte copy."
+      "release_sha256": "9cbc6deb8d9c4f41b2dd84eea24cb4641b7e9b516baf014cf9b31a06dd570a87",
+      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
+      "pre_rename_release_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a"
     },
     {
       "path": "alaska_presentation_20261117/ranking_tables/render_high_res.mjs",
@@ -470,10 +511,11 @@
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/common/candidate_metadata.json",
+      "path": "statewide_analysis/common/candidate_metadata.json",
       "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
       "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/candidate_metadata.json"
     },
     {
       "path": "alaska_2026_senate_sam_rachel/descriptive/candidate_metadata.json",
@@ -482,208 +524,242 @@
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/README.txt",
+      "path": "statewide_analysis/axis_models/README.txt",
       "source_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
       "release_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/README.txt"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/voter_distributions/METHODOLOGY.txt",
+      "path": "statewide_analysis/voter_distributions/METHODOLOGY.txt",
       "source_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
       "release_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/METHODOLOGY.txt"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/completed/flows/METHODOLOGY.txt",
+      "path": "statewide_analysis/completed/flows/METHODOLOGY.txt",
       "source_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
       "release_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/completed/flows/METHODOLOGY.txt"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/adjacency_matrix.csv",
+      "path": "statewide_analysis/axis_models/governor/adjacency_matrix.csv",
       "source_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
       "release_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/adjacency_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/candidate_axis.csv",
+      "path": "statewide_analysis/axis_models/governor/candidate_axis.csv",
       "source_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
       "release_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/candidate_axis.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/consistency_summary.csv",
+      "path": "statewide_analysis/axis_models/governor/consistency_summary.csv",
       "source_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
       "release_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/consistency_summary.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/coranking_matrix.csv",
+      "path": "statewide_analysis/axis_models/governor/coranking_matrix.csv",
       "source_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
       "release_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/coranking_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/dissimilarity_matrix.csv",
+      "path": "statewide_analysis/axis_models/governor/dissimilarity_matrix.csv",
       "source_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
       "release_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/dissimilarity_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_results.json",
+      "path": "statewide_analysis/axis_models/governor/mds_results.json",
       "source_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
       "release_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_results.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_verification.json",
+      "path": "statewide_analysis/axis_models/governor/mds_verification.json",
       "source_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
       "release_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_verification.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/method_provenance.json",
+      "path": "statewide_analysis/axis_models/governor/method_provenance.json",
       "source_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
       "release_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/method_provenance.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/null_profiles.json",
+      "path": "statewide_analysis/axis_models/governor/null_profiles.json",
       "source_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
       "release_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/null_profiles.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/profile.json",
+      "path": "statewide_analysis/axis_models/governor/profile.json",
       "source_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
       "release_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/profile.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/independent_axis_audit.json",
+      "path": "statewide_analysis/axis_models/independent_axis_audit.json",
       "source_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
       "release_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/independent_axis_audit.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/new_contests_consistency.csv",
+      "path": "statewide_analysis/axis_models/new_contests_consistency.csv",
       "source_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
       "release_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/new_contests_consistency.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/adjacency_matrix.csv",
+      "path": "statewide_analysis/axis_models/us_house/adjacency_matrix.csv",
       "source_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
       "release_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/adjacency_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/candidate_axis.csv",
+      "path": "statewide_analysis/axis_models/us_house/candidate_axis.csv",
       "source_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
       "release_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/candidate_axis.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/consistency_summary.csv",
+      "path": "statewide_analysis/axis_models/us_house/consistency_summary.csv",
       "source_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
       "release_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/consistency_summary.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/coranking_matrix.csv",
+      "path": "statewide_analysis/axis_models/us_house/coranking_matrix.csv",
       "source_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
       "release_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/coranking_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/dissimilarity_matrix.csv",
+      "path": "statewide_analysis/axis_models/us_house/dissimilarity_matrix.csv",
       "source_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
       "release_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/dissimilarity_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_results.json",
+      "path": "statewide_analysis/axis_models/us_house/mds_results.json",
       "source_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
       "release_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_results.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_verification.json",
+      "path": "statewide_analysis/axis_models/us_house/mds_verification.json",
       "source_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
       "release_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_verification.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/method_provenance.json",
+      "path": "statewide_analysis/axis_models/us_house/method_provenance.json",
       "source_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
       "release_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/method_provenance.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/null_profiles.json",
+      "path": "statewide_analysis/axis_models/us_house/null_profiles.json",
       "source_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
       "release_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/null_profiles.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/profile.json",
+      "path": "statewide_analysis/axis_models/us_house/profile.json",
       "source_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
       "release_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/profile.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/candidate_axis.csv",
+      "path": "statewide_analysis/axis_models/us_senate/candidate_axis.csv",
       "source_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
       "release_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/candidate_axis.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/carryover_provenance.json",
+      "path": "statewide_analysis/axis_models/us_senate/carryover_provenance.json",
       "source_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
       "release_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/carryover_provenance.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/consistency_summary.csv",
+      "path": "statewide_analysis/axis_models/us_senate/consistency_summary.csv",
       "source_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
       "release_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/consistency_summary.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/dissimilarity_matrix.csv",
+      "path": "statewide_analysis/axis_models/us_senate/dissimilarity_matrix.csv",
       "source_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
       "release_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/dissimilarity_matrix.csv"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_results.json",
+      "path": "statewide_analysis/axis_models/us_senate/mds_results.json",
       "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
       "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_results.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_verification.json",
+      "path": "statewide_analysis/axis_models/us_senate/mds_verification.json",
       "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
       "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_verification.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/method_provenance.json",
+      "path": "statewide_analysis/axis_models/us_senate/method_provenance.json",
       "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
       "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/method_provenance.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/profile.json",
+      "path": "statewide_analysis/axis_models/us_senate/profile.json",
       "source_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
       "release_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/profile.json"
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/rachel_profile_provenance.json",
+      "path": "statewide_analysis/axis_models/us_senate/rachel_profile_provenance.json",
       "source_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
       "release_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/rachel_profile_provenance.json"
     },
     {
       "path": "alaska_2026_senate_sam_rachel/mds/mds_results.json",
@@ -710,10 +786,11 @@
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_sam_followup_20261116/references/benchmark_validation.json",
+      "path": "statewide_analysis/references/benchmark_validation.json",
       "source_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
       "release_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
-      "transformation": "Byte-for-byte copy."
+      "transformation": "Byte-for-byte copy.",
+      "original_source_path": "alaska_2026_sam_followup_20261116/references/benchmark_validation.json"
     }
   ],
   "excluded": [
@@ -722,5 +799,6 @@
     "Private correspondence",
     "Unrelated project code",
     "node_modules and runtime caches"
-  ]
+  ],
+  "reorganization": "Renamed main workflow to statewide_analysis and notebook to Alaska_2026_Statewide_Analysis.ipynb; updated references without refitting."
 }
