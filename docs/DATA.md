@@ -9,16 +9,17 @@ The main statewide code uses only these unmodified Rachel/FairVote CSVs:
 | Alaska_20261103_US_Senate_11_11.csv | 3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972 |
 
 The files are not redistributed in this code release. Place copies you are
-authorized to use in the respective pipeline's `inputs/` directory. The
-interpreters check their hashes. Do not replace a snapshot silently or use old
+authorized to use in the single `data/nov11/` directory. The main MDS loaders and linked-data ingestion enforce these hashes.
+Standalone flow producers record their source hashes; independent validation
+checks the selected versions. Do not replace a snapshot silently or use old
 official-JSON extracts to fill names hidden by overvote tokens.
 
 Saved candidate axes, consistency summaries, aggregate ranking profiles,
-randomized profiles and diagnostics in `axis_models/` are November 11
+randomized profiles and diagnostics in each race’s `candidate_axis/` folder are November 11
 derivatives. They contain pattern counts rather than individual ballot IDs.
 They do not make every notebook self-contained without the original inputs.
 
-The separate `alaska_presentation_20261117/nov16_house_check/` code uses a later
+The separate `analysis/house/snapshots/nov16_check/` code uses a later
 official House CVR export and a separately archived benchmark. It must not be
 mixed with the main November 11 candidate axes. Its archive path, URL and source
 hash are explicit in the script; the archive itself is not included here.

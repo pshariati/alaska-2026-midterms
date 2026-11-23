@@ -1,0 +1,695 @@
+{
+  "scope": "Pre-reorganization public-release files and their exact hashes. Original sources remain recoverable from Git history.",
+  "files": [
+    {
+      "previous_path": ".github/CODEOWNERS",
+      "previous_sha256": "af4bda8f96d7b172624c381c7e0282b93a6377abbea4c2a634dd5068c0adf063",
+      "current_path": ".github/CODEOWNERS"
+    },
+    {
+      "previous_path": ".github/workflows/checks.yml",
+      "previous_sha256": "0c355bd38f8d047302d1e286e4509f6af7540a0f5ea254f5ccf41c8fe57b580d",
+      "current_path": ".github/workflows/checks.yml"
+    },
+    {
+      "previous_path": ".gitignore",
+      "previous_sha256": "bacaf5ce4ae04ae8b7ba8ee23d3e9b8e28eaa6c163b32ecaaa171f9003c020af",
+      "current_path": ".gitignore"
+    },
+    {
+      "previous_path": "CONTRIBUTING.md",
+      "previous_sha256": "c5adf6113b4ce18ae46d4233cf507c9736de108f1bed1b270271cae88ea17224",
+      "current_path": "CONTRIBUTING.md"
+    },
+    {
+      "previous_path": "README.md",
+      "previous_sha256": "eb3d68b057f55d893953dca6452fb4e1ad75b2dc9fe35c1729d00d8c2a91ed74",
+      "current_path": "README.md"
+    },
+    {
+      "previous_path": "THIRD_PARTY_NOTICES.md",
+      "previous_sha256": "9fb6eec317407aa90e624120d96622e7190f73340b4c147a6108ca9441fa56c1",
+      "current_path": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/Alaska_2026_Senate_Rachel_FairVote.ipynb",
+      "previous_sha256": "ff6d062168a63e12f3ab8bab8201ce776d0ebd46fa59bb04d8a807adf4286646",
+      "current_path": "analysis/senate/archive/report_20261111/Alaska_2026_Senate_Rachel_FairVote.ipynb"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/add_validation_note.py",
+      "previous_sha256": "5ca93c2d9d976cf1f1cec97cb358998b931728732dd5572111a3ac8b4a76ee85",
+      "current_path": "analysis/senate/archive/report_20261111/add_validation_note.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/apply_alaska_rule_revision.py",
+      "previous_sha256": "9690fed2635c74e664de11eb562b5220fa2f9cc169337b02b091d30c391ce84a",
+      "current_path": "analysis/senate/archive/report_20261111/apply_alaska_rule_revision.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/audit_ultra/descriptive/independent_descriptive_audit.py",
+      "previous_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
+      "current_path": "analysis/cross_race/first_choices/audits/independent_descriptive_audit.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/audit_ultra/finish_audit.py",
+      "previous_sha256": "b524459183245ef5aa7f030353264013a779e5c4c1635316070dae092c8b54e4",
+      "current_path": "analysis/senate/archive/report_20261111/audit_ultra/finish_audit.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/audit_ultra/flows/independent_flow_audit.py",
+      "previous_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
+      "current_path": "analysis/senate/flows/audits/independent_flow_audit.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/audit_ultra/mds/independent_mds_audit.py",
+      "previous_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
+      "current_path": "analysis/senate/candidate_axis/audits/independent_mds_audit.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/build_notebook.py",
+      "previous_sha256": "9b49b799821e4d0acd383d93dfff88b7b1c7565f31e9c164f5d06aa61876904c",
+      "current_path": "analysis/senate/archive/report_20261111/build_notebook.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/descriptive/candidate_metadata.json",
+      "previous_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "current_path": "analysis/shared/candidate_metadata.json"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/descriptive/descriptive_analysis.py",
+      "previous_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
+      "current_path": "analysis/cross_race/first_choices/descriptive_analysis.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/descriptive/verify_rachel.py",
+      "previous_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
+      "current_path": "analysis/cross_race/first_choices/verify_rachel.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/descriptive/verify_usable_preferences.py",
+      "previous_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
+      "current_path": "analysis/cross_race/first_choices/verify_usable_preferences.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/execute_legal_revision.py",
+      "previous_sha256": "08e11754a835da432c40d3c19cdf0396a326bf7e459a5a54dac96f514d62eaf0",
+      "current_path": "analysis/senate/archive/report_20261111/execute_legal_revision.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/execute_notebook.py",
+      "previous_sha256": "c595dfd1fb7e30e35ba4cea29222f0ae82e7c7d7c5ef6711612fff33de06a12c",
+      "current_path": "analysis/senate/archive/report_20261111/execute_notebook.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/flows/build_flows.py",
+      "previous_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
+      "current_path": "analysis/senate/flows/build_flows.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/flows/test_flows.py",
+      "previous_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
+      "current_path": "analysis/senate/flows/test_flows.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/flows/validate_all_contest_benchmarks.py",
+      "previous_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "current_path": "analysis/cross_race/validation/validate_all_contest_benchmarks.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/flows/validate_official_scope.py",
+      "previous_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
+      "current_path": "analysis/cross_race/validation/validate_official_scope.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/candidate_axis.csv",
+      "previous_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+      "current_path": "analysis/senate/candidate_axis/candidate_axis.csv"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/check_mds.py",
+      "previous_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
+      "current_path": "analysis/senate/candidate_axis/check_mds.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/mds_results.json",
+      "previous_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "current_path": "analysis/senate/candidate_axis/mds_results.json"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/mds_verification.json",
+      "previous_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "current_path": "analysis/senate/candidate_axis/mds_verification.json"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/method_provenance.json",
+      "previous_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "current_path": "analysis/senate/candidate_axis/method_provenance.json"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/og_axis.py",
+      "previous_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "current_path": "analysis/shared/og_axis.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/ranking_rules.py",
+      "previous_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
+      "current_path": "analysis/senate/candidate_axis/ranking_rules.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/run_mds.py",
+      "previous_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
+      "current_path": "analysis/senate/candidate_axis/run_mds.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/mds/test_rachel_rules.py",
+      "previous_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
+      "current_path": "analysis/senate/candidate_axis/test_rachel_rules.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/package_results.py",
+      "previous_sha256": "c3c51788bbb9e4ae0be7c7b017eea1280b627a8e3976b9c4bdf6c615cfd3db5a",
+      "current_path": "analysis/senate/archive/report_20261111/package_results.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/presentation.py",
+      "previous_sha256": "26e5f5741517d5a71630d9e8a787e0809f6ed6628c573885a02c032ecc50375d",
+      "current_path": "analysis/senate/archive/report_20261111/presentation.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/render/render_browser_view.py",
+      "previous_sha256": "214182427bc7e77770c47fdd3ee5314deb6973d447c9f594453f63379acdf7d5",
+      "current_path": "analysis/senate/archive/report_20261111/render/render_browser_view.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/render/restyle_notebook.py",
+      "previous_sha256": "163a3d5af4a359043de54d552a72a10081a41a12c43a3127187790fe73029527",
+      "current_path": "analysis/senate/archive/report_20261111/render/restyle_notebook.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/repair_audit_findings.py",
+      "previous_sha256": "c3847b94d05c85556e81c8e4537b37098fc6577477e59d3f5c3a7b24967ab20c",
+      "current_path": "analysis/senate/archive/report_20261111/repair_audit_findings.py"
+    },
+    {
+      "previous_path": "alaska_2026_senate_sam_rachel/requirements.txt",
+      "previous_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "current_path": "analysis/senate/archive/report_20261111/requirements.txt"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/.build/build_deck.mjs",
+      "previous_sha256": "d4fb4f16a2bf781a19f5e5750fc370adafe8217a086b4a83f9a4889fa8e20240",
+      "current_path": "presentations/.build/build_deck.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/.build/finalize_only.mjs",
+      "previous_sha256": "ccf450445b17e4d59c4206ebc1ce3f620f33abd4b7ab9cc468a8582780b5912e",
+      "current_path": "presentations/.build/finalize_only.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/assets/build_presentation_figures.py",
+      "previous_sha256": "c9c02ca59dd12a914cb356d901b5a6ebf836c90c395adf45ea23480038cfe4c3",
+      "current_path": "presentations/assets/build_presentation_figures.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/counting_rules_audit/recheck.py",
+      "previous_sha256": "a2436a22a6b37f438c9e86f56569181f2ca941e7243fb0ad318519d328f4b131",
+      "current_path": "analysis/cross_race/validation/counting_rules/recheck.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/flow_assets/build_flow_assets.py",
+      "previous_sha256": "d7354b0f1a2bd3d7271c5d98778cb069678a681ab0a56f298bafa94a599db1da",
+      "current_path": "analysis/senate/figures/flows/build_flow_assets.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/flow_assets/build_slide_crops.py",
+      "previous_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
+      "current_path": "analysis/senate/figures/flows/build_slide_crops.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/flow_assets/render_flow_assets.mjs",
+      "previous_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
+      "current_path": "analysis/senate/figures/flows/render_flow_assets.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/hafner_bullet_analysis/analyze_bullets.py",
+      "previous_sha256": "13afd063807bcefd372310f6d3a8f33be3a2dc17af4b3186661e139828643aac",
+      "current_path": "analysis/house/hafner/bullet_votes/analyze_bullets.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/hafner_bullet_analysis/build_slide.mjs",
+      "previous_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "current_path": "analysis/house/hafner/bullet_votes/build_slide.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/house_sankey/build_house_sankey.py",
+      "previous_sha256": "6d347743d333900086855df6f4606c77a887dde435b8ff2d0fb424abe23b1db9",
+      "current_path": "analysis/house/flows/build_house_sankey.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/house_sankey/render_house_sankey.mjs",
+      "previous_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
+      "current_path": "analysis/house/flows/render_house_sankey.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/audit_review/reconcile_saved_math.py",
+      "previous_sha256": "4b9f068a29607cab9dbbcb08224f35fa3be0c4d4dba6bf78803f98d49e9241c1",
+      "current_path": "analysis/cross_race/validation/reconcile_saved_math.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/build_math.py",
+      "previous_sha256": "96b8255383ff07a778bd0477780b8953206ae93927b133d84aadfdd859efefd5",
+      "current_path": "presentations/math_qr/build_math.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/build_pdf.py",
+      "previous_sha256": "dd3ad2189ef0991cdf750af19b452a8b5c590fbde79d87eeae6b3cc980b7e643",
+      "current_path": "presentations/math_qr/build_pdf.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/build_qr_slide.mjs",
+      "previous_sha256": "d8010f27001e12b1bf728af1e546a0c122372056c4ed3bc34cd994e642e9f43b",
+      "current_path": "presentations/math_qr/build_qr_slide.mjs"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/v2/build_polished_pdf.py",
+      "previous_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
+      "current_path": "presentations/math_qr/v2/build_polished_pdf.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/math_qr/v2/render_equations.py",
+      "previous_sha256": "8af4799652de43990b57ac18aac0c447da1e88ce15bc8b0e67d2c90ae48162a3",
+      "current_path": "presentations/math_qr/v2/render_equations.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/narrow_density_figures/render_narrow.py",
+      "previous_sha256": "82eaf156557387d8d83b988eaf41d59e811593b67d1f0747a2f3d50fe3c0a6cc",
+      "current_path": "presentations/narrow_density_figures/render_narrow.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/new_slides_20261117/build_six_panel.py",
+      "previous_sha256": "890c0ebcd2f38934ed327dee2d4055c56e0ab261d8d4054ccc4354f9b1fa1dc2",
+      "current_path": "presentations/new_slides_20261117/build_six_panel.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/nov16_house_check/analyze.py",
+      "previous_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "current_path": "analysis/house/snapshots/nov16_check/analyze.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/nov16_house_check/build_report.py",
+      "previous_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "current_path": "analysis/house/snapshots/nov16_check/build_report.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/ranking_tables/build_tables.py",
+      "previous_sha256": "9cbc6deb8d9c4f41b2dd84eea24cb4641b7e9b516baf014cf9b31a06dd570a87",
+      "current_path": "analysis/senate/figures/ranking_tables/build_tables.py"
+    },
+    {
+      "previous_path": "alaska_presentation_20261117/ranking_tables/render_high_res.mjs",
+      "previous_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "current_path": "analysis/senate/figures/ranking_tables/render_high_res.mjs"
+    },
+    {
+      "previous_path": "docs/CHANGES_FROM_MAHSHAD.md",
+      "previous_sha256": "edbbf5dcd2ab9d1b5e29002e30aa977745f42a270b22c1bc4f68edf5920bd5c0",
+      "current_path": "docs/CHANGES_FROM_MAHSHAD.md"
+    },
+    {
+      "previous_path": "docs/DATA.md",
+      "previous_sha256": "c85798f5737e80e27accc4b4a8af237e3114f250c68c76e3228e22d21091654b",
+      "current_path": "docs/DATA.md"
+    },
+    {
+      "previous_path": "docs/KNOWN_ISSUES.md",
+      "previous_sha256": "dcaae04abd770d07b62b01c7d539af3faefd15e04206cf729d9445241c5ffb1d",
+      "current_path": "docs/KNOWN_ISSUES.md"
+    },
+    {
+      "previous_path": "docs/METHODS.md",
+      "previous_sha256": "eaf0483b1b69bb587238f70a1da946fc59107998c581819661ae713e7f61085b",
+      "current_path": "docs/METHODS.md"
+    },
+    {
+      "previous_path": "docs/REPRODUCIBILITY.md",
+      "previous_sha256": "00ffe2016240b904a8571049b2743dc590b94496f4845df16332226c33988754",
+      "current_path": "docs/REPRODUCIBILITY.md"
+    },
+    {
+      "previous_path": "examples/toy_profile.json",
+      "previous_sha256": "c5217c3ede3c7476bd378f49516b3cc37c81095d03c13702b9c6f7eb7520a0c8",
+      "current_path": "examples/toy_profile.json"
+    },
+    {
+      "previous_path": "provenance/source_manifest.json",
+      "previous_sha256": "4cab500527a516970707025174c42affd6745a6e9f755f1198229d81de9003ce",
+      "current_path": "provenance/source_manifest.json"
+    },
+    {
+      "previous_path": "requirements-core.txt",
+      "previous_sha256": "898d107dddf653033dce66287ea74b859d87d566ae07c508a9da0e6f98edbf4a",
+      "current_path": "requirements-core.txt"
+    },
+    {
+      "previous_path": "scripts/check_release.py",
+      "previous_sha256": "c718bb841537adad0def8c3cb4098cf6d6e45d6a9ab29ae2bd7c42221f1ca5cb",
+      "current_path": "scripts/check_release.py"
+    },
+    {
+      "previous_path": "scripts/fit_candidate_axis.py",
+      "previous_sha256": "c35b869349d48fc6b553ee445111f89708a7f78d36ba23251c498bebdb33b8f0",
+      "current_path": "scripts/fit_candidate_axis.py"
+    },
+    {
+      "previous_path": "statewide_analysis/Alaska_2026_Statewide_Analysis.ipynb",
+      "previous_sha256": "52bbd8d4f3e8efc9130673ca4ce8f063891032e541acf05a1a43336c29651099",
+      "current_path": "analysis/reporting/Alaska_2026_Statewide_Analysis.ipynb"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/README.txt",
+      "previous_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
+      "current_path": "analysis/cross_race/validation/axes/README.txt"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/audit_axes.py",
+      "previous_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
+      "current_path": "analysis/cross_race/validation/axes/audit_axes.py"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/adjacency_matrix.csv",
+      "previous_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
+      "current_path": "analysis/governor/candidate_axis/adjacency_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/candidate_axis.csv",
+      "previous_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
+      "current_path": "analysis/governor/candidate_axis/candidate_axis.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/consistency_summary.csv",
+      "previous_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
+      "current_path": "analysis/governor/candidate_axis/consistency_summary.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/coranking_matrix.csv",
+      "previous_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
+      "current_path": "analysis/governor/candidate_axis/coranking_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/dissimilarity_matrix.csv",
+      "previous_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
+      "current_path": "analysis/governor/candidate_axis/dissimilarity_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/mds_results.json",
+      "previous_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+      "current_path": "analysis/governor/candidate_axis/mds_results.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/mds_verification.json",
+      "previous_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
+      "current_path": "analysis/governor/candidate_axis/mds_verification.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/method_provenance.json",
+      "previous_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
+      "current_path": "analysis/governor/candidate_axis/method_provenance.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/null_profiles.json",
+      "previous_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
+      "current_path": "analysis/governor/candidate_axis/null_profiles.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/governor/profile.json",
+      "previous_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
+      "current_path": "analysis/governor/candidate_axis/profile.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/independent_axis_audit.json",
+      "previous_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
+      "current_path": "analysis/cross_race/validation/axes/independent_axis_audit.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/new_contests_consistency.csv",
+      "previous_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+      "current_path": "analysis/cross_race/validation/axes/new_contests_consistency.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/run_axes.py",
+      "previous_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
+      "current_path": "analysis/shared/fit_races.py"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/adjacency_matrix.csv",
+      "previous_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
+      "current_path": "analysis/house/candidate_axis/adjacency_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/candidate_axis.csv",
+      "previous_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
+      "current_path": "analysis/house/candidate_axis/candidate_axis.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/consistency_summary.csv",
+      "previous_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
+      "current_path": "analysis/house/candidate_axis/consistency_summary.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/coranking_matrix.csv",
+      "previous_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
+      "current_path": "analysis/house/candidate_axis/coranking_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/dissimilarity_matrix.csv",
+      "previous_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
+      "current_path": "analysis/house/candidate_axis/dissimilarity_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/mds_results.json",
+      "previous_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+      "current_path": "analysis/house/candidate_axis/mds_results.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/mds_verification.json",
+      "previous_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
+      "current_path": "analysis/house/candidate_axis/mds_verification.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/method_provenance.json",
+      "previous_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
+      "current_path": "analysis/house/candidate_axis/method_provenance.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/null_profiles.json",
+      "previous_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
+      "current_path": "analysis/house/candidate_axis/null_profiles.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_house/profile.json",
+      "previous_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
+      "current_path": "analysis/house/candidate_axis/profile.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/candidate_axis.csv",
+      "previous_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
+      "current_path": "analysis/senate/candidate_axis/candidate_axis.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/carryover_provenance.json",
+      "previous_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+      "current_path": "analysis/senate/candidate_axis/carryover_provenance.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/consistency_summary.csv",
+      "previous_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+      "current_path": "analysis/senate/candidate_axis/consistency_summary.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/dissimilarity_matrix.csv",
+      "previous_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
+      "current_path": "analysis/senate/candidate_axis/dissimilarity_matrix.csv"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/mds_results.json",
+      "previous_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "current_path": "analysis/senate/candidate_axis/mds_results.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/mds_verification.json",
+      "previous_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "current_path": "analysis/senate/candidate_axis/mds_verification.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/method_provenance.json",
+      "previous_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "current_path": "analysis/senate/candidate_axis/method_provenance.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/profile.json",
+      "previous_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
+      "current_path": "analysis/senate/candidate_axis/profile.json"
+    },
+    {
+      "previous_path": "statewide_analysis/axis_models/us_senate/rachel_profile_provenance.json",
+      "previous_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
+      "current_path": "analysis/senate/candidate_axis/rachel_profile_provenance.json"
+    },
+    {
+      "previous_path": "statewide_analysis/build_notebook.py",
+      "previous_sha256": "2e2a320878596be5384078aa88e7e05c5019f5cc3917a965b41855bc66e66b45",
+      "current_path": "analysis/reporting/build_notebook.py"
+    },
+    {
+      "previous_path": "statewide_analysis/common/__pycache__/og_axis.cpython-312.pyc",
+      "previous_sha256": "3f8685b28300c3e8bdc2d6f528f57ee76fc36d1c096bfc7fb75ee0f67bcdd823",
+      "current_path": "analysis/shared/__pycache__/og_axis.cpython-312.pyc"
+    },
+    {
+      "previous_path": "statewide_analysis/common/candidate_metadata.json",
+      "previous_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "current_path": "analysis/shared/candidate_metadata.json"
+    },
+    {
+      "previous_path": "statewide_analysis/common/data.py",
+      "previous_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+      "current_path": "analysis/shared/data.py"
+    },
+    {
+      "previous_path": "statewide_analysis/common/og_axis.py",
+      "previous_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "current_path": "analysis/shared/og_axis.py"
+    },
+    {
+      "previous_path": "statewide_analysis/completed/flows/METHODOLOGY.txt",
+      "previous_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
+      "current_path": "analysis/senate/flows/METHODOLOGY.txt"
+    },
+    {
+      "previous_path": "statewide_analysis/confusion/run_confusion.py",
+      "previous_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
+      "current_path": "analysis/senate/rankings/run_confusion.py"
+    },
+    {
+      "previous_path": "statewide_analysis/confusion/verify_confusion.py",
+      "previous_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
+      "current_path": "analysis/senate/rankings/verify_confusion.py"
+    },
+    {
+      "previous_path": "statewide_analysis/execute_notebook.py",
+      "previous_sha256": "8b38f6303db6340cc04f3f42bb26e427709e2330eee477ab50560a6e727e5b6e",
+      "current_path": "analysis/reporting/execute_notebook.py"
+    },
+    {
+      "previous_path": "statewide_analysis/hafner/run_hafner.py",
+      "previous_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
+      "current_path": "analysis/house/hafner/run_hafner.py"
+    },
+    {
+      "previous_path": "statewide_analysis/hafner_geography.py",
+      "previous_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
+      "current_path": "analysis/house/hafner/geography.py"
+    },
+    {
+      "previous_path": "statewide_analysis/hafner_notebook.py",
+      "previous_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
+      "current_path": "analysis/reporting/hafner_section.py"
+    },
+    {
+      "previous_path": "statewide_analysis/package_results.py",
+      "previous_sha256": "a4b593270750c7ef0f17c80ac98ab31bcf30395ec0adab6f193c05b2a15636c7",
+      "current_path": "analysis/reporting/package_results.py"
+    },
+    {
+      "previous_path": "statewide_analysis/presentation.py",
+      "previous_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
+      "current_path": "analysis/reporting/presentation.py"
+    },
+    {
+      "previous_path": "statewide_analysis/presentation_figures/build_axis.py",
+      "previous_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
+      "current_path": "analysis/cross_race/first_choices/figures/build_axis.py"
+    },
+    {
+      "previous_path": "statewide_analysis/presentation_figures/build_vertical.py",
+      "previous_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
+      "current_path": "analysis/cross_race/first_choices/figures/build_vertical.py"
+    },
+    {
+      "previous_path": "statewide_analysis/references/benchmark_validation.json",
+      "previous_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
+      "current_path": "references/nov11/benchmark_validation.json"
+    },
+    {
+      "previous_path": "statewide_analysis/render/render_browser_view.py",
+      "previous_sha256": "3a0dd6a02be6475b9c7edde10a3b00c2a888b9833566105af6a115e6b0b922f7",
+      "current_path": "analysis/reporting/render/render_browser_view.py"
+    },
+    {
+      "previous_path": "statewide_analysis/requirements.txt",
+      "previous_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "current_path": "analysis/reporting/requirements.txt"
+    },
+    {
+      "previous_path": "statewide_analysis/validation/audit_hafner.py",
+      "previous_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
+      "current_path": "analysis/house/hafner/audit_hafner.py"
+    },
+    {
+      "previous_path": "statewide_analysis/validation/independent_voter_audit.py",
+      "previous_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
+      "current_path": "analysis/cross_race/validation/independent_voter_audit.py"
+    },
+    {
+      "previous_path": "statewide_analysis/validation/validate_archived_benchmarks.py",
+      "previous_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "current_path": "analysis/cross_race/validation/validate_archived_benchmarks.py"
+    },
+    {
+      "previous_path": "statewide_analysis/validation/verify_completed.py",
+      "previous_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
+      "current_path": "analysis/cross_race/validation/verify_completed.py"
+    },
+    {
+      "previous_path": "statewide_analysis/validation/verify_peltola_routes.py",
+      "previous_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
+      "current_path": "analysis/senate/rankings/verify_peltola_routes.py"
+    },
+    {
+      "previous_path": "statewide_analysis/voter_distributions/METHODOLOGY.txt",
+      "previous_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
+      "current_path": "analysis/cross_race/voter_distributions/METHODOLOGY.txt"
+    },
+    {
+      "previous_path": "statewide_analysis/voter_distributions/method_references/MDS_analysis.py",
+      "previous_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
+      "current_path": "provenance/upstream_methods/MDS_analysis.py"
+    },
+    {
+      "previous_path": "statewide_analysis/voter_distributions/method_references/consistency.py",
+      "previous_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
+      "current_path": "provenance/upstream_methods/consistency.py"
+    },
+    {
+      "previous_path": "statewide_analysis/voter_distributions/method_references/rcv_distribution.py",
+      "previous_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
+      "current_path": "provenance/upstream_methods/rcv_distribution.py"
+    },
+    {
+      "previous_path": "statewide_analysis/voter_distributions/run_distributions.py",
+      "previous_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
+      "current_path": "analysis/cross_race/voter_distributions/run_distributions.py"
+    },
+    {
+      "previous_path": "tests/__pycache__/test_core.cpython-312.pyc",
+      "previous_sha256": "91be070411e4f0a755477fd6fb1640e37fa6aeda86f79486a507b5a4dcc2206b",
+      "current_path": "tests/__pycache__/test_core.cpython-312.pyc"
+    },
+    {
+      "previous_path": "tests/test_core.py",
+      "previous_sha256": "c2a6357d4142ae3fa98ee04ee5a51fe2f612ce8bbc1160cb638503eee7791990",
+      "current_path": "tests/test_core.py"
+    }
+  ]
+}

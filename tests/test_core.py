@@ -11,7 +11,7 @@ import unittest
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'statewide_analysis/common'))
+sys.path.insert(0, str(ROOT / 'analysis/shared'))
 import og_axis as core
 
 

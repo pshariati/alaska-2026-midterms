@@ -1,59 +1,79 @@
 # Reproduction
 
-## Historical candidate-axis fits
+Run package commands from the repository root. Python 3.12 and the pinned
+`requirements-core.txt` preserve the historical numerical environment. This is
+provenance, not a recommendation to use the old solver for new findings; read
+[known issues](KNOWN_ISSUES.md).
 
-The reusable runner reads a JSON weighted profile with `candidates` and
-`ballots`. Each ballot has an ordered, duplicate-free list of zero-based
-candidate indices in `ranking` and a nonnegative integer `count`. Empty
-rankings remain represented but do not enter the nonempty gamma denominator.
-See `examples/toy_profile.json` for a synthetic format example.
-
-The historical environment is Python 3.12 with numpy 2.0.2, scipy 1.13.1 and
-scikit-learn 1.6.1. These versions reproduce the old solver; they are not a
-recommendation for future substantive results. Read the known solver issue.
+## Checks requiring no ballot files and no new fitting
 
 ```bash
 python -m pip install -r requirements-core.txt
-python scripts/fit_candidate_axis.py   --profile statewide_analysis/axis_models/governor/profile.json   --output runs/governor/replay.json   --seed 20261112 --null-draws 49
-```
-
-This portable runner uses the preserved mathematical functions with its own
-documented seed labels. Its default seed labels differ from the original
-contest-specific driver; it is not promised to reproduce saved coordinates
-bit for bit. Use the original drivers and exact inputs for their saved seed
-protocols. The runner records the core hash and its actual library versions.
-It refuses a different numerical environment unless explicitly allowed; such
-a run is labeled a different-environment result, never a historical replication.
-
-## Full original statewide workflow
-
-Install the matching pipeline requirements in a separate environment, obtain
-the pinned CSV inputs, and restore any omitted generated inputs needed by a
-chosen stage. The main workflow is in `statewide_analysis/`; references were updated with the rename.
-The combined notebook is:
-`statewide_analysis/Alaska_2026_Statewide_Analysis.ipynb`.
-Run it from that directory, following the source guard in its first code cell.
-
-The combined notebook defaults to reusing saved models; that setting must not
-be described as a fresh MDS fit. The original `axis_models/run_axes.py` freshly
-fits Governor and House, while the earlier Senate driver is
-`alaska_2026_senate_sam_rachel/mds/run_mds.py`. The drivers write their results,
-so use a fresh checkout or a separate run directory for comparisons.
-
-The code-only checkout excludes generated distributions, completed descriptive
-tables and individual-linked exports. Before running a downstream notebook cell,
-generate its inputs with the supplied relevant stage or restore your original
-research package. No automatic download of a changing live CVR is performed.
-
-## Checks supplied with this release
-
-```bash
 python -m unittest discover -s tests -v
 python scripts/check_release.py
 ```
 
-Unit checks cover weighted pair counts, the dissimilarity transform, independent
-strict-distance geometry, exact first-choice/length null margins, preservation
-of the archived core, and parser/help behavior. They do not constitute a new
-legislative experiment or a corrected-solver statewide rerun. Python source
-syntax and notebook source preservation are checked separately in the manifest.
+The tests check weighted pair counting, the dissimilarity transform, independent
+strict-distance geometry, matched-null margins, parser barriers, saved-profile
+scores and matrices, saved randomized profiles, and immutable result hashes.
+The release checker checks manifest hashes, Python/notebook syntax, cleared
+notebook outputs, and excluded ballot data. These are not new model fits or
+validation against omitted source CVRs. Senate randomized profiles are absent;
+House and Governor each include 49 saved randomized profiles.
+
+## Read the saved results
+
+Open `analysis/senate/Overview.ipynb`, `analysis/house/Overview.ipynb` or
+`analysis/governor/Overview.ipynb` in Jupyter. These small notebooks read committed
+aggregate results and display their source version, candidate axis and gamma
+summaries. They do not refit or reconstruct individual ballots.
+
+## Fitting entry points
+
+The generic runner accepts weighted JSON profiles with `candidates` and
+`ballots`, including `analysis/<race>/candidate_axis/profile.json`. A ranking is
+an ordered, duplicate-free list of zero-based candidate indices and each count
+is a nonnegative integer. Empty rankings are retained but excluded from the
+nonempty gamma denominator. `examples/toy_profile.json` is synthetic.
+
+```bash
+python scripts/fit_candidate_axis.py --help
+```
+
+It records the actual library versions and requires explicit permission via
+`--allow-different-environment` to run outside the historical numerical versions.
+Its seed labels differ from the original contest drivers, so it is not promised
+to reproduce saved coordinates bit for bit.
+
+The original seed-protocol drivers, now with updated paths, are:
+
+```bash
+python -m analysis.senate.candidate_axis.run_mds
+python -m analysis.governor.candidate_axis.fit
+python -m analysis.house.candidate_axis.fit
+```
+
+**These commands perform expensive new fits and overwrite the corresponding
+saved output files.** Use a disposable checkout for a replication. They require
+the exact source CSVs under `data/nov11/`; the Senate driver retains its own
+independent ranking interpreter. Governor and House share one fitting engine
+in `analysis/shared/fit_races.py`. No fitting command was run for the reorganization.
+
+## Rebuilding the combined research report
+
+The source notebook and builders are in `analysis/reporting/`. Install its
+additional requirements, supply the pinned inputs, and generate or restore
+required intermediate artifacts before running it. The code-only release does
+not include linked ballot exports, generated descriptive tables, density grids,
+Sankey media or every archived reference webpage. Supplying the three CSVs alone
+does not automatically restore all of those dependencies.
+
+The upstream stages are grouped by race and under `analysis/cross_race/`; their
+READMEs identify their entry points. The combined notebook reuses saved spatial
+fits by default. Its optional refitting flag must remain false if the intention
+is to rebuild the report without new MDS fitting. The earlier report under
+`analysis/senate/archive/` is frozen historical source, not a runnable entry point.
+
+Presentation Python code builds figures from generated tables. Some JavaScript
+deck builders depend on the author's desktop presentation runtime; they are
+preserved with that limitation, not presented as portable public commands.
