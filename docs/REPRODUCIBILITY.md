@@ -14,7 +14,7 @@ recommendation for future substantive results. Read the known solver issue.
 
 ```bash
 python -m pip install -r requirements-core.txt
-python scripts/fit_candidate_axis.py   --profile alaska_2026_sam_followup_20261116/axis_models/governor/profile.json   --output runs/governor/replay.json   --seed 20261112 --null-draws 49
+python scripts/fit_candidate_axis.py   --profile statewide_analysis/axis_models/governor/profile.json   --output runs/governor/replay.json   --seed 20261112 --null-draws 49
 ```
 
 This portable runner uses the preserved mathematical functions with its own
@@ -29,9 +29,9 @@ a run is labeled a different-environment result, never a historical replication.
 
 Install the matching pipeline requirements in a separate environment, obtain
 the pinned CSV inputs, and restore any omitted generated inputs needed by a
-chosen stage. Original relative directory names are preserved to retain paths.
+chosen stage. The main workflow is in `statewide_analysis/`; references were updated with the rename.
 The combined notebook is:
-`alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb`.
+`statewide_analysis/Alaska_2026_Statewide_Analysis.ipynb`.
 Run it from that directory, following the source guard in its first code cell.
 
 The combined notebook defaults to reusing saved models; that setting must not
