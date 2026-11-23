@@ -1,0 +1,39 @@
+{
+  "description": "Synthetic format example only. Not Alaska ballots or election results.",
+  "candidates": [
+    "Example A",
+    "Example B",
+    "Example C",
+    "Example D"
+  ],
+  "ballots": [
+    {
+      "ranking": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "count": 7
+    },
+    {
+      "ranking": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 5
+    },
+    {
+      "ranking": [
+        0
+      ],
+      "count": 3
+    },
+    {
+      "ranking": [],
+      "count": 2
+    }
+  ]
+}
