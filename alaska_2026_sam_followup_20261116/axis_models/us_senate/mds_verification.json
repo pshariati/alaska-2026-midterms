@@ -1,0 +1,41 @@
+{
+  "source_filename": "Alaska_20261103_US_Senate_11_11.csv",
+  "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
+  "status": "passed",
+  "independent_feasibility_rankings_checked": 3264,
+  "axes_checked": 51,
+  "strong_fit_axis": [
+    0.7668234737231286,
+    0.0,
+    0.4302700273551502,
+    1.0
+  ],
+  "strong_fit_diagnostics": {
+    "modal_order_share": 0.86,
+    "valid_runs": 100,
+    "discarded_coincident_runs": 0,
+    "distinct_orders": 4,
+    "modal_order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "mean_modal_stress": 1.946616932425636e-06,
+    "min_stress": 0.0,
+    "max_iter_hits_selected": 0,
+    "settings": {
+      "n_runs": 100,
+      "n_init": 16,
+      "max_iter": 1000,
+      "eps": 1e-06
+    }
+  },
+  "strong_fit_gamma": 0.9275943803856694,
+  "strong_fit_gamma_informative": 0.6153509826640141,
+  "main_fit_gamma": 0.9275943803856694,
+  "main_fit_gamma_informative": 0.6153509826640141,
+  "change_overall_percentage_points": 0.0,
+  "change_three_plus_percentage_points": 0.0,
+  "interpretation": "100outer\u00d716 starts observed-only fitting-budget sensitivity; null comparison remains prespecified20outer\u00d78 starts per observed and randomized profile."
+}
