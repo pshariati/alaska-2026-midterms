@@ -1,0 +1,23 @@
+{
+  "ballot_source_filename": "Alaska_20261103_US_Senate_11_11.csv",
+  "ballot_source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
+  "core_original_path": "rcv-analysis/src/rcv_core.py",
+  "core_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+  "core_copied_unchanged": true,
+  "only_prior_material_reused": "Pure OG mathematical method code and independent checking code; no prior ballot data, profiles, fitted axes or randomized results reused",
+  "ranking_interpretation": "Rachel CSV rank1..rank5 tokens; literal overvote barrier; two internal skipped tokens barrier; repeats collapse; generic Write-in occupies rank before removal from four-candidate model",
+  "candidate_ids_are_internal_lookup_labels": true,
+  "settings": {
+    "n_runs": 20,
+    "n_init": 8,
+    "max_iter": 1000,
+    "eps": 1e-06,
+    "null_draws": 49,
+    "base_seed": 20261112
+  },
+  "strong_observed_sensitivity": {
+    "n_runs": 100,
+    "n_init": 16
+  },
+  "cohort": "Full nonempty interpreted Rachel Senate collection, fitted and scored on same collection; same fullfit and scoring protocol separately on every randomized profile; no 80/20 split"
+}

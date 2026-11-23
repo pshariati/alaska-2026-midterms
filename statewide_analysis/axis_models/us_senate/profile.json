@@ -1,0 +1,541 @@
+{
+  "candidate_ids": [
+    524,
+    525,
+    526,
+    527
+  ],
+  "candidates": [
+    "Heikes, Gerald L.",
+    "Peltola, Mary",
+    "Sullivan, Daniel J. Jr.",
+    "Sullivan, Dan S."
+  ],
+  "ballots": [
+    {
+      "ranking": [],
+      "count": 1699
+    },
+    {
+      "ranking": [
+        0
+      ],
+      "count": 1954
+    },
+    {
+      "ranking": [
+        0,
+        1
+      ],
+      "count": 202
+    },
+    {
+      "ranking": [
+        0,
+        1,
+        2
+      ],
+      "count": 54
+    },
+    {
+      "ranking": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "count": 194
+    },
+    {
+      "ranking": [
+        0,
+        1,
+        3
+      ],
+      "count": 77
+    },
+    {
+      "ranking": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "count": 153
+    },
+    {
+      "ranking": [
+        0,
+        2
+      ],
+      "count": 149
+    },
+    {
+      "ranking": [
+        0,
+        2,
+        1
+      ],
+      "count": 41
+    },
+    {
+      "ranking": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "count": 181
+    },
+    {
+      "ranking": [
+        0,
+        2,
+        3
+      ],
+      "count": 127
+    },
+    {
+      "ranking": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "count": 258
+    },
+    {
+      "ranking": [
+        0,
+        3
+      ],
+      "count": 963
+    },
+    {
+      "ranking": [
+        0,
+        3,
+        1
+      ],
+      "count": 115
+    },
+    {
+      "ranking": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "count": 191
+    },
+    {
+      "ranking": [
+        0,
+        3,
+        2
+      ],
+      "count": 184
+    },
+    {
+      "ranking": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "count": 429
+    },
+    {
+      "ranking": [
+        1
+      ],
+      "count": 66742
+    },
+    {
+      "ranking": [
+        1,
+        0
+      ],
+      "count": 1736
+    },
+    {
+      "ranking": [
+        1,
+        0,
+        2
+      ],
+      "count": 869
+    },
+    {
+      "ranking": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "count": 3560
+    },
+    {
+      "ranking": [
+        1,
+        0,
+        3
+      ],
+      "count": 455
+    },
+    {
+      "ranking": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "count": 1373
+    },
+    {
+      "ranking": [
+        1,
+        2
+      ],
+      "count": 21871
+    },
+    {
+      "ranking": [
+        1,
+        2,
+        0
+      ],
+      "count": 3372
+    },
+    {
+      "ranking": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "count": 8184
+    },
+    {
+      "ranking": [
+        1,
+        2,
+        3
+      ],
+      "count": 1271
+    },
+    {
+      "ranking": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "count": 2221
+    },
+    {
+      "ranking": [
+        1,
+        3
+      ],
+      "count": 2795
+    },
+    {
+      "ranking": [
+        1,
+        3,
+        0
+      ],
+      "count": 506
+    },
+    {
+      "ranking": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "count": 1331
+    },
+    {
+      "ranking": [
+        1,
+        3,
+        2
+      ],
+      "count": 398
+    },
+    {
+      "ranking": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "count": 972
+    },
+    {
+      "ranking": [
+        2
+      ],
+      "count": 1484
+    },
+    {
+      "ranking": [
+        2,
+        0
+      ],
+      "count": 263
+    },
+    {
+      "ranking": [
+        2,
+        0,
+        1
+      ],
+      "count": 56
+    },
+    {
+      "ranking": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "count": 145
+    },
+    {
+      "ranking": [
+        2,
+        0,
+        3
+      ],
+      "count": 113
+    },
+    {
+      "ranking": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "count": 165
+    },
+    {
+      "ranking": [
+        2,
+        1
+      ],
+      "count": 634
+    },
+    {
+      "ranking": [
+        2,
+        1,
+        0
+      ],
+      "count": 91
+    },
+    {
+      "ranking": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "count": 217
+    },
+    {
+      "ranking": [
+        2,
+        1,
+        3
+      ],
+      "count": 82
+    },
+    {
+      "ranking": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "count": 150
+    },
+    {
+      "ranking": [
+        2,
+        3
+      ],
+      "count": 219
+    },
+    {
+      "ranking": [
+        2,
+        3,
+        0
+      ],
+      "count": 165
+    },
+    {
+      "ranking": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "count": 154
+    },
+    {
+      "ranking": [
+        2,
+        3,
+        1
+      ],
+      "count": 46
+    },
+    {
+      "ranking": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "count": 71
+    },
+    {
+      "ranking": [
+        3
+      ],
+      "count": 63604
+    },
+    {
+      "ranking": [
+        3,
+        0
+      ],
+      "count": 31870
+    },
+    {
+      "ranking": [
+        3,
+        0,
+        1
+      ],
+      "count": 967
+    },
+    {
+      "ranking": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "count": 1469
+    },
+    {
+      "ranking": [
+        3,
+        0,
+        2
+      ],
+      "count": 6945
+    },
+    {
+      "ranking": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "count": 4694
+    },
+    {
+      "ranking": [
+        3,
+        1
+      ],
+      "count": 1492
+    },
+    {
+      "ranking": [
+        3,
+        1,
+        0
+      ],
+      "count": 373
+    },
+    {
+      "ranking": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "count": 663
+    },
+    {
+      "ranking": [
+        3,
+        1,
+        2
+      ],
+      "count": 110
+    },
+    {
+      "ranking": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "count": 285
+    },
+    {
+      "ranking": [
+        3,
+        2
+      ],
+      "count": 1285
+    },
+    {
+      "ranking": [
+        3,
+        2,
+        0
+      ],
+      "count": 1251
+    },
+    {
+      "ranking": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "count": 727
+    },
+    {
+      "ranking": [
+        3,
+        2,
+        1
+      ],
+      "count": 114
+    },
+    {
+      "ranking": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 174
+    }
+  ],
+  "source_filename": "Alaska_20261103_US_Senate_11_11.csv",
+  "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
+  "source_rows": 244705,
+  "candidate_ids_are_internal_lookup_labels": true,
+  "cohort": "All Rachel Senate CSV rows, Alaska-interpretable prefix; generic unresolved write-in excluded only after barriers; empty prefixes retained separately"
+}
