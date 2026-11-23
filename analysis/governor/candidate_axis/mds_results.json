@@ -4493,7 +4493,7 @@
   "source_sha256": "3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3",
   "source_rows": 244575,
   "candidate_ids_are_internal_lookup_labels": true,
-  "sole_ballot_source": "Rachel November11 CSV for this contest; countable-prefix transformation from common/data.py",
+  "sole_ballot_source": "FairVote November11 CSV for this contest; countable-prefix transformation from common/data.py",
   "ranking_interpreter_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
   "cohort": "All nonempty Alaska-countable named prefixes; generic write-in excluded only after barriers; empty prefixes retained separately.",
   "summary": [
