@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 BASE=Path(__file__).resolve().parent
 ROOT=BASE.parent.parent
-SOURCE=ROOT/'alaska_2026_sam_followup_20261116/confusion/daniel_first_usable_permutations.csv'
+SOURCE=ROOT/'statewide_analysis/confusion/daniel_first_usable_permutations.csv'
 rows=list(csv.DictReader(SOURCE.open()))
 counts={tuple(json.loads(r['candidate_ids_json'])):int(r['literal_rank1_daniel_ballots']) for r in rows}
 assert sum(counts.values())==3940
