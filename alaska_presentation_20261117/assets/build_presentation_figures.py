@@ -18,7 +18,7 @@ from matplotlib.ticker import PercentFormatter, MaxNLocator
 
 OUT = Path(__file__).resolve().parent
 PROJECT = OUT.parent.parent
-ROOT = PROJECT / 'alaska_2026_sam_followup_20261116'
+ROOT = PROJECT / 'statewide_analysis'
 NAVY = '#243449'
 TEXT = '#40566f'
 LINE = '#c5d1db'
