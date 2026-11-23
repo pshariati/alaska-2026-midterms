@@ -23,16 +23,16 @@ if str(ROOT) not in sys.path:
 RACES = ("senate", "governor", "house")
 CORE_SHA256 = "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a"
 
-# Frozen before the race-folder reorganization, from the former
-# statewide_analysis/axis_models directory. These are historical artifacts, so
-# even embedded historical paths/provenance must not be rewritten in place.
+# Frozen public artifact bytes after the FairVote attribution update.
+# Only source-label text changed; numeric values are independently frozen
+# in provenance/numeric_baseline.json and checked below.
 SAVED_SHA256 = {
     "analysis/governor/candidate_axis/adjacency_matrix.csv": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
     "analysis/governor/candidate_axis/candidate_axis.csv": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
     "analysis/governor/candidate_axis/consistency_summary.csv": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
     "analysis/governor/candidate_axis/coranking_matrix.csv": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
     "analysis/governor/candidate_axis/dissimilarity_matrix.csv": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
-    "analysis/governor/candidate_axis/mds_results.json": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+    "analysis/governor/candidate_axis/mds_results.json": "88cf67a3fc3a5a5b162e226e8c05d9143f7fc1585e186808467c6bf686f8015a",
     "analysis/governor/candidate_axis/mds_verification.json": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
     "analysis/governor/candidate_axis/method_provenance.json": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
     "analysis/governor/candidate_axis/null_profiles.json": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
@@ -42,22 +42,22 @@ SAVED_SHA256 = {
     "analysis/house/candidate_axis/consistency_summary.csv": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
     "analysis/house/candidate_axis/coranking_matrix.csv": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
     "analysis/house/candidate_axis/dissimilarity_matrix.csv": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
-    "analysis/house/candidate_axis/mds_results.json": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+    "analysis/house/candidate_axis/mds_results.json": "c998370c272a746fd3403e05d1f63eed658270ef64f3b0eaf137439f702f52d2",
     "analysis/house/candidate_axis/mds_verification.json": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
     "analysis/house/candidate_axis/method_provenance.json": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
     "analysis/house/candidate_axis/null_profiles.json": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
     "analysis/house/candidate_axis/profile.json": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
     "analysis/senate/candidate_axis/candidate_axis.csv": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
-    "analysis/senate/candidate_axis/carryover_provenance.json": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+    "analysis/senate/candidate_axis/carryover_provenance.json": "892707a3fc5bb0a1f2fd755c84d422f9ae3527e4d14bf4af4bcaa5a8349ddc79",
     "analysis/senate/candidate_axis/consistency_summary.csv": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
     "analysis/senate/candidate_axis/dissimilarity_matrix.csv": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
-    "analysis/senate/candidate_axis/mds_results.json": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+    "analysis/senate/candidate_axis/mds_results.json": "0ae933026e1de3c14239a8f6c7ea58de4e17e92e1058fcb88b67222e1f8d2420",
     "analysis/senate/candidate_axis/mds_verification.json": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-    "analysis/senate/candidate_axis/method_provenance.json": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-    "analysis/senate/candidate_axis/profile.json": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
-    "analysis/senate/candidate_axis/rachel_profile_provenance.json": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
-    "analysis/cross_race/validation/axes/independent_axis_audit.json": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
-    "analysis/cross_race/validation/axes/new_contests_consistency.csv": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+    "analysis/senate/candidate_axis/method_provenance.json": "9a6084599ab1fe02b5f12c0529632d17272a5cc32b315a4c2cebdf34b154a376",
+    "analysis/senate/candidate_axis/profile.json": "54cf5e421fd1c595f5af14f4b601a20a8bc1fdbaeedf49b655259b9412c959e2",
+    "analysis/senate/candidate_axis/fairvote_profile_provenance.json": "6bf4ad80a26ad3218eeac2f513a00cb04a631ca4e805c86be7ada173403dd19a",
+    "analysis/cross_race/validation/axes/independent_axis_audit.json": "a34f4f7825e2f34e3021f912d8f3914c1b3c9c185ae67489033a63a6685ec7c2",
+    "analysis/cross_race/validation/axes/new_contests_consistency.csv": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598"
 }
 
 
@@ -162,6 +162,22 @@ class SavedResultChecks(unittest.TestCase):
                                  expected)
         core = ROOT / "analysis/shared/og_axis.py"
         self.assertEqual(hashlib.sha256(core.read_bytes()).hexdigest(), CORE_SHA256)
+
+    def test_saved_numeric_values_preserved_during_attribution_cleanup(self):
+        def leaves(value, trail=()):
+            if isinstance(value, dict):
+                return [entry for key, child in sorted(value.items()) for entry in leaves(child, trail+(key,))]
+            if isinstance(value, list):
+                return [entry for i, child in enumerate(value) for entry in leaves(child, trail+(i,))]
+            if isinstance(value, (int, float)) and not isinstance(value, bool):
+                return [[list(trail), value]]
+            return []
+        baseline = load_json(ROOT/'provenance/numeric_baseline.json')['artifacts']
+        for relative, expected in baseline.items():
+            path = ROOT/relative
+            payload = (json.dumps(leaves(load_json(path)), separators=(',', ':'), allow_nan=False).encode()
+                       if path.suffix == '.json' else path.read_bytes())
+            self.assertEqual(hashlib.sha256(payload).hexdigest(), expected, relative)
 
     def test_observed_profiles_totals_and_scores(self):
         for race in RACES:
