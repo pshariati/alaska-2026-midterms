@@ -1,0 +1,131 @@
+{
+  "source_only": "All counts recomputed from the three Rachel CSV rank1-rank5 columns only.",
+  "benchmark_role": "Frozen published FairVote HTML tables are external reference values, never analysis data or fitting inputs.",
+  "cells": 54,
+  "matches": 54,
+  "mismatches": [],
+  "all_mass_conservation_passed": true,
+  "initial_inactive_handling": "Every source ballot remains in each round. The initially inactive count is subtracted only when matching the published newly-inactive series.",
+  "contests": {
+    "governor": {
+      "source_file": "inputs/Alaska_20261103_US_Governor_11_11.csv",
+      "source_sha256": "3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3",
+      "source_ballots": 244575,
+      "unique_ballot_ids": 244575,
+      "initially_inactive": 3699,
+      "pattern_count": 279,
+      "reference_file": "references/fairvote_governor.html",
+      "reference_sha256": "21a15bdfb173b78745533cfe044febff09d95e2686af1cc9a4973d9891967d00",
+      "stage_candidate_sets_role": "Published non-eliminated sets align reference stages only; not model-fitting inputs",
+      "round_counts": [
+        {
+          "Bronson/Church": 33428,
+          "Taylor/English": 17548,
+          "Kreiss-Tomkins/Johnson": 119111,
+          "Wilson/Shower": 70120,
+          "Write-in": 669,
+          "Inactive Ballots": 3699
+        },
+        {
+          "Bronson/Church": 33484,
+          "Taylor/English": 17587,
+          "Kreiss-Tomkins/Johnson": 119339,
+          "Wilson/Shower": 70166,
+          "Inactive Ballots": 3999
+        },
+        {
+          "Bronson/Church": 38577,
+          "Kreiss-Tomkins/Johnson": 120286,
+          "Wilson/Shower": 75834,
+          "Inactive Ballots": 9878
+        },
+        {
+          "Wilson/Shower": 97857,
+          "Kreiss-Tomkins/Johnson": 122893,
+          "Inactive Ballots": 23825
+        }
+      ],
+      "mass_conservation_passed": true
+    },
+    "us_house": {
+      "source_file": "inputs/Alaska_20261103_US_House_11_11.csv",
+      "source_sha256": "b57fad2ef5a8845ba5b3da1eeb3c5e7cfb036c1c174af640b3acee65e45f8b48",
+      "source_ballots": 244705,
+      "unique_ballot_ids": 244705,
+      "initially_inactive": 2171,
+      "pattern_count": 277,
+      "reference_file": "references/fairvote_us_house.html",
+      "reference_sha256": "f432ce964a8776ab64edadf601c60e9f4323dbe521f4b16c376463c331f726e1",
+      "stage_candidate_sets_role": "Published non-eliminated sets align reference stages only; not model-fitting inputs",
+      "round_counts": [
+        {
+          "Begich, Nick": 119271,
+          "McDermott, James C. \"Jim\"": 6418,
+          "Hill, Bill": 98465,
+          "Hafner, Eric": 18012,
+          "Inactive Ballots": 2171,
+          "Write-in": 368
+        },
+        {
+          "Begich, Nick": 119307,
+          "McDermott, James C. \"Jim\"": 6446,
+          "Hill, Bill": 98543,
+          "Hafner, Eric": 18032,
+          "Inactive Ballots": 2377
+        },
+        {
+          "Begich, Nick": 121107,
+          "Inactive Ballots": 4463,
+          "Hill, Bill": 100324,
+          "Hafner, Eric": 18811
+        },
+        {
+          "Begich, Nick": 122405,
+          "Inactive Ballots": 13383,
+          "Hill, Bill": 108917
+        }
+      ],
+      "mass_conservation_passed": true
+    },
+    "us_senate": {
+      "source_file": "inputs/Alaska_20261103_US_Senate_11_11.csv",
+      "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
+      "source_ballots": 244705,
+      "unique_ballot_ids": 244705,
+      "initially_inactive": 1363,
+      "pattern_count": 291,
+      "reference_file": "references/fairvote_us_senate.html",
+      "reference_sha256": "ada2172611f84df417f87bcb689116f8f6414cadc7b473980afe346b3b50e0d0",
+      "stage_candidate_sets_role": "Published non-eliminated sets align reference stages only; not model-fitting inputs",
+      "round_counts": [
+        {
+          "Heikes, Gerald L.": 5155,
+          "Peltola, Mary": 117505,
+          "Sullivan, Dan S.": 115917,
+          "Sullivan, Daniel J. Jr.": 3992,
+          "Inactive Ballots": 1363,
+          "Write-in": 773
+        },
+        {
+          "Heikes, Gerald L.": 5272,
+          "Peltola, Mary": 117656,
+          "Sullivan, Dan S.": 116023,
+          "Sullivan, Daniel J. Jr.": 4055,
+          "Inactive Ballots": 1699
+        },
+        {
+          "Heikes, Gerald L.": 6014,
+          "Peltola, Mary": 118830,
+          "Sullivan, Dan S.": 116678,
+          "Inactive Ballots": 3183
+        },
+        {
+          "Sullivan, Dan S.": 119223,
+          "Peltola, Mary": 119933,
+          "Inactive Ballots": 5549
+        }
+      ],
+      "mass_conservation_passed": true
+    }
+  }
+}
