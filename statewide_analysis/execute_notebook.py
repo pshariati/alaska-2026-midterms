@@ -4,7 +4,7 @@ import sys,json,hashlib,datetime,importlib.metadata
 import nbformat
 from nbclient import NotebookClient
 ROOT=Path(__file__).resolve().parent
-path=ROOT/'Alaska_2026_Sam_Followup.ipynb'
+path=ROOT/'Alaska_2026_Statewide_Analysis.ipynb'
 nb=nbformat.read(path,as_version=4)
 start=datetime.datetime.now(datetime.timezone.utc).isoformat()
 try:

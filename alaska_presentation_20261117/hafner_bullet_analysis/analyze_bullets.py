@@ -7,7 +7,7 @@ from collections import Counter
 import csv,json,sys,gzip,hashlib
 
 BASE=Path(__file__).resolve().parent
-ROOT=BASE.parents[1]/'alaska_2026_sam_followup_20261116'
+ROOT=BASE.parents[1]/'statewide_analysis'
 sys.path.insert(0,str(ROOT/'common'))
 from data import read_rows,normalized_id,RACES,source_path,sha256
 H='Hafner, Eric';P='Peltola, Mary';K='Kreiss-Tomkins/Johnson';MISSING='Missing contest record'

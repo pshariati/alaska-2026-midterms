@@ -8,7 +8,7 @@ under `voter_distributions/method_references/` are reference material; the
 current statewide runner imports the separately adapted `common/og_axis.py`.
 
 The release manifest records the checksum of every copied source and whether
-notebook outputs were cleared. Python source copies are unchanged. New sharing
+notebook outputs were cleared. The numerical core is unchanged; subsequent path-reference updates are recorded in the manifest. New sharing
 documentation and the generic runner are distinct from the historical code.
 No new blanket license is asserted over third-party material; consult the
 upstream rights holders for reuse terms. This repository does not confer new

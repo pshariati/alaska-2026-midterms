@@ -31,14 +31,14 @@ described as an unchanged copy of her script or as a corrected-solver rerun.
 - [Data versions and input checksums](docs/DATA.md)
 - [Reproduction instructions](docs/REPRODUCIBILITY.md)
 - [Known issues and validation limits](docs/KNOWN_ISSUES.md)
-- [Archived mathematical core](alaska_2026_sam_followup_20261116/common/og_axis.py)
+- [Archived mathematical core](statewide_analysis/common/og_axis.py)
 - [Generic candidate-axis runner](scripts/fit_candidate_axis.py)
 
 ## Repository layout
 
 | Location | Contents |
 | --- | --- |
-| `alaska_2026_sam_followup_20261116/` | Combined statewide notebook, axes, distributions, permutation scenarios, Hafner analysis, independent checks |
+| `statewide_analysis/` | Combined statewide notebook, axes, distributions, permutation scenarios, Hafner analysis, independent checks |
 | `alaska_2026_senate_sam_rachel/` | Earlier Rachel-only Senate analysis, source parser, descriptive tables and Senate transfer replay |
 | `alaska_presentation_20261117/` | Figure, table, Sankey, math-companion and presentation-generation code; includes the separate November 16 House check |
 | `scripts/` | Portable entry point for a weighted candidate-ranking profile |
@@ -46,7 +46,7 @@ described as an unchanged copy of her script or as a corrected-solver rerun.
 | `tests/` | Pair-counting, geometry and matched-null checks that do not refit election data |
 | `provenance/` | Source-file checksums and packaging transformations |
 
-Python analysis source files are preserved byte for byte. Notebook outputs and
+The mathematical core is preserved byte for byte. Folder and notebook path updates are recorded in the source manifest. Notebook outputs and
 execution metadata are cleared for sharing, while their cell sources are
 preserved. Saved axis results and aggregate ranking profiles are included; raw
 CVR files, individual ballot identifiers and linked ballot exports are excluded.

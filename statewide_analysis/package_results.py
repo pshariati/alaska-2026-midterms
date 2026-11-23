@@ -14,7 +14,7 @@ def sha(path):
 
 def main():
  execution=read('validation/notebook_execution.json')
- nbpath=ROOT/'Alaska_2026_Sam_Followup.ipynb';nb=nbformat.read(nbpath,as_version=4)
+ nbpath=ROOT/'Alaska_2026_Statewide_Analysis.ipynb';nb=nbformat.read(nbpath,as_version=4)
  assert sha(nbpath)==execution['notebook_sha256']
  code=[c for c in nb.cells if c.cell_type=='code']
  assert execution['all_cells_executed'] and execution['error_outputs']==0
@@ -76,7 +76,7 @@ def main():
    data=output.get('data',{})
    tables+=len(BeautifulSoup(data.get('text/html',''),'html.parser').find_all('table'))
    figures+='image/png' in data
- htmlpath=ROOT/'Alaska_2026_Sam_Followup_Readable.html'
+ htmlpath=ROOT/'Alaska_2026_Statewide_Analysis_Readable.html'
  soup=BeautifulSoup(htmlpath.read_text(),'html.parser')
  assert len(soup.select('table'))==tables and tables>=28
  assert len(soup.select('img[src^="data:image/png;base64,"]'))==figures==12
@@ -105,7 +105,7 @@ def main():
  files=sorted(p for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in {'.pyc','.log','.tmp','.sqlite'} and p.name!='SHA256SUMS.json')
  hashes={str(p.relative_to(ROOT)):sha(p) for p in files}
  (ROOT/'SHA256SUMS.json').write_text(json.dumps(hashes,indent=2))
- archive=ROOT.parent/'Alaska_2026_Sam_Followup_20261116.zip'
+ archive=ROOT.parent/'Alaska_2026_Statewide_Analysis_20261116.zip'
  with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=4) as z:
   for p in files+[ROOT/'SHA256SUMS.json']:
    z.write(p,str(p.relative_to(ROOT.parent)),compress_type=zipfile.ZIP_STORED if p.suffix in {'.png','.npz','.gz','.pdf'} else zipfile.ZIP_DEFLATED)

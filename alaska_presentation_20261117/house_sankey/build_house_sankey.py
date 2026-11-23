@@ -8,7 +8,7 @@ import csv,sys,json,html,hashlib
 
 BASE=Path(__file__).resolve().parent
 PROJECT=BASE.parents[1]
-ROOT=PROJECT/'alaska_2026_sam_followup_20261116'
+ROOT=PROJECT/'statewide_analysis'
 sys.path.insert(0,str(ROOT/'common'))
 from data import read_rows,countable_tokens,RACES,source_path,sha256
 

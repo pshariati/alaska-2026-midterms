@@ -6,7 +6,7 @@ import nbformat
 from nbconvert import HTMLExporter
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parent.parent
-p=R/'Alaska_2026_Sam_Followup.ipynb'
+p=R/'Alaska_2026_Statewide_Analysis.ipynb'
 nb=nbformat.read(p,as_version=4)
 exporter=HTMLExporter(template_name='classic');exporter.exclude_input=False;exporter.exclude_input_prompt=False;exporter.exclude_output_prompt=True;exporter.embed_images=True
 html,_=exporter.from_notebook_node(nb)
@@ -49,8 +49,8 @@ bar=BeautifulSoup('''<header class="sam-browser-bar"><div class="sam-browser-bra
 soup.body.insert(0,bar)
 script=soup.new_tag('script');script.string="document.getElementById('sam-code-toggle').addEventListener('click',function(){const on=document.body.classList.toggle('show-code');this.textContent=on?'Hide code':'Show code';this.setAttribute('aria-pressed',String(on));if(on)document.querySelectorAll('details.sam-details').forEach(d=>d.open=true);});";soup.body.append(script)
 if soup.title:soup.title.string='Alaska 2026 — Sam follow-up notebook'
-out=R/'Alaska_2026_Sam_Followup.html';out.write_text(str(soup),encoding='utf-8')
-readable=R/'Alaska_2026_Sam_Followup_Readable.html';shutil.copy2(out,readable)
+out=R/'Alaska_2026_Statewide_Analysis.html';out.write_text(str(soup),encoding='utf-8')
+readable=R/'Alaska_2026_Statewide_Analysis_Readable.html';shutil.copy2(out,readable)
 expected_tables=sum(len(BeautifulSoup(o.get('data',{}).get('text/html',''),'html.parser').select('table')) for c in nb.cells for o in c.get('outputs',[]))
 assert len(soup.select('table'))==expected_tables
 expected_images=sum('image/png' in o.get('data',{}) for c in nb.cells for o in c.get('outputs',[]))

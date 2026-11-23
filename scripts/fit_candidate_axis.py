@@ -8,7 +8,7 @@ import platform
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CORE = ROOT / 'alaska_2026_sam_followup_20261116/common/og_axis.py'
+CORE = ROOT / 'statewide_analysis/common/og_axis.py'
 
 
 def read_profile(path):

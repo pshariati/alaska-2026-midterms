@@ -3,7 +3,7 @@ from pathlib import Path
 import csv, json, hashlib, html
 
 ROOT=Path(__file__).resolve().parents[2]
-BASE=ROOT/'alaska_2026_sam_followup_20261116'
+BASE=ROOT/'statewide_analysis'
 OUT=Path(__file__).resolve().parent
 OUT.mkdir(exist_ok=True)
 def rows(p):

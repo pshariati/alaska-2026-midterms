@@ -233,5 +233,5 @@ def build_document():
  return nb
 
 if __name__=='__main__':
- path=ROOT/'Alaska_2026_Sam_Followup.ipynb';nbf.write(build_document(),path)
+ path=ROOT/'Alaska_2026_Statewide_Analysis.ipynb';nbf.write(build_document(),path)
  print(path)

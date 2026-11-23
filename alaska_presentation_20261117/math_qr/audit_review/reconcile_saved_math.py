@@ -8,7 +8,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parents[2]
-ROOT = PROJECT / 'alaska_2026_sam_followup_20261116' / 'axis_models'
+ROOT = PROJECT / 'statewide_analysis' / 'axis_models'
 TOL = 1e-12
 
 

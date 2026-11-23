@@ -9,7 +9,7 @@ from collections import Counter
 import csv, hashlib, json, importlib.util
 
 BASE=Path(__file__).resolve().parent
-ROOT=BASE.parents[1]/'alaska_2026_sam_followup_20261116'
+ROOT=BASE.parents[1]/'statewide_analysis'
 spec=importlib.util.spec_from_file_location('benchmark_read',ROOT/'validation/validate_archived_benchmarks.py')
 mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
 expected=json.loads((ROOT/'references/benchmark_validation.json').read_text())

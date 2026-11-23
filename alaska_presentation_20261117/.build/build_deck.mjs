@@ -5,7 +5,7 @@ import {Presentation, PresentationFile} from '@oai/artifact-tool';
 const ROOT='/Users/pejmonshariati/.codex/.chatgpt-projects/g-p-6a7f49ff7aec8191b1e23d45a2922c23';
 const W=path.join(ROOT,'alaska_presentation_20261117');
 const BUILD=path.join(W,'.build');
-const SOURCE=path.join(ROOT,'alaska_2026_sam_followup_20261116');
+const SOURCE=path.join(ROOT,'statewide_analysis');
 const SKILL='/Users/pejmonshariati/.codex/plugins/cache/openai-primary-runtime/presentations/26.1112.11011/skills/presentations';
 process.env.RUNTIME_NODE_MODULES='/Users/pejmonshariati/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const {finalizePresentation}=await import(path.join(SKILL,'container_tools/artifact_tool_utils.mjs'));
@@ -73,7 +73,7 @@ function axes(s){
 
 // 1 — cover
 {
- const s=slide('Alaska’s ranked ballots','Research presentation','','Source: Alaska_2026_Sam_Followup.ipynb, opening summary and methods. Prepared for discussion with Sam. These are three separate elections: governor, one US House seat, and one US Senate seat.');
+ const s=slide('Alaska’s ranked ballots','Research presentation','','Source: Alaska_2026_Statewide_Analysis.ipynb, opening summary and methods. Prepared for discussion with Sam. These are three separate elections: governor, one US House seat, and one US Senate seat.');
  text(s,'Preferences, transfers and voter structure',64,198,1100,80,43,C.navy);
  text(s,'Senate · Governor · U.S. House',64,302,1100,48,30,C.muted);
  text(s,'Pejmon Shariati',64,451,1000,45,29,C.navy,true);
@@ -218,7 +218,7 @@ for(const [race,raceLabel] of [['senate','Senate'],['governor','Governor'],['hou
 }
 // 25 — source reference
 {
- const s=slide('Sources and supporting material','Appendix','Full methods, ranking tables and reproducibility files are in the research notebook',`Notebook: Alaska_2026_Sam_Followup.ipynb and Alaska_2026_Sam_Followup_Readable.html. Analytic ballot inputs only Rachel November11 CSVs. Sourcehashes Senate3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972;Governor3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3;Houseb57fad2ef5a8845ba5b3da1eeb3c5e7cfb036c1c174af640b3acee65e45f8b48. Official terminology and rule references below. Hafner background and geographic references cited in corresponding speaker notes.`);
+ const s=slide('Sources and supporting material','Appendix','Full methods, ranking tables and reproducibility files are in the research notebook',`Notebook: Alaska_2026_Statewide_Analysis.ipynb and Alaska_2026_Statewide_Analysis_Readable.html. Analytic ballot inputs only Rachel November11 CSVs. Sourcehashes Senate3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972;Governor3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3;Houseb57fad2ef5a8845ba5b3da1eeb3c5e7cfb036c1c174af640b3acee65e45f8b48. Official terminology and rule references below. Hafner background and geographic references cited in corresponding speaker notes.`);
  const rows=[['Alaska counting rules','https://www.akleg.gov/statutesPDF/Title-15.pdf'],['Alaska election explanation','https://www.elections.alaska.gov/election-information/'],['Official “valid rankings” wording','https://www.elections.alaska.gov/doc/forms/B19-NC.pdf'],['CVR coverage / official results','https://www.elections.alaska.gov/election-results/e/?id=26genr'],['House district geography','https://www.elections.alaska.gov/research/district-maps/']];
  rows.forEach(([label,url],i)=>{text(s,label,64,212+i*76,1152,31,25,C.navy,true);const a=text(s,url,64,247+i*76,1152,32,22,C.muted);a.text.get(url).link={uri:url,isExternal:true};});
 }
@@ -258,7 +258,7 @@ const scripts=[
 if(scripts.length!==manifest.length)throw Error('Speaker-note count mismatch');
 for(let i=0;i<manifest.length;i++){
  const urls=[...new Set((manifest[i].notes.match(/https:\/\/[^\s;]+/g)||[]).map(u=>u.replace(/[.,]$/,'')))];
- p.slides.items[i].speakerNotes.text=scripts[i]+'\n\nSources: Alaska_2026_Sam_Followup.ipynb; Rachel’s November 11 CSVs and saved analysis outputs.\n'+urls.join('\n');
+ p.slides.items[i].speakerNotes.text=scripts[i]+'\n\nSources: Alaska_2026_Statewide_Analysis.ipynb; Rachel’s November 11 CSVs and saved analysis outputs.\n'+urls.join('\n');
 }
 
 await fs.mkdir(path.join(BUILD,'previews'),{recursive:true});
