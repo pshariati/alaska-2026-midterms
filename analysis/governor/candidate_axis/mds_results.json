@@ -1,0 +1,4581 @@
+{
+  "status": "complete",
+  "candidate_ids": [
+    537,
+    538,
+    536,
+    539
+  ],
+  "candidates": [
+    "Bronson/Church",
+    "Kreiss-Tomkins/Johnson",
+    "Taylor/English",
+    "Wilson/Shower"
+  ],
+  "axis": [
+    0.6330228394821272,
+    0.0,
+    0.5079171693287531,
+    1.0
+  ],
+  "display_axis": [
+    0.6330228394821272,
+    0.0,
+    0.5079171693287531,
+    1.0
+  ],
+  "display_reflected": false,
+  "display_orientation_rule": "Kreiss-Tomkins left of Wilson",
+  "orientation_interpretation": "Reflection only; axes are separately fitted and not a common calibrated ideology metric.",
+  "observed": {
+    "ballots": 240576,
+    "empty_ballots": 3999,
+    "informative_ballots": 88693,
+    "gamma": 0.8423367251928704,
+    "gamma_informative": 0.5723450554158728,
+    "by_length": [
+      {
+        "length": 1,
+        "ballots": 129491,
+        "consistent": 129491,
+        "gamma": 1.0,
+        "swap_histogram": {
+          "0": 129491
+        },
+        "mean_swaps": 0.0,
+        "mean_swaps_inconsistent": null,
+        "mean_swaps_pair_normalized": 0
+      },
+      {
+        "length": 2,
+        "ballots": 22392,
+        "consistent": 22392,
+        "gamma": 1.0,
+        "swap_histogram": {
+          "0": 22392
+        },
+        "mean_swaps": 0.0,
+        "mean_swaps_inconsistent": null,
+        "mean_swaps_pair_normalized": 0.0
+      },
+      {
+        "length": 3,
+        "ballots": 61783,
+        "consistent": 41853,
+        "gamma": 0.6774193548387096,
+        "swap_histogram": {
+          "0": 41853,
+          "1": 19930
+        },
+        "mean_swaps": 0.3225806451612903,
+        "mean_swaps_inconsistent": 1.0,
+        "mean_swaps_pair_normalized": 0.10752688172043011
+      },
+      {
+        "length": 4,
+        "ballots": 26910,
+        "consistent": 8910,
+        "gamma": 0.3311036789297659,
+        "swap_histogram": {
+          "0": 8910,
+          "1": 10053,
+          "2": 6011,
+          "3": 1936
+        },
+        "mean_swaps": 1.0361575622445187,
+        "mean_swaps_inconsistent": 1.5490555555555556,
+        "mean_swaps_pair_normalized": 0.17269292704075312
+      }
+    ]
+  },
+  "fit_diagnostics": {
+    "modal_order_share": 0.6,
+    "valid_runs": 20,
+    "discarded_coincident_runs": 0,
+    "distinct_orders": 4,
+    "modal_order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "mean_modal_stress": 1.6368862725903675e-06,
+    "min_stress": 7.978279859564315e-07,
+    "max_iter_hits_selected": 0,
+    "settings": {
+      "n_runs": 20,
+      "n_init": 8,
+      "max_iter": 1000,
+      "eps": 1e-06
+    }
+  },
+  "null": [
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8291433891992551,
+      "gamma_informative": 0.5365586912157667,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37014,
+          "gamma": 0.599096838936277,
+          "swap_histogram": {
+            "0": 37014,
+            "1": 24769
+          },
+          "mean_swaps": 0.40090316106372303,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.133634387021241
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10575,
+          "gamma": 0.39297658862876256,
+          "swap_histogram": {
+            "0": 10575,
+            "1": 8780,
+            "2": 6425,
+            "3": 1130
+          },
+          "mean_swaps": 0.9297658862876255,
+          "mean_swaps_inconsistent": 1.5316804407713498,
+          "mean_swaps_pair_normalized": 0.15496098104793757
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 4,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.822278243318711e-06,
+        "min_stress": 3.230227501947042e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        2.510458351082382e-08,
+        8.610016982126587e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 0
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8152683559457302,
+      "gamma_informative": 0.4989232521168525,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37952,
+          "gamma": 0.6142790087888254,
+          "swap_histogram": {
+            "0": 37952,
+            "1": 23831
+          },
+          "mean_swaps": 0.3857209912111746,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1285736637370582
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6299,
+          "gamma": 0.2340765514678558,
+          "swap_histogram": {
+            "0": 6299,
+            "1": 8871,
+            "2": 8287,
+            "3": 3453
+          },
+          "mean_swaps": 1.330509104422148,
+          "mean_swaps_inconsistent": 1.7371306583862987,
+          "mean_swaps_pair_normalized": 0.22175151740369134
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.45,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.391432267472096e-06,
+        "min_stress": 2.806272816941374e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4478503796142195,
+        0.0,
+        0.4478431469823372,
+        1.0
+      ],
+      "draw": 1
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.814632382282522,
+      "gamma_informative": 0.49719820053442776,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37931,
+          "gamma": 0.6139391094637684,
+          "swap_histogram": {
+            "0": 37931,
+            "1": 23852
+          },
+          "mean_swaps": 0.38606089053623166,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12868696351207723
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6167,
+          "gamma": 0.22917131178000744,
+          "swap_histogram": {
+            "0": 6167,
+            "1": 8930,
+            "2": 8300,
+            "3": 3513
+          },
+          "mean_swaps": 1.3403567447045708,
+          "mean_swaps_inconsistent": 1.738851660801234,
+          "mean_swaps_pair_normalized": 0.22339279078409513
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.610255155986814e-06,
+        "min_stress": 3.1601781118935466e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.3926014115935648,
+        0.0,
+        0.3925936388048669,
+        1.0
+      ],
+      "draw": 2
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8145409350891194,
+      "gamma_informative": 0.4969501539016608,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37855,
+          "gamma": 0.6127089976207047,
+          "swap_histogram": {
+            "0": 37855,
+            "1": 23928
+          },
+          "mean_swaps": 0.38729100237929526,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1290970007930984
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6221,
+          "gamma": 0.23117800074321815,
+          "swap_histogram": {
+            "0": 6221,
+            "1": 8925,
+            "2": 8310,
+            "3": 3454
+          },
+          "mean_swaps": 1.3343366778149386,
+          "mean_swaps_inconsistent": 1.7355599593987143,
+          "mean_swaps_pair_normalized": 0.22238944630248977
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.269037638699276e-06,
+        "min_stress": 2.8449781506690857e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4396812821705144,
+        0.0,
+        0.4396743102044529,
+        1.0
+      ],
+      "draw": 3
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.814266593508912,
+      "gamma_informative": 0.4962060140033599,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37883,
+          "gamma": 0.6131621967207808,
+          "swap_histogram": {
+            "0": 37883,
+            "1": 23900
+          },
+          "mean_swaps": 0.3868378032792192,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1289459344264064
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6127,
+          "gamma": 0.22768487551096248,
+          "swap_histogram": {
+            "0": 6127,
+            "1": 8915,
+            "2": 8398,
+            "3": 3470
+          },
+          "mean_swaps": 1.3422891118543292,
+          "mean_swaps_inconsistent": 1.7380070249723332,
+          "mean_swaps_pair_normalized": 0.22371485197572152
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.25,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.1721754302210636e-06,
+        "min_stress": 2.935383419590309e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4641620743428096,
+        0.0,
+        0.46415532902080436,
+        1.0
+      ],
+      "draw": 4
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.81934606943336,
+      "gamma_informative": 0.5099838769688702,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36841,
+          "gamma": 0.5962967159250927,
+          "swap_histogram": {
+            "0": 36841,
+            "1": 24942
+          },
+          "mean_swaps": 0.40370328407490735,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13456776135830245
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 8391,
+          "gamma": 0.3118171683389075,
+          "swap_histogram": {
+            "0": 8391,
+            "1": 9105,
+            "2": 8235,
+            "3": 1179
+          },
+          "mean_swaps": 1.0818283166109253,
+          "mean_swaps_inconsistent": 1.5720071278146768,
+          "mean_swaps_pair_normalized": 0.18030471943515422
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.813972181523479e-06,
+        "min_stress": 3.220992595304058e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        8.141029605621527e-06,
+        5.427353080397061e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 5
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8146864192604416,
+      "gamma_informative": 0.49734477354469914,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38000,
+          "gamma": 0.615055921531813,
+          "swap_histogram": {
+            "0": 38000,
+            "1": 23783
+          },
+          "mean_swaps": 0.38494407846818707,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12831469282272903
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6111,
+          "gamma": 0.22709030100334449,
+          "swap_histogram": {
+            "0": 6111,
+            "1": 9031,
+            "2": 8270,
+            "3": 3498
+          },
+          "mean_swaps": 1.3402081010776663,
+          "mean_swaps_inconsistent": 1.7339775950766865,
+          "mean_swaps_pair_normalized": 0.22336801684627772
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.5,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.4166763503740665e-06,
+        "min_stress": 3.081557572240369e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4417839463296312,
+        0.0,
+        0.44177666292311313,
+        1.0
+      ],
+      "draw": 6
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8144702713487629,
+      "gamma_informative": 0.49675848150361357,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37915,
+          "gamma": 0.6136801385494391,
+          "swap_histogram": {
+            "0": 37915,
+            "1": 23868
+          },
+          "mean_swaps": 0.38631986145056085,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12877328715018696
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6144,
+          "gamma": 0.22831661092530658,
+          "swap_histogram": {
+            "0": 6144,
+            "1": 8969,
+            "2": 8307,
+            "3": 3490
+          },
+          "mean_swaps": 1.3397621701969529,
+          "mean_swaps_inconsistent": 1.7361552537802176,
+          "mean_swaps_pair_normalized": 0.22329369503282548
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.281177209619417e-06,
+        "min_stress": 2.9259203169846074e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4397243540871515,
+        0.0,
+        0.43971736374325365,
+        1.0
+      ],
+      "draw": 7
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8135017624368183,
+      "gamma_informative": 0.4941314421656726,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37767,
+          "gamma": 0.6112846575918942,
+          "swap_histogram": {
+            "0": 37767,
+            "1": 24016
+          },
+          "mean_swaps": 0.3887153424081058,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12957178080270193
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6059,
+          "gamma": 0.22515793385358604,
+          "swap_histogram": {
+            "0": 6059,
+            "1": 9065,
+            "2": 8241,
+            "3": 3545
+          },
+          "mean_swaps": 1.3445559271646228,
+          "mean_swaps_inconsistent": 1.73526449570764,
+          "mean_swaps_pair_normalized": 0.22409265452743712
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.350890990105667e-06,
+        "min_stress": 3.0460961861209752e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.38086457775500504,
+        0.0,
+        0.3808573376910536,
+        1.0
+      ],
+      "draw": 8
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8133978451715882,
+      "gamma_informative": 0.49384957099207377,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37797,
+          "gamma": 0.6117702280562615,
+          "swap_histogram": {
+            "0": 37797,
+            "1": 23986
+          },
+          "mean_swaps": 0.3882297719437386,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1294099239812462
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6004,
+          "gamma": 0.2231140839836492,
+          "swap_histogram": {
+            "0": 6004,
+            "1": 8979,
+            "2": 8396,
+            "3": 3531
+          },
+          "mean_swaps": 1.3513192121887774,
+          "mean_swaps_inconsistent": 1.7394049555151632,
+          "mean_swaps_pair_normalized": 0.22521986869812957
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.45,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2271087130343223e-06,
+        "min_stress": 2.8340631003762877e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.42892951168696397,
+        0.0,
+        0.4289226057332568,
+        1.0
+      ],
+      "draw": 9
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8177166467145517,
+      "gamma_informative": 0.5055641369668407,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34634,
+          "gamma": 0.5605749154298107,
+          "swap_histogram": {
+            "0": 34634,
+            "1": 27149
+          },
+          "mean_swaps": 0.4394250845701892,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14647502819006306
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10206,
+          "gamma": 0.37926421404682276,
+          "swap_histogram": {
+            "0": 10206,
+            "1": 8913,
+            "2": 6342,
+            "3": 1449
+          },
+          "mean_swaps": 0.9641025641025641,
+          "mean_swaps_inconsistent": 1.5531609195402298,
+          "mean_swaps_pair_normalized": 0.1606837606837607
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.685837371198736e-06,
+        "min_stress": 2.845181640247145e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        8.97482389184568e-06,
+        4.133065268521111e-06,
+        1.0
+      ],
+      "draw": 10
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8139008047353019,
+      "gamma_informative": 0.4952138274722921,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37797,
+          "gamma": 0.6117702280562615,
+          "swap_histogram": {
+            "0": 37797,
+            "1": 23986
+          },
+          "mean_swaps": 0.3882297719437386,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1294099239812462
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6125,
+          "gamma": 0.2276105536975102,
+          "swap_histogram": {
+            "0": 6125,
+            "1": 9098,
+            "2": 8210,
+            "3": 3477
+          },
+          "mean_swaps": 1.3358974358974358,
+          "mean_swaps_inconsistent": 1.7295645898484484,
+          "mean_swaps_pair_normalized": 0.22264957264957264
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2573840880672568e-06,
+        "min_stress": 2.9081630209221415e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4242197735260009,
+        0.0,
+        0.4242128140379899,
+        1.0
+      ],
+      "draw": 11
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8155177573822825,
+      "gamma_informative": 0.4995997429334897,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38182,
+          "gamma": 0.6180017156823074,
+          "swap_histogram": {
+            "0": 38182,
+            "1": 23601
+          },
+          "mean_swaps": 0.38199828431769256,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12733276143923086
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6129,
+          "gamma": 0.22775919732441471,
+          "swap_histogram": {
+            "0": 6129,
+            "1": 8886,
+            "2": 8407,
+            "3": 3488
+          },
+          "mean_swaps": 1.3438870308435527,
+          "mean_swaps_inconsistent": 1.7402434916510274,
+          "mean_swaps_pair_normalized": 0.22398117180725877
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.223566828551841e-06,
+        "min_stress": 2.9152886916172867e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.44490090577499825,
+        0.0,
+        0.4448940412701678,
+        1.0
+      ],
+      "draw": 12
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8176335129023676,
+      "gamma_informative": 0.5053386400279616,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34557,
+          "gamma": 0.5593286179046016,
+          "swap_histogram": {
+            "0": 34557,
+            "1": 27226
+          },
+          "mean_swaps": 0.4406713820953984,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14689046069846615
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10263,
+          "gamma": 0.3813823857302118,
+          "swap_histogram": {
+            "0": 10263,
+            "1": 8879,
+            "2": 6292,
+            "3": 1476
+          },
+          "mean_swaps": 0.9621330360460795,
+          "mean_swaps_inconsistent": 1.555295248393104,
+          "mean_swaps_pair_normalized": 0.16035550600767992
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.80748244261444e-06,
+        "min_stress": 3.117787306176533e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        9.627484335915637e-06,
+        3.834895297251701e-06,
+        1.0
+      ],
+      "draw": 13
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8152725126363395,
+      "gamma_informative": 0.4989345269637965,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38025,
+          "gamma": 0.6154605635854523,
+          "swap_histogram": {
+            "0": 38025,
+            "1": 23758
+          },
+          "mean_swaps": 0.3845394364145477,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12817981213818255
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6227,
+          "gamma": 0.2314009661835749,
+          "swap_histogram": {
+            "0": 6227,
+            "1": 8957,
+            "2": 8298,
+            "3": 3428
+          },
+          "mean_swaps": 1.33173541434411,
+          "mean_swaps_inconsistent": 1.7326790117487791,
+          "mean_swaps_pair_normalized": 0.221955902390685
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.5,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.4163001386796017e-06,
+        "min_stress": 2.8994430378882588e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.3196929219400103,
+        0.0,
+        0.3196852810484575,
+        1.0
+      ],
+      "draw": 14
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8143040037243948,
+      "gamma_informative": 0.49630748762585547,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37966,
+          "gamma": 0.6145056083388635,
+          "swap_histogram": {
+            "0": 37966,
+            "1": 23817
+          },
+          "mean_swaps": 0.3854943916611366,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1284981305537122
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6053,
+          "gamma": 0.22493496841322927,
+          "swap_histogram": {
+            "0": 6053,
+            "1": 8897,
+            "2": 8442,
+            "3": 3518
+          },
+          "mean_swaps": 1.3502415458937198,
+          "mean_swaps_inconsistent": 1.7421009732943376,
+          "mean_swaps_pair_normalized": 0.2250402576489533
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.5,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.4566738489540347e-06,
+        "min_stress": 2.9822780871711558e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4040485684636028,
+        0.0,
+        0.40404109344135153,
+        1.0
+      ],
+      "draw": 15
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.814919193934557,
+      "gamma_informative": 0.4979761649735605,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38013,
+          "gamma": 0.6152663353997054,
+          "swap_histogram": {
+            "0": 38013,
+            "1": 23770
+          },
+          "mean_swaps": 0.38473366460029457,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12824455486676486
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6154,
+          "gamma": 0.22868821999256783,
+          "swap_histogram": {
+            "0": 6154,
+            "1": 8838,
+            "2": 8413,
+            "3": 3505
+          },
+          "mean_swaps": 1.3444444444444446,
+          "mean_swaps_inconsistent": 1.7430622470610908,
+          "mean_swaps_pair_normalized": 0.2240740740740741
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2913703735081392e-06,
+        "min_stress": 7.569322407950592e-07,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.42097454417052177,
+        0.0,
+        0.42096746477807295,
+        1.0
+      ],
+      "draw": 16
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8143164737962224,
+      "gamma_informative": 0.4963413121666873,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37880,
+          "gamma": 0.6131136396743441,
+          "swap_histogram": {
+            "0": 37880,
+            "1": 23903
+          },
+          "mean_swaps": 0.38688636032565593,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.128962120108552
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6142,
+          "gamma": 0.22824228911185432,
+          "swap_histogram": {
+            "0": 6142,
+            "1": 8961,
+            "2": 8343,
+            "3": 3464
+          },
+          "mean_swaps": 1.339241917502787,
+          "mean_swaps_inconsistent": 1.7353139445300463,
+          "mean_swaps_pair_normalized": 0.2232069862504645
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.388513072527696e-06,
+        "min_stress": 3.064220043097558e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.42935337418798225,
+        0.0,
+        0.42934610766749975,
+        1.0
+      ],
+      "draw": 17
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8142000864591646,
+      "gamma_informative": 0.4960256164522567,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37917,
+          "gamma": 0.6137125099137303,
+          "swap_histogram": {
+            "0": 37917,
+            "1": 23866
+          },
+          "mean_swaps": 0.38628749008626967,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12876249669542322
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6077,
+          "gamma": 0.22582683017465627,
+          "swap_histogram": {
+            "0": 6077,
+            "1": 8888,
+            "2": 8367,
+            "3": 3578
+          },
+          "mean_swaps": 1.3510219249349684,
+          "mean_swaps_inconsistent": 1.7451159218547496,
+          "mean_swaps_pair_normalized": 0.22517032082249475
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.5,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2745046281922066e-06,
+        "min_stress": 2.58268678038147e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.39589258060891075,
+        0.0,
+        0.3958854616088016,
+        1.0
+      ],
+      "draw": 18
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.814794493216281,
+      "gamma_informative": 0.4976379195652419,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37981,
+          "gamma": 0.614748393571047,
+          "swap_histogram": {
+            "0": 37981,
+            "1": 23802
+          },
+          "mean_swaps": 0.38525160642895295,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12841720214298433
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6156,
+          "gamma": 0.22876254180602007,
+          "swap_histogram": {
+            "0": 6156,
+            "1": 8882,
+            "2": 8493,
+            "3": 3379
+          },
+          "mean_swaps": 1.337978446674099,
+          "mean_swaps_inconsistent": 1.7348462946901801,
+          "mean_swaps_pair_normalized": 0.2229964077790165
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.1919804623316623e-06,
+        "min_stress": 2.84859162985102e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4347407222695342,
+        0.0,
+        0.43473390854285254,
+        1.0
+      ],
+      "draw": 19
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.818901303538175,
+      "gamma_informative": 0.5087774683458672,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34808,
+          "gamma": 0.5633912241231407,
+          "swap_histogram": {
+            "0": 34808,
+            "1": 26975
+          },
+          "mean_swaps": 0.4366087758768593,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14553625862561978
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10317,
+          "gamma": 0.38338907469342254,
+          "swap_histogram": {
+            "0": 10317,
+            "1": 8918,
+            "2": 6225,
+            "3": 1450
+          },
+          "mean_swaps": 0.9557041991824601,
+          "mean_swaps_inconsistent": 1.5499306936660038,
+          "mean_swaps_pair_normalized": 0.15928403319707668
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.7781513069681293e-06,
+        "min_stress": 2.5301010035989942e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        9.358192425921855e-06,
+        5.011131024533415e-06,
+        1.0
+      ],
+      "draw": 20
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8144411745144985,
+      "gamma_informative": 0.4966795575750059,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37848,
+          "gamma": 0.6125956978456857,
+          "swap_histogram": {
+            "0": 37848,
+            "1": 23935
+          },
+          "mean_swaps": 0.3874043021543143,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12913476738477145
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6204,
+          "gamma": 0.230546265328874,
+          "swap_histogram": {
+            "0": 6204,
+            "1": 9022,
+            "2": 8242,
+            "3": 3442
+          },
+          "mean_swaps": 1.3315496098104793,
+          "mean_swaps_inconsistent": 1.7305128948130977,
+          "mean_swaps_pair_normalized": 0.22192493496841323
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.6,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.3866682303302504e-06,
+        "min_stress": 2.839142111149935e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.44765713313497696,
+        0.0,
+        0.447649915956723,
+        1.0
+      ],
+      "draw": 21
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8282289172652301,
+      "gamma_informative": 0.5340782248880972,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36890,
+          "gamma": 0.5970898143502258,
+          "swap_histogram": {
+            "0": 36890,
+            "1": 24893
+          },
+          "mean_swaps": 0.4029101856497742,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1343033952165914
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10479,
+          "gamma": 0.3894091415830546,
+          "swap_histogram": {
+            "0": 10479,
+            "1": 8865,
+            "2": 6313,
+            "3": 1253
+          },
+          "mean_swaps": 0.938312894834634,
+          "mean_swaps_inconsistent": 1.5367293530521575,
+          "mean_swaps_pair_normalized": 0.156385482472439
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.820579597947429e-06,
+        "min_stress": 2.9769012851458944e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.0887654595490839e-08,
+        8.600587708538224e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 22
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8152600425645118,
+      "gamma_informative": 0.4989007024229646,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38045,
+          "gamma": 0.6157842772283638,
+          "swap_histogram": {
+            "0": 38045,
+            "1": 23738
+          },
+          "mean_swaps": 0.38421572277163624,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1280719075905454
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6204,
+          "gamma": 0.230546265328874,
+          "swap_histogram": {
+            "0": 6204,
+            "1": 8893,
+            "2": 8260,
+            "3": 3553
+          },
+          "mean_swaps": 1.3404682274247492,
+          "mean_swaps_inconsistent": 1.7421037380469429,
+          "mean_swaps_pair_normalized": 0.22341137123745822
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2112346318096434e-06,
+        "min_stress": 2.7657911500215876e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.46668165463975264,
+        0.0,
+        0.4666748318176428,
+        1.0
+      ],
+      "draw": 23
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8194375166267625,
+      "gamma_informative": 0.5102319236016372,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36709,
+          "gamma": 0.5941602058818769,
+          "swap_histogram": {
+            "0": 36709,
+            "1": 25074
+          },
+          "mean_swaps": 0.4058397941181231,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1352799313727077
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 8545,
+          "gamma": 0.31753994797473056,
+          "swap_histogram": {
+            "0": 8545,
+            "1": 8924,
+            "2": 8248,
+            "3": 1193
+          },
+          "mean_swaps": 1.0776291341508732,
+          "mean_swaps_inconsistent": 1.5790362101824122,
+          "mean_swaps_pair_normalized": 0.1796048556918122
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.800558722023552e-06,
+        "min_stress": 2.817901659028981e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        8.11239819298026e-06,
+        5.408265561545641e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 24
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8194125764831072,
+      "gamma_informative": 0.5101642745199734,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36806,
+          "gamma": 0.5957302170499976,
+          "swap_histogram": {
+            "0": 36806,
+            "1": 24977
+          },
+          "mean_swaps": 0.40426978295000243,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13475659431666748
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 8442,
+          "gamma": 0.3137123745819398,
+          "swap_histogram": {
+            "0": 8442,
+            "1": 9023,
+            "2": 8166,
+            "3": 1279
+          },
+          "mean_swaps": 1.0848011891490152,
+          "mean_swaps_inconsistent": 1.5806800952999784,
+          "mean_swaps_pair_normalized": 0.18080019819150253
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.8143406344817037e-06,
+        "min_stress": 2.816107302965179e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        8.141815992513343e-06,
+        5.427877288439143e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 25
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8132814578345304,
+      "gamma_informative": 0.4935338752776431,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37770,
+          "gamma": 0.6113332146383309,
+          "swap_histogram": {
+            "0": 37770,
+            "1": 24013
+          },
+          "mean_swaps": 0.38866678536166904,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12955559512055634
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6003,
+          "gamma": 0.2230769230769231,
+          "swap_histogram": {
+            "0": 6003,
+            "1": 8967,
+            "2": 8424,
+            "3": 3516
+          },
+          "mean_swaps": 1.3512820512820514,
+          "mean_swaps_inconsistent": 1.7392739273927393,
+          "mean_swaps_pair_normalized": 0.22521367521367522
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.258482140948267e-06,
+        "min_stress": 1.933190061093903e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.41727045038758304,
+        0.0,
+        0.41726345767283113,
+        1.0
+      ],
+      "draw": 26
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8137470071827614,
+      "gamma_informative": 0.49479665813536583,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37723,
+          "gamma": 0.6105724875774889,
+          "swap_histogram": {
+            "0": 37723,
+            "1": 24060
+          },
+          "mean_swaps": 0.38942751242251106,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12980917080750368
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6162,
+          "gamma": 0.2289855072463768,
+          "swap_histogram": {
+            "0": 6162,
+            "1": 8924,
+            "2": 8308,
+            "3": 3516
+          },
+          "mean_swaps": 1.3410628019323672,
+          "mean_swaps_inconsistent": 1.7393483709273183,
+          "mean_swaps_pair_normalized": 0.22351046698872787
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.226084624715476e-06,
+        "min_stress": 2.9478561273161296e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4174922688548536,
+        0.0,
+        0.4174853309982217,
+        1.0
+      ],
+      "draw": 27
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8285115722266561,
+      "gamma_informative": 0.5348449144802859,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37040,
+          "gamma": 0.5995176666720619,
+          "swap_histogram": {
+            "0": 37040,
+            "1": 24743
+          },
+          "mean_swaps": 0.4004823333279381,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1334941111093127
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10397,
+          "gamma": 0.38636194723151246,
+          "swap_histogram": {
+            "0": 10397,
+            "1": 8984,
+            "2": 6356,
+            "3": 1173
+          },
+          "mean_swaps": 0.9370122630992196,
+          "mean_swaps_inconsistent": 1.5269787440198632,
+          "mean_swaps_pair_normalized": 0.1561687105165366
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.604612051876401e-06,
+        "min_stress": 3.0052923153287496e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.576369943603436e-08,
+        8.116573591632235e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 28
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8139049614259112,
+      "gamma_informative": 0.495225102319236,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37854,
+          "gamma": 0.6126928119385592,
+          "swap_histogram": {
+            "0": 37854,
+            "1": 23929
+          },
+          "mean_swaps": 0.3873071880614409,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1291023960204803
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6069,
+          "gamma": 0.22552954292084726,
+          "swap_histogram": {
+            "0": 6069,
+            "1": 8984,
+            "2": 8372,
+            "3": 3485
+          },
+          "mean_swaps": 1.344593088071349,
+          "mean_swaps_inconsistent": 1.736145098603714,
+          "mean_swaps_pair_normalized": 0.2240988480118915
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.45,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 2.9743329766914015e-06,
+        "min_stress": 8.844207720989246e-07,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.4223951860183789,
+        0.0,
+        0.42238896177343027,
+        1.0
+      ],
+      "draw": 29
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8180325552008513,
+      "gamma_informative": 0.5064210253345811,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34648,
+          "gamma": 0.5608015149798489,
+          "swap_histogram": {
+            "0": 34648,
+            "1": 27135
+          },
+          "mean_swaps": 0.4391984850201512,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14639949500671706
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10268,
+          "gamma": 0.3815681902638424,
+          "swap_histogram": {
+            "0": 10268,
+            "1": 8852,
+            "2": 6285,
+            "3": 1505
+          },
+          "mean_swaps": 0.9638424377554813,
+          "mean_swaps_inconsistent": 1.5585266193967071,
+          "mean_swaps_pair_normalized": 0.16064040629258022
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.7552514226696706e-06,
+        "min_stress": 1.4240519375022633e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        9.388185410165633e-06,
+        4.908392872031531e-06,
+        1.0
+      ],
+      "draw": 30
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.828083433093908,
+      "gamma_informative": 0.5336836052450588,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36865,
+          "gamma": 0.5966851722965865,
+          "swap_histogram": {
+            "0": 36865,
+            "1": 24918
+          },
+          "mean_swaps": 0.40331482770341354,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13443827590113785
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10469,
+          "gamma": 0.38903753251579337,
+          "swap_histogram": {
+            "0": 10469,
+            "1": 8907,
+            "2": 6368,
+            "3": 1166
+          },
+          "mean_swaps": 0.9342623560014864,
+          "mean_swaps_inconsistent": 1.5291648926464327,
+          "mean_swaps_pair_normalized": 0.15571039266691442
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 6,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.6776064745167123e-06,
+        "min_stress": 3.0360895007755045e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.3924537803104767e-08,
+        8.280120925224737e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 31
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.81469473264166,
+      "gamma_informative": 0.497367323238587,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37949,
+          "gamma": 0.6142304517423887,
+          "swap_histogram": {
+            "0": 37949,
+            "1": 23834
+          },
+          "mean_swaps": 0.38576954825761134,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1285898494192038
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6164,
+          "gamma": 0.22905982905982905,
+          "swap_histogram": {
+            "0": 6164,
+            "1": 8837,
+            "2": 8456,
+            "3": 3453
+          },
+          "mean_swaps": 1.3418060200668895,
+          "mean_swaps_inconsistent": 1.740480092547961,
+          "mean_swaps_pair_normalized": 0.22363433667781493
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.5,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.249564422906472e-06,
+        "min_stress": 2.9447232131111267e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.44065665377339325,
+        0.0,
+        0.4406497016270085,
+        1.0
+      ],
+      "draw": 32
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8151561252992817,
+      "gamma_informative": 0.4986188312493658,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38068,
+          "gamma": 0.616156547917712,
+          "swap_histogram": {
+            "0": 38068,
+            "1": 23715
+          },
+          "mean_swaps": 0.383843452082288,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12794781736076266
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6156,
+          "gamma": 0.22876254180602007,
+          "swap_histogram": {
+            "0": 6156,
+            "1": 8987,
+            "2": 8328,
+            "3": 3439
+          },
+          "mean_swaps": 1.3363062058714232,
+          "mean_swaps_inconsistent": 1.7326780379685844,
+          "mean_swaps_pair_normalized": 0.22271770097857055
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.43570069630365e-06,
+        "min_stress": 3.130922413365777e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.3984124287669569,
+        0.0,
+        0.3984049862388161,
+        1.0
+      ],
+      "draw": 33
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8143455706304868,
+      "gamma_informative": 0.496420236095295,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37902,
+          "gamma": 0.6134697246815467,
+          "swap_histogram": {
+            "0": 37902,
+            "1": 23881
+          },
+          "mean_swaps": 0.3865302753184533,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1288434251061511
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6127,
+          "gamma": 0.22768487551096248,
+          "swap_histogram": {
+            "0": 6127,
+            "1": 9086,
+            "2": 8124,
+            "3": 3573
+          },
+          "mean_swaps": 1.3397621701969529,
+          "mean_swaps_inconsistent": 1.734735120050041,
+          "mean_swaps_pair_normalized": 0.22329369503282548
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.25,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.165057692786226e-06,
+        "min_stress": 1.255237982250656e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.45565956356759757,
+        0.0,
+        0.4556528236419676,
+        1.0
+      ],
+      "draw": 34
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8137927307794626,
+      "gamma_informative": 0.4949206814517493,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37736,
+          "gamma": 0.6107829014453814,
+          "swap_histogram": {
+            "0": 37736,
+            "1": 24047
+          },
+          "mean_swaps": 0.38921709855461856,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1297390328515395
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6160,
+          "gamma": 0.22891118543292457,
+          "swap_histogram": {
+            "0": 6160,
+            "1": 8968,
+            "2": 8388,
+            "3": 3394
+          },
+          "mean_swaps": 1.335042735042735,
+          "mean_swaps_inconsistent": 1.7313734939759036,
+          "mean_swaps_pair_normalized": 0.22250712250712248
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.25,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.412763315918795e-06,
+        "min_stress": 1.5662679432814553e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.3765636103293444,
+        0.0,
+        0.37655624635383406,
+        1.0
+      ],
+      "draw": 35
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8142790635807395,
+      "gamma_informative": 0.49623983854419174,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37905,
+          "gamma": 0.6135182817279834,
+          "swap_histogram": {
+            "0": 37905,
+            "1": 23878
+          },
+          "mean_swaps": 0.38648171827201655,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1288272394240055
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6108,
+          "gamma": 0.2269788182831661,
+          "swap_histogram": {
+            "0": 6108,
+            "1": 8912,
+            "2": 8373,
+            "3": 3517
+          },
+          "mean_swaps": 1.3455592716462281,
+          "mean_swaps_inconsistent": 1.740649937506009,
+          "mean_swaps_pair_normalized": 0.2242598786077047
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.1978227621010416e-06,
+        "min_stress": 1.499099200203394e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.3933638065887293,
+        0.0,
+        0.393356912805641,
+        1.0
+      ],
+      "draw": 36
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8137262237297154,
+      "gamma_informative": 0.49474028390064606,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37759,
+          "gamma": 0.6111551721347296,
+          "swap_histogram": {
+            "0": 37759,
+            "1": 24024
+          },
+          "mean_swaps": 0.38884482786527036,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1296149426217568
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6121,
+          "gamma": 0.22746191007060573,
+          "swap_histogram": {
+            "0": 6121,
+            "1": 9018,
+            "2": 8265,
+            "3": 3506
+          },
+          "mean_swaps": 1.3402452619843923,
+          "mean_swaps_inconsistent": 1.7348597816152773,
+          "mean_swaps_pair_normalized": 0.22337421033073204
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.55,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2934620629845116e-06,
+        "min_stress": 2.9338304815885317e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.42199547460027936,
+        0.0,
+        0.4219883626645098,
+        1.0
+      ],
+      "draw": 37
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8281748802873105,
+      "gamma_informative": 0.5339316518778258,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36982,
+          "gamma": 0.5985788971076186,
+          "swap_histogram": {
+            "0": 36982,
+            "1": 24801
+          },
+          "mean_swaps": 0.4014211028923814,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13380703429746046
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10374,
+          "gamma": 0.3855072463768116,
+          "swap_histogram": {
+            "0": 10374,
+            "1": 9158,
+            "2": 6169,
+            "3": 1209
+          },
+          "mean_swaps": 0.9335934596804162,
+          "mean_swaps_inconsistent": 1.5192912433478472,
+          "mean_swaps_pair_normalized": 0.15559890994673603
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.8389630229037764e-06,
+        "min_stress": 3.227449703793218e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        9.601749062263726e-09,
+        8.64145533650953e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 38
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.827962889066241,
+      "gamma_informative": 0.5333566346836842,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36905,
+          "gamma": 0.5973325995824094,
+          "swap_histogram": {
+            "0": 36905,
+            "1": 24878
+          },
+          "mean_swaps": 0.4026674004175906,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13422246680586353
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10400,
+          "gamma": 0.3864734299516908,
+          "swap_histogram": {
+            "0": 10400,
+            "1": 8948,
+            "2": 6356,
+            "3": 1206
+          },
+          "mean_swaps": 0.9393534002229654,
+          "mean_swaps_inconsistent": 1.5310720775287705,
+          "mean_swaps_pair_normalized": 0.15655890003716091
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.7475333501650827e-06,
+        "min_stress": 2.9252923139074642e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.0210623951808324e-08,
+        8.435976162763033e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 39
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8177249600957701,
+      "gamma_informative": 0.5055866866607286,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34657,
+          "gamma": 0.560947186119159,
+          "swap_histogram": {
+            "0": 34657,
+            "1": 27126
+          },
+          "mean_swaps": 0.439052813880841,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14635093796028034
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10185,
+          "gamma": 0.37848383500557414,
+          "swap_histogram": {
+            "0": 10185,
+            "1": 9000,
+            "2": 6332,
+            "3": 1393
+          },
+          "mean_swaps": 0.9603493125232255,
+          "mean_swaps_inconsistent": 1.5451718983557547,
+          "mean_swaps_pair_normalized": 0.1600582187538709
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 19,
+        "discarded_coincident_runs": 1,
+        "distinct_orders": 4,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.600173111425111e-06,
+        "min_stress": 3.0568431714301315e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        9.138326877517156e-06,
+        3.989350551784947e-06,
+        1.0
+      ],
+      "draw": 40
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8150355812716148,
+      "gamma_informative": 0.49829186068799114,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 38057,
+          "gamma": 0.6159785054141107,
+          "swap_histogram": {
+            "0": 38057,
+            "1": 23726
+          },
+          "mean_swaps": 0.3840214945858893,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1280071648619631
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6138,
+          "gamma": 0.22809364548494984,
+          "swap_histogram": {
+            "0": 6138,
+            "1": 9023,
+            "2": 8295,
+            "3": 3454
+          },
+          "mean_swaps": 1.3368636194723151,
+          "mean_swaps_inconsistent": 1.731898709801656,
+          "mean_swaps_pair_normalized": 0.22281060324538585
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.4,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.3977951265876336e-06,
+        "min_stress": 1.290079257197328e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.39360147169798904,
+        0.0,
+        0.3935941366929983,
+        1.0
+      ],
+      "draw": 41
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.818128159084863,
+      "gamma_informative": 0.506680346814292,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34734,
+          "gamma": 0.5621934836443682,
+          "swap_histogram": {
+            "0": 34734,
+            "1": 27049
+          },
+          "mean_swaps": 0.4378065163556318,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14593550545187725
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10205,
+          "gamma": 0.37922705314009664,
+          "swap_histogram": {
+            "0": 10205,
+            "1": 8910,
+            "2": 6366,
+            "3": 1429
+          },
+          "mean_swaps": 0.9635451505016722,
+          "mean_swaps_inconsistent": 1.5521700089793475,
+          "mean_swaps_pair_normalized": 0.16059085841694537
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 7,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.5922019871434647e-06,
+        "min_stress": 3.000148076282597e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        8.498777715036138e-06,
+        3.6872922164361305e-06,
+        1.0
+      ],
+      "draw": 42
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.817051576217079,
+      "gamma_informative": 0.5037601614558083,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34605,
+          "gamma": 0.5601055306475892,
+          "swap_histogram": {
+            "0": 34605,
+            "1": 27178
+          },
+          "mean_swaps": 0.43989446935241083,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14663148978413695
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10075,
+          "gamma": 0.3743961352657005,
+          "swap_histogram": {
+            "0": 10075,
+            "1": 8909,
+            "2": 6428,
+            "3": 1498
+          },
+          "mean_swaps": 0.9758082497212932,
+          "mean_swaps_inconsistent": 1.5597861597861598,
+          "mean_swaps_pair_normalized": 0.1626347082868822
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.664815599885188e-06,
+        "min_stress": 3.050773858941906e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        9.24647879081751e-06,
+        3.950119495145945e-06,
+        1.0
+      ],
+      "draw": 43
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.81432894386805,
+      "gamma_informative": 0.4963751367075192,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37847,
+          "gamma": 0.6125795121635401,
+          "swap_histogram": {
+            "0": 37847,
+            "1": 23936
+          },
+          "mean_swaps": 0.3874204878364599,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.1291401626121533
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6178,
+          "gamma": 0.2295800817539948,
+          "swap_histogram": {
+            "0": 6178,
+            "1": 8925,
+            "2": 8344,
+            "3": 3463
+          },
+          "mean_swaps": 1.3378669639539205,
+          "mean_swaps_inconsistent": 1.7365425429288057,
+          "mean_swaps_pair_normalized": 0.2229778273256534
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 4,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.2192225058492537e-06,
+        "min_stress": 2.984964656674002e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.43798079890176433,
+        0.0,
+        0.4379739009203062,
+        1.0
+      ],
+      "draw": 44
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8278922253258846,
+      "gamma_informative": 0.5331649622856369,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36838,
+          "gamma": 0.5962481588786559,
+          "swap_histogram": {
+            "0": 36838,
+            "1": 24945
+          },
+          "mean_swaps": 0.40375184112134405,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13458394704044802
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10450,
+          "gamma": 0.38833147528799705,
+          "swap_histogram": {
+            "0": 10450,
+            "1": 8944,
+            "2": 6310,
+            "3": 1206
+          },
+          "mean_swaps": 0.9357859531772575,
+          "mean_swaps_inconsistent": 1.5298906439854192,
+          "mean_swaps_pair_normalized": 0.15596432552954292
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.3,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.721814817441262e-06,
+        "min_stress": 3.098656058017579e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.3362096106053076e-08,
+        8.3793617827278e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 45
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8184191274275073,
+      "gamma_informative": 0.5074695861003687,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 34784,
+          "gamma": 0.5630027677516469,
+          "swap_histogram": {
+            "0": 34784,
+            "1": 26999
+          },
+          "mean_swaps": 0.43699723224835313,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.14566574408278438
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10225,
+          "gamma": 0.3799702712746191,
+          "swap_histogram": {
+            "0": 10225,
+            "1": 9039,
+            "2": 6229,
+            "3": 1417
+          },
+          "mean_swaps": 0.9568190263842438,
+          "mean_swaps_inconsistent": 1.543182499250824,
+          "mean_swaps_pair_normalized": 0.1594698377307073
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.25,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.6197535906093026e-06,
+        "min_stress": 2.8473053458480067e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.0,
+        8.919610733812104e-06,
+        3.15347808354942e-06,
+        1.0
+      ],
+      "draw": 46
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.8141086392657622,
+      "gamma_informative": 0.4957775698194897,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 37943,
+          "gamma": 0.6141333376495153,
+          "swap_histogram": {
+            "0": 37943,
+            "1": 23840
+          },
+          "mean_swaps": 0.3858666623504848,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.12862222078349492
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 6029,
+          "gamma": 0.2240431066518023,
+          "swap_histogram": {
+            "0": 6029,
+            "1": 9004,
+            "2": 8412,
+            "3": 3465
+          },
+          "mean_swaps": 1.3460795243403938,
+          "mean_swaps_inconsistent": 1.734734926488195,
+          "mean_swaps_pair_normalized": 0.22434658739006563
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 5,
+        "modal_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "mean_modal_stress": 3.249211012107594e-06,
+        "min_stress": 3.060735454017327e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        0.40843962505901005,
+        0.0,
+        0.4084326424457416,
+        1.0
+      ],
+      "draw": 47
+    },
+    {
+      "ballots": 240576,
+      "empty_ballots": 3999,
+      "informative_ballots": 88693,
+      "gamma": 0.827617883745677,
+      "gamma_informative": 0.5324208223873361,
+      "by_length": [
+        {
+          "length": 1,
+          "ballots": 129491,
+          "consistent": 129491,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 129491
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0
+        },
+        {
+          "length": 2,
+          "ballots": 22392,
+          "consistent": 22392,
+          "gamma": 1.0,
+          "swap_histogram": {
+            "0": 22392
+          },
+          "mean_swaps": 0.0,
+          "mean_swaps_inconsistent": null,
+          "mean_swaps_pair_normalized": 0.0
+        },
+        {
+          "length": 3,
+          "ballots": 61783,
+          "consistent": 36761,
+          "gamma": 0.5950018613534468,
+          "swap_histogram": {
+            "0": 36761,
+            "1": 25022
+          },
+          "mean_swaps": 0.40499813864655326,
+          "mean_swaps_inconsistent": 1.0,
+          "mean_swaps_pair_normalized": 0.13499937954885108
+        },
+        {
+          "length": 4,
+          "ballots": 26910,
+          "consistent": 10461,
+          "gamma": 0.3887402452619844,
+          "swap_histogram": {
+            "0": 10461,
+            "1": 9074,
+            "2": 6181,
+            "3": 1194
+          },
+          "mean_swaps": 0.9296915644741731,
+          "mean_swaps_inconsistent": 1.5209435224025776,
+          "mean_swaps_pair_normalized": 0.15494859407902886
+        }
+      ],
+      "fit_diagnostics": {
+        "modal_order_share": 0.35,
+        "valid_runs": 20,
+        "discarded_coincident_runs": 0,
+        "distinct_orders": 6,
+        "modal_order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "mean_modal_stress": 3.507791219962232e-06,
+        "min_stress": 3.0295895244484462e-06,
+        "max_iter_hits_selected": 0,
+        "settings": {
+          "n_runs": 20,
+          "n_init": 8,
+          "max_iter": 1000,
+          "eps": 1e-06
+        }
+      },
+      "axis": [
+        1.701838666275203e-08,
+        7.8992050631114e-06,
+        0.0,
+        1.0
+      ],
+      "draw": 48
+    }
+  ],
+  "base_seed": 20261112,
+  "null_draws": 49,
+  "settings": {
+    "n_runs": 20,
+    "n_init": 8,
+    "max_iter": 1000,
+    "eps": 1e-06
+  },
+  "original_core_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+  "copied_core_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "method_source": "Pure corrected OG method copied unchanged from prior audited code; no old ballot data or models used.",
+  "source_filename": "Alaska_20261103_US_Governor_11_11.csv",
+  "source_sha256": "3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3",
+  "source_rows": 244575,
+  "candidate_ids_are_internal_lookup_labels": true,
+  "sole_ballot_source": "Rachel November11 CSV for this contest; countable-prefix transformation from common/data.py",
+  "ranking_interpreter_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+  "cohort": "All nonempty Alaska-countable named prefixes; generic write-in excluded only after barriers; empty prefixes retained separately.",
+  "summary": [
+    {
+      "group": "All nonempty",
+      "ballots": 240576,
+      "observed_consistency": 0.8423367251928704,
+      "random_mean": 0.8175410477439178,
+      "excess_percentage_points": 2.4795677448952613,
+      "random_sd": 0.005062418610166275,
+      "random_mcse": 0.0007232026585951821,
+      "random_2_5pct": 0.8134186286246342,
+      "random_97_5pct": 0.8284550412343709,
+      "simulation_tail_fraction": 0.02,
+      "random_draws": 49
+    },
+    {
+      "group": "Three or four named ranks",
+      "ballots": 88693,
+      "observed_consistency": 0.5723450554158728,
+      "random_mean": 0.505087832208188,
+      "excess_percentage_points": 6.7257223207684795,
+      "random_sd": 0.013731595724119838,
+      "random_mcse": 0.0019616565320171196,
+      "random_2_5pct": 0.49390594522679354,
+      "random_97_5pct": 0.5346915765618482,
+      "simulation_tail_fraction": 0.02,
+      "random_draws": 49
+    },
+    {
+      "group": "Exactly 1 named ranks",
+      "ballots": 129491,
+      "observed_consistency": 1.0,
+      "random_mean": 1.0,
+      "excess_percentage_points": 0.0,
+      "random_sd": 0.0,
+      "random_mcse": 0.0,
+      "random_2_5pct": 1.0,
+      "random_97_5pct": 1.0,
+      "simulation_tail_fraction": 1.0,
+      "random_draws": 49
+    },
+    {
+      "group": "Exactly 2 named ranks",
+      "ballots": 22392,
+      "observed_consistency": 1.0,
+      "random_mean": 1.0,
+      "excess_percentage_points": 0.0,
+      "random_sd": 0.0,
+      "random_mcse": 0.0,
+      "random_2_5pct": 1.0,
+      "random_97_5pct": 1.0,
+      "simulation_tail_fraction": 1.0,
+      "random_draws": 49
+    },
+    {
+      "group": "Exactly 3 named ranks",
+      "ballots": 61783,
+      "observed_consistency": 0.6774193548387096,
+      "random_mean": 0.6012964401078561,
+      "excess_percentage_points": 7.612291473085353,
+      "random_sd": 0.019191232922265395,
+      "random_mcse": 0.002741604703180771,
+      "random_2_5pct": 0.5601994076040335,
+      "random_97_5pct": 0.6161209394169918,
+      "simulation_tail_fraction": 0.02,
+      "random_draws": 49
+    },
+    {
+      "group": "Exactly 4 named ranks",
+      "ballots": 26910,
+      "observed_consistency": 0.3311036789297659,
+      "random_mean": 0.28420130594043636,
+      "excess_percentage_points": 4.690237298932953,
+      "random_sd": 0.0732744390044025,
+      "random_mcse": 0.010467777000628928,
+      "random_2_5pct": 0.22329988851727983,
+      "random_97_5pct": 0.3893348197696024,
+      "simulation_tail_fraction": 0.34,
+      "random_draws": 49
+    }
+  ],
+  "seconds": 39.45799449994229,
+  "completed_utc": "2026-11-16T18:47:32.403744+00:00"
+}

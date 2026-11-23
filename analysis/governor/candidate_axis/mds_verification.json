@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "source_sha256": "3d76cd612870025d9c470f78a60d0bde0cd274aeb9a4e57d575704b588f4b8b3",
+  "axes_checked": 51,
+  "independent_feasibility_rankings_checked": 3264,
+  "all49_null_margins_exact": true,
+  "all_observed_and_randomized_scores_independently_checked": true,
+  "strong_fit_axis": [
+    0.6598565285490846,
+    0.0,
+    0.5703091104801044,
+    1.0
+  ],
+  "strong_fit_diagnostics": {
+    "modal_order_share": 0.68,
+    "valid_runs": 100,
+    "discarded_coincident_runs": 0,
+    "distinct_orders": 3,
+    "modal_order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "mean_modal_stress": 1.1485108924572752e-06,
+    "min_stress": 0.0,
+    "max_iter_hits_selected": 0,
+    "settings": {
+      "n_runs": 100,
+      "n_init": 16,
+      "max_iter": 1000,
+      "eps": 1e-06
+    }
+  },
+  "strong_fit_gamma": 0.8423367251928704,
+  "strong_fit_gamma_informative": 0.5723450554158728,
+  "main_fit_gamma": 0.8423367251928704,
+  "main_fit_gamma_informative": 0.5723450554158728,
+  "change_overall_percentage_points": 0.0,
+  "change_three_plus_percentage_points": 0.0,
+  "interpretation": "Stronger observed-only fit sensitivity; main real/null comparison uses identical20x8budgets."
+}
