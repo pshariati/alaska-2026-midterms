@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+*.pem
+*.key
+**/inputs/*.csv
+**/inputs/*.zip
+**/raw/
+**/node_modules/
+**/*ballots*.jsonl*
+**/linked_*.gz
+runs/
