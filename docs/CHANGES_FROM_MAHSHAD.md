@@ -2,7 +2,7 @@
 
 Reference: `MDS_analysis.py`, `consistency.py` and `null_elections.py` in the
 [pinned upstream snapshot](https://github.com/SamWangPhD/bugs-in-democracy/tree/2b1e69572a32d866253170facd85abc36ef252c4/2026/analysis).
-The Alaska mathematical core is `common/og_axis.py` in the combined pipeline.
+The Alaska mathematical core is `analysis/shared/og_axis.py`.
 
 | Part | Upstream behavior | Alaska implementation |
 | --- | --- | --- |
