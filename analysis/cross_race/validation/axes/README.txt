@@ -1,6 +1,6 @@
 SAVED GOVERNOR AND HOUSE AXES — OG ONE-DIMENSIONAL METHOD
 
-All numerical inputs come from the unmodified Rachel November11 CSV for the
+All numerical inputs come from the unmodified FairVote November11 CSV for the
 relevant contest. analysis/shared/data.py applies Alaska barriers before removing generic
 write-ins and collapses repeated names. Empty named prefixes are retained in the
 profile and source totals but excluded from the nonempty consistency denominator.

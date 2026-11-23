@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "source_policy": "Only Rachel source CSVs and new model outputs; no producer parser/scorer imported.",
+  "source_policy": "Only FairVote source CSVs and new model outputs; no producer parser/scorer imported.",
   "contests": {
     "governor": {
       "status": "passed",

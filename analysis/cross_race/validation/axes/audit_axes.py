@@ -110,7 +110,7 @@ def main():
             'observed_and_all49_null_scores_independent':True,'all49_null_first_choice_by_length_margins_exact':True,
             'by_length_scores_exact':True,'pairwise_halfspace_geometry_checks':checked,
             'reflection_preserves_consistency':True}
-    report={'status':'passed','source_policy':'Only Rachel source CSVs and new model outputs; no producer parser/scorer imported.',
+    report={'status':'passed','source_policy':'Only FairVote source CSVs and new model outputs; no producer parser/scorer imported.',
         'contests':records}
     (HERE/'independent_axis_audit.json').write_text(json.dumps(report,indent=2))
     print(json.dumps(report,indent=2));return report
