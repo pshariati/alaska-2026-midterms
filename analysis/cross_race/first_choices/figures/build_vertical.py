@@ -1,4 +1,4 @@
-"""Reformat the audited Rachel-only affiliation figure without changing its values."""
+"""Reformat the audited FairVote-only affiliation figure without changing its values."""
 from pathlib import Path
 from analysis.shared.paths import REPO_ROOT, INPUTS_ROOT, REFERENCES_ROOT, SHARED_ROOT, race_dir, model_dir, cross_race_dir, resolve_recorded_path
 from collections import defaultdict
@@ -84,7 +84,7 @@ def main():
     (OUT/'build_vertical_provenance.json').write_text(json.dumps({
         'source':str(SOURCE.relative_to(ROOT)),
         'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
-        'source_policy':'Audited Rachel-only affiliation cross-tabs; source data unchanged.',
+        'source_policy':'Audited FairVote-only affiliation cross-tabs; source data unchanged.',
         'candidate_order':ORDER,'candidate_labels':[x.replace('\n',' ') for x in LABELS],
         'house_stack_bottom_to_top':specifications[1][2],
         'cohort_labels_added_to_both_panels':'Senate 1st choice:',

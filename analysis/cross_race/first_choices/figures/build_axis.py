@@ -97,7 +97,7 @@ def main():
     fig.savefig(output.with_suffix('.svg'))
     plt.close(fig)
     (OUT/'build_axis_provenance.json').write_text(json.dumps({
-        'source_policy':'Existing audited Rachel-only results; no recalculation or change of analysis.',
+        'source_policy':'Existing audited FairVote-only results; no recalculation or change of analysis.',
         'sources':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [PARTY,AXIS]},
         'candidate_order':order,'axis_positions':positions,'bar_width':width,
         'house_stack_bottom_to_top':SPECS[1][3],
