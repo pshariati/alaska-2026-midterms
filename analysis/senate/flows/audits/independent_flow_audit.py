@@ -1,4 +1,4 @@
-"""Independent Alaska-prefix / IRV audit; reads Rachel inputs and frozen references.
+"""Independent Alaska-prefix / IRV audit; reads FairVote inputs and frozen references.
 
 No producer module is imported. The oracle locates all structural barriers before
 deduplicating candidates, rather than reusing the producer's state-machine parser.
@@ -94,14 +94,14 @@ def independent_article_audit():
     for group in desired[:3]:
         for j,dest in enumerate(['Peltola','Dan S. Sullivan','No visible named finalist']):
             assert observed[group,j]==article_rows[group][j]
-            cells.append({'article_governor_row_label':group,'destination':dest,'observed_raw_Rachel':observed[group,j],'frozen_article':article_rows[group][j]})
+            cells.append({'article_governor_row_label':group,'destination':dest,'observed_raw_FairVote':observed[group,j],'frozen_article':article_rows[group][j]})
     assert n==article_rows['Total'][3]==3940
-    result={'frozen_article_sha256':sha(article),'article_provenance':provenance,'independent_raw_Rachel_join':True,'cohort_n':n,'verified_actual_frozen_article_cells':cells,'other_governor_group_contents':dict(other_contents),'scope':'Visible first-named finalist, ignoring barriers; supplementary descriptive audit, not legal transfers. Broader Other label retained if article blank label is inaccurate.','status':'passed'}
+    result={'frozen_article_sha256':sha(article),'article_provenance':provenance,'independent_raw_FairVote_join':True,'cohort_n':n,'verified_actual_frozen_article_cells':cells,'other_governor_group_contents':dict(other_contents),'scope':'Visible first-named finalist, ignoring barriers; supplementary descriptive audit, not legal transfers. Broader Other label retained if article blank label is inaccurate.','status':'passed'}
     (HERE/'independent_article_audit.json').write_text(json.dumps(result,indent=2)+'\n')
     return result
 
 def main():
-    report={'source_policy':'Only Rachel supplied ballot CSVs are ballot inputs; producer modules not imported.'}
+    report={'source_policy':'Only FairVote supplied ballot CSVs are ballot inputs; producer modules not imported.'}
     patterns=Counter();source_tokens=Counter();ids=set();repeat_rows=0;ov_rows=0;two_skip_rows=0
     with SENATE.open(encoding='utf-8-sig',newline='') as f:
         reader=csv.DictReader(f);columns=reader.fieldnames
