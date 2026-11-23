@@ -1,4 +1,4 @@
-"""Reproduce a descriptive Hafner-first analysis from Rachel's November 11 CSVs.
+"""Reproduce a descriptive Hafner-first analysis from FairVote's November 11 CSVs.
 
 Raw ranks are retained separately. All transfer results are snapshot simulations,
 and none of these ballot patterns identifies voter intent or candidate knowledge.
@@ -296,7 +296,7 @@ def main(render=True):
 
     result = {
         'status': 'passed', 'analysis': 'Eric Hafner literal House-first ballots',
-        'source_version': 'Rachel/FairVote supplied November 11, 2026 CSVs',
+        'source_version': 'FairVote supplied November 11, 2026 CSVs',
         'sources': source_meta, 'started_utc': started,
         'finished_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'house_first_choices': {LABEL[x]: count for x, count in first.items()},
@@ -387,7 +387,7 @@ def render_figures(result=None):
         ax.set_axisbelow(True)
     fig.suptitle(f'Eric Hafner-first ballots: backup choices and transfers',
                  x=.07, y=.97, ha='left', fontsize=18, fontweight='bold')
-    fig.text(.07, .895, f'Rachel’s November 11 snapshot · {n:,} literal House first-choice ballots', fontsize=11)
+    fig.text(.07, .895, f'FairVote’s November 11 snapshot · {n:,} literal House first-choice ballots', fontsize=11)
     fig.text(.07, .035,
              'Left shows ranked backup preferences, not actual transfers; McDermott is eliminated before Hafner in this replay.\n'
              'Right follows the full replay to Hill/Begich or inactivity. Usable rankings apply Alaska barriers; generic write-ins omitted.',
@@ -432,7 +432,7 @@ def render_figures(result=None):
         ax.set_xlabel('Share of the full House first-choice cohort (%)')
     fig.suptitle('House first-choice groups in the other two races', x=.07, y=.985,
                  ha='left', fontsize=19, fontweight='bold')
-    fig.text(.07, .942, 'Rachel’s November 11 snapshot · Hafner’s group is shown alongside the other House groups', fontsize=11)
+    fig.text(.07, .942, 'FairVote’s November 11 snapshot · Hafner’s group is shown alongside the other House groups', fontsize=11)
     fig.text(.07, .018, 'Literal first ranks; missing Governor records remain in the denominator. Candidate choices do not identify voter intent.',
              fontsize=9, color='#627990')
     fig.subplots_adjust(top=.875, bottom=.155, left=.16, right=.96, hspace=.82)
