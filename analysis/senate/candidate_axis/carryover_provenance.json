@@ -1,0 +1,33 @@
+{
+  "role": "Previously completed Rachel-only Senate result carried forward as explicitly requested; not refitted in this follow-up.",
+  "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
+  "current_source_profile_independently_matches_previous": true,
+  "original_notebook_execution": {
+    "started_utc": "2026-11-13T21:33:10.611659+00:00",
+    "finished_utc": "2026-11-13T21:35:12.070860+00:00",
+    "execution": "Real Jupyter kernel; all descriptive tables, Sankey, observed MDS and all49 randomized MDS fits freshly recomputed from Rachel CSVs only",
+    "code_cells": 11,
+    "all_cells_executed": true,
+    "error_outputs": 0,
+    "notebook_sha256": "92fc4c986c125b3b2b4067e906ee84c5708cee9a0f9b2e6bf32ca4cb7d544b1d",
+    "packages": {
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "scikit-learn": "1.6.1",
+      "matplotlib": "3.9.4",
+      "pandas": "2.2.3",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0"
+    },
+    "audit_documentation_finalized_utc": "2026-11-13T21:36:21.999563+00:00",
+    "audit_documentation_note": "Following full11cell Run All, added authenticated official scope comparison to markdown; all code and freshly computed outputs preserved."
+  },
+  "files": {
+    "mds_results.json": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+    "candidate_axis.csv": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+    "consistency_summary.csv": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+    "mds_verification.json": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879"
+  },
+  "display_axis_reflected": false
+}
