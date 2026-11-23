@@ -30,7 +30,7 @@ def main():
     article=read('descriptive/descriptive_verification.json')
     assert article['article_comparison_matches']==article['article_comparison_numeric_cells']==9
     assert article['article_reference_sha256']==sha(ROOT/article['article_reference_file'])
-    nbpath=ROOT/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+    nbpath=ROOT/'Alaska_2026_Senate_FairVote.ipynb'
     nb=nbformat.read(nbpath,as_version=4);nbformat.validate(nb)
     code=[c for c in nb.cells if c.cell_type=='code']
     assert len(code)==11 and [c.execution_count for c in code]==list(range(1,12))
@@ -57,7 +57,7 @@ def main():
     expected_images=[ROOT/'figures/cross_race_party.png',ROOT/'flows/senate_sankey.png',ROOT/'figures/senate_candidate_axis.png',ROOT/'figures/real_vs_random.png']
     assert image_hashes==[sha(p) for p in expected_images]
     assert table_count==19
-    html=ROOT/'Alaska_2026_Senate_Rachel_FairVote_Readable.html'
+    html=ROOT/'Alaska_2026_Senate_FairVote_Readable.html'
     soup=BeautifulSoup(html.read_text(),'html.parser')
     assert len(soup.select('table'))==table_count
     assert len(soup.select('img[src^="data:image/png;base64,"]'))==4
@@ -65,10 +65,10 @@ def main():
     texts=[BeautifulSoup(o.get('data',{}).get('text/html',''),'html.parser').get_text(' ',strip=True) for o in q1.outputs]
     for number in ['568','423','765','481','1,703']:assert number in texts[0]
     scope=read('references/official_scope_comparison.json')
-    assert all(row['official_minus_Rachel']==6383 for row in scope['comparisons'])
+    assert all(row['official_minus_FairVote']==6383 for row in scope['comparisons'])
     result={
         'status':'passed','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        'source_policy':'Rachel CSVs only; archived public aggregates used only as validation references',
+        'source_policy':'FairVote CSVs only; archived public aggregates used only as validation references',
         'fresh_Run_All_results_reproduced':True,'fresh_Run_All_code_cells':11,
         'fresh_Run_All_error_outputs':0,'analytical_results_compared_without_runtime_timing':compared,
         'independent_original_contest_records_verified':sum(descriptive['source_rows_preserved_in_linked_records'].values()),
@@ -83,9 +83,9 @@ def main():
         'notebook_sha256':sha(nbpath),'html_sha256':sha(html),
         'numerical_corrections_needed':False,
         'repairs':['Run All now executes the independent Alaska-prefix check and all54 external round-table checks.','Reference subgroup figures now parsed from authenticated archived article HTML rather than hardcoded constants.','Added full data-quality and original-versus-usable rank-length appendix.','Clarified same-version FairVote references, official coverage gap, residual governor group and affiliation labels.','Clarified49-draw Monte Carlo precision and supported Python version.','Removed obsolete dependence on byte-identical timing-containing model files from a ballot-rule check.'],
-        'limits':['Rachel11/11scanned records are not every official ballot or certified results.','Ancillary ambiguity fields are preserved; ballot-image adjudication cannot be independently verified here.','Descriptive cohorts use explicitly labeled literal rank1, with structural-first-choice sensitivity separate.','MDS is full-profile ranked-only structural consistency; one/two-name ballots pass automatically.','49null draws estimate the random mean; MCSE about0.625percentagepoints for3+; no predictive or ideological claim.']}
+        'limits':['FairVote11/11scanned records are not every official ballot or certified results.','Ancillary ambiguity fields are preserved; ballot-image adjudication cannot be independently verified here.','Descriptive cohorts use explicitly labeled literal rank1, with structural-first-choice sensitivity separate.','MDS is full-profile ranked-only structural consistency; one/two-name ballots pass automatically.','49null draws estimate the random mean; MCSE about0.625percentagepoints for3+; no predictive or ideological claim.']}
     (HERE/'final_audit.json').write_text(json.dumps(result,indent=2))
-    (HERE/'AUDIT_REPORT.txt').write_text('''FULL INDEPENDENT AUDIT — RACHEL-ONLY ALASKA NOTEBOOK
+    (HERE/'AUDIT_REPORT.txt').write_text('''FULL INDEPENDENT AUDIT — FAIRVOTE-ONLY ALASKA NOTEBOOK
 
 No numerical correction was needed to the Alaska-rule results delivered before
 this audit. A fresh real Jupyter Run All executed all 11 code cells with zero
@@ -121,7 +121,7 @@ Confirmed main results:
 - MDS3–4named preferences:61.5351%observed vs41.5687%random mean, +19.9664pp.
 
 Data and validation limits:
-The Rachel files contain244705Senate/House records and244575governor records.
+The FairVote files contain244705Senate/House records and244575governor records.
 They are6383records short of the contemporaneous broader official summary in
 each race. Exact match to frozen FairVote round tables is not equality to every
 official ballot, later data updates or certified results. DOE excludes hand-count-
