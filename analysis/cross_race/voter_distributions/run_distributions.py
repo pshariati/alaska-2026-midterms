@@ -1,6 +1,6 @@
 """Mahshad-style imputed voter distributions on full-contest one-dimensional axes.
 
-Only Rachel's supplied CSVs are ballot inputs. Positions are not identified voter
+Only FairVote's supplied CSVs are ballot inputs. Positions are not identified voter
 ideologies: multiple-name ballots are spread over their feasible ranked-only
 interval and one-name ballots are pinned to their sole candidate, following the
 upstream plotting convention. Every omitted/missing/inconsistent ballot is counted.
@@ -416,7 +416,7 @@ The domain is [0,1] because candidate axes are normalized to [0,1]; the upstream
 [0,n-1] domain corresponds to that code's own coordinate scaling. No unranked
 candidate is silently added as a lower-preference constraint.
 
-Input data are the three unchanged Rachel November11 CSVs only. Senate groups
+Input data are the three unchanged FairVote November11 CSVs only. Senate groups
 use literal rank1, fixed at their original full sizes. IDs are normalized and
 joined, never matched by row order. For each other race, a missing row is missing;
 130 governor records are absent. A generic write-in occupies its original rank
