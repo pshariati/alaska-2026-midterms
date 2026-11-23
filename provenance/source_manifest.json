@@ -1,804 +1,1174 @@
 {
-  "scope": "Source packaging and saved aggregate results; no new election fits.",
+  "scope": "Public code, documentation and saved aggregates after race-based organization; no new election fits.",
+  "verification_limits": "Hash/syntax/geometry checks do not validate omitted raw CVRs or resolve the historical sklearn solver issue.",
   "files": [
     {
-      "path": "statewide_analysis/Alaska_2026_Statewide_Analysis.ipynb",
-      "source_sha256": "b723fa2af8b0b4c1d60faa79ef4a3a6ea1995086bf7b5d36fb0653a6523d342c",
-      "release_sha256": "52bbd8d4f3e8efc9130673ca4ce8f063891032e541acf05a1a43336c29651099",
-      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb"
+      "path": ".github/CODEOWNERS",
+      "release_sha256": "af4bda8f96d7b172624c381c7e0282b93a6377abbea4c2a634dd5068c0adf063",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/axis_models/audit_axes.py",
-      "source_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
-      "release_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/audit_axes.py"
+      "path": ".github/workflows/checks.yml",
+      "release_sha256": "a9ac932803649553f8859abdd509a7f76d662b66fe89b3b2615e30a564a8d1af",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/axis_models/run_axes.py",
-      "source_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
-      "release_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/run_axes.py"
+      "path": ".gitignore",
+      "release_sha256": "362a5a0a5c05734d1f8bd0a5e9f70c12d7dea7888df6accd900fd81260bc8438",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/build_notebook.py",
-      "source_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
-      "release_sha256": "2e2a320878596be5384078aa88e7e05c5019f5cc3917a965b41855bc66e66b45",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
-      "original_source_path": "alaska_2026_sam_followup_20261116/build_notebook.py"
+      "path": "CONTRIBUTING.md",
+      "release_sha256": "c5adf6113b4ce18ae46d4233cf507c9736de108f1bed1b270271cae88ea17224",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/common/data.py",
-      "source_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
-      "release_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/common/data.py"
+      "path": "README.md",
+      "release_sha256": "f92eaddcbe1a984e4274561607af6985aa947c854dc75fba1c0ed9a30a072f9f",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/common/og_axis.py",
-      "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
-      "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/common/og_axis.py"
+      "path": "THIRD_PARTY_NOTICES.md",
+      "release_sha256": "4011f5fd58cca854a65fc8b4dc2fea1ab5360c4cfc2d72bfb8ec6d9220cdbb9c",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/confusion/run_confusion.py",
-      "source_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
-      "release_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/run_confusion.py"
+      "path": "analysis/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/confusion/verify_confusion.py",
-      "source_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
-      "release_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/verify_confusion.py"
+      "path": "analysis/cross_race/README.md",
+      "release_sha256": "8610e293ef9620177da7ea795b1011f2e6db28790dca8e6c7b50df4c29eedc3f",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/execute_notebook.py",
-      "source_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
-      "release_sha256": "8b38f6303db6340cc04f3f42bb26e427709e2330eee477ab50560a6e727e5b6e",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
-      "original_source_path": "alaska_2026_sam_followup_20261116/execute_notebook.py"
+      "path": "analysis/cross_race/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/hafner/run_hafner.py",
-      "source_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
-      "release_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/hafner/run_hafner.py"
+      "path": "analysis/cross_race/first_choices/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/hafner_geography.py",
-      "source_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
-      "release_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_geography.py"
+      "path": "analysis/cross_race/first_choices/audits/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/hafner_notebook.py",
-      "source_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
-      "release_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_notebook.py"
+      "source_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
+      "path": "analysis/cross_race/first_choices/audits/independent_descriptive_audit.py",
+      "release_sha256": "90c8ff21b3c22a61f3b88bc5bcdcc6e2d2100f19b28bf9f50112c7e2d7764c89",
+      "previous_release_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/package_results.py",
-      "source_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
-      "release_sha256": "a4b593270750c7ef0f17c80ac98ab31bcf30395ec0adab6f193c05b2a15636c7",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
-      "original_source_path": "alaska_2026_sam_followup_20261116/package_results.py"
+      "source_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
+      "path": "analysis/cross_race/first_choices/descriptive_analysis.py",
+      "release_sha256": "c7d0cf11601ca346f220e94f33059f4452211b757c700d3b4a6b05037221be31",
+      "previous_release_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/presentation.py",
-      "source_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
-      "release_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/presentation.py"
+      "path": "analysis/cross_race/first_choices/figures/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/presentation_figures/build_axis.py",
       "source_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
-      "release_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_axis.py"
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_axis.py",
+      "path": "analysis/cross_race/first_choices/figures/build_axis.py",
+      "release_sha256": "4c964fbfebea45a42a89cc0afcc7e5bd19bc4160511f55aeaba16c6ea1ac4ffc",
+      "previous_release_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/presentation_figures/build_vertical.py",
       "source_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
-      "release_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_vertical.py"
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation_figures/build_vertical.py",
+      "path": "analysis/cross_race/first_choices/figures/build_vertical.py",
+      "release_sha256": "e4af7ac37bfc8b49443feee92c72185d506e70ce7651dee82450a02936828131",
+      "previous_release_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/render/render_browser_view.py",
-      "source_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
-      "release_sha256": "3a0dd6a02be6475b9c7edde10a3b00c2a888b9833566105af6a115e6b0b922f7",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
-      "original_source_path": "alaska_2026_sam_followup_20261116/render/render_browser_view.py"
+      "source_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
+      "path": "analysis/cross_race/first_choices/verify_rachel.py",
+      "release_sha256": "bbbb45530a26aaf071b20a4c94f67e0a3ba03b31d9b0047fdb46ffd987cd83df",
+      "previous_release_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/requirements.txt",
-      "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
-      "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/requirements.txt"
+      "source_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
+      "path": "analysis/cross_race/first_choices/verify_usable_preferences.py",
+      "release_sha256": "1efec698c382bb44a4c816f94c4645aa6abb605d4013fb6e696c17ace142c5f5",
+      "previous_release_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/validation/audit_hafner.py",
-      "source_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
-      "release_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/validation/audit_hafner.py"
+      "path": "analysis/cross_race/validation/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/validation/independent_voter_audit.py",
+      "source_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/README.txt",
+      "path": "analysis/cross_race/validation/axes/README.txt",
+      "release_sha256": "c298f647fdd9ea11eac4d41f7579f80327fe650ed9487d8acfb477b5e709c622",
+      "previous_release_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/cross_race/validation/axes/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/audit_axes.py",
+      "path": "analysis/cross_race/validation/axes/audit_axes.py",
+      "release_sha256": "2d4143be3b85fe34a2372213335faf0a3745306c32c8d44bc4c82beb87dad1c7",
+      "previous_release_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/independent_axis_audit.json",
+      "path": "analysis/cross_race/validation/axes/independent_axis_audit.json",
+      "release_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/new_contests_consistency.csv",
+      "path": "analysis/cross_race/validation/axes/new_contests_consistency.csv",
+      "release_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/cross_race/validation/counting_rules/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
+      "pre_rename_release_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
+      "path": "analysis/cross_race/validation/counting_rules/recheck.py",
+      "release_sha256": "0eb1823045dafdc9f1c596ca6217e7a48f02333246209c9967501e22e8b207cf",
+      "previous_release_sha256": "a2436a22a6b37f438c9e86f56569181f2ca941e7243fb0ad318519d328f4b131",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
       "source_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
-      "release_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/validation/independent_voter_audit.py"
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/independent_voter_audit.py",
+      "path": "analysis/cross_race/validation/independent_voter_audit.py",
+      "release_sha256": "735331e1ebf48edc45d1a5650ded2738aea16a9c3427f8e7d626099687c671bb",
+      "previous_release_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/validation/validate_archived_benchmarks.py",
+      "source_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
+      "pre_rename_release_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
+      "path": "analysis/cross_race/validation/reconcile_saved_math.py",
+      "release_sha256": "6c5c73c5649043dcd4e86e4595b73290f7e92307acd754dc7302befa80bfdda3",
+      "previous_release_sha256": "4b9f068a29607cab9dbbcb08224f35fa3be0c4d4dba6bf78803f98d49e9241c1",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
       "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
-      "release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/validation/validate_archived_benchmarks.py"
+      "path": "analysis/cross_race/validation/validate_all_contest_benchmarks.py",
+      "release_sha256": "1a15efff777523ef61237c668a989decadf65f1e0effd74bd191925055126e62",
+      "previous_release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/validation/verify_completed.py",
+      "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/validate_archived_benchmarks.py",
+      "path": "analysis/cross_race/validation/validate_archived_benchmarks.py",
+      "release_sha256": "1a15efff777523ef61237c668a989decadf65f1e0effd74bd191925055126e62",
+      "previous_release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
+      "path": "analysis/cross_race/validation/validate_official_scope.py",
+      "release_sha256": "f90d7493bde4356d53da50090b45d20662e3d3e8f0cd138b8f41de884aead11c",
+      "previous_release_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
       "source_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
-      "release_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_completed.py"
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_completed.py",
+      "path": "analysis/cross_race/validation/verify_completed.py",
+      "release_sha256": "8f54edeb67bea506acbd05f1b24c52de90b0533a2fc48309aef252ec34e4cc0d",
+      "previous_release_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "statewide_analysis/validation/verify_peltola_routes.py",
-      "source_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
-      "release_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_peltola_routes.py"
+      "source_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/METHODOLOGY.txt",
+      "path": "analysis/cross_race/voter_distributions/METHODOLOGY.txt",
+      "release_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
+      "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "statewide_analysis/voter_distributions/method_references/MDS_analysis.py",
-      "source_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
-      "release_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/MDS_analysis.py"
+      "path": "analysis/cross_race/voter_distributions/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "statewide_analysis/voter_distributions/method_references/consistency.py",
-      "source_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
-      "release_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/consistency.py"
-    },
-    {
-      "path": "statewide_analysis/voter_distributions/method_references/rcv_distribution.py",
-      "source_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
-      "release_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/rcv_distribution.py"
-    },
-    {
-      "path": "statewide_analysis/voter_distributions/run_distributions.py",
       "source_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
-      "release_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/run_distributions.py"
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/run_distributions.py",
+      "path": "analysis/cross_race/voter_distributions/run_distributions.py",
+      "release_sha256": "9051b746002cacdb3866feea06c217870a94f616375343d9a7dfb13a01c2c1b0",
+      "previous_release_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/Alaska_2026_Senate_Rachel_FairVote.ipynb",
+      "path": "analysis/governor/Overview.ipynb",
+      "release_sha256": "590b51208c9ce5c40c5543219052825c56041d192443c5480b6f88fd4c1bd603",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/governor/README.md",
+      "release_sha256": "84a67e13253e71810d12521c7f862651b37505fe22f8d93760bd811a7b2cc3b6",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/adjacency_matrix.csv",
+      "path": "analysis/governor/candidate_axis/adjacency_matrix.csv",
+      "release_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/candidate_axis.csv",
+      "path": "analysis/governor/candidate_axis/candidate_axis.csv",
+      "release_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/consistency_summary.csv",
+      "path": "analysis/governor/candidate_axis/consistency_summary.csv",
+      "release_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/coranking_matrix.csv",
+      "path": "analysis/governor/candidate_axis/coranking_matrix.csv",
+      "release_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/dissimilarity_matrix.csv",
+      "path": "analysis/governor/candidate_axis/dissimilarity_matrix.csv",
+      "release_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/governor/candidate_axis/fit.py",
+      "release_sha256": "d9f6c53d6f2d630f396f198183756ab032518489418539bb83ecd896bfaf4bb1",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_results.json",
+      "path": "analysis/governor/candidate_axis/mds_results.json",
+      "release_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_verification.json",
+      "path": "analysis/governor/candidate_axis/mds_verification.json",
+      "release_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/method_provenance.json",
+      "path": "analysis/governor/candidate_axis/method_provenance.json",
+      "release_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/null_profiles.json",
+      "path": "analysis/governor/candidate_axis/null_profiles.json",
+      "release_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/profile.json",
+      "path": "analysis/governor/candidate_axis/profile.json",
+      "release_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/house/Overview.ipynb",
+      "release_sha256": "12fe580f6f0bd720dcf1a5dff4468b6cbf07be28454a2573e9c66deb9d038d23",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/house/README.md",
+      "release_sha256": "d78bb06442cd3aa5e2a6c13639048eb02a65355d41f83af6de6d00ee68901e3a",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/house/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/adjacency_matrix.csv",
+      "path": "analysis/house/candidate_axis/adjacency_matrix.csv",
+      "release_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/candidate_axis.csv",
+      "path": "analysis/house/candidate_axis/candidate_axis.csv",
+      "release_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/consistency_summary.csv",
+      "path": "analysis/house/candidate_axis/consistency_summary.csv",
+      "release_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/coranking_matrix.csv",
+      "path": "analysis/house/candidate_axis/coranking_matrix.csv",
+      "release_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/dissimilarity_matrix.csv",
+      "path": "analysis/house/candidate_axis/dissimilarity_matrix.csv",
+      "release_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/house/candidate_axis/fit.py",
+      "release_sha256": "11f965d9485a9c718b975ee660d8e8fcb0e60111d493ae049d6acbf2aca3b40c",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_results.json",
+      "path": "analysis/house/candidate_axis/mds_results.json",
+      "release_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_verification.json",
+      "path": "analysis/house/candidate_axis/mds_verification.json",
+      "release_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/method_provenance.json",
+      "path": "analysis/house/candidate_axis/method_provenance.json",
+      "release_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/null_profiles.json",
+      "path": "analysis/house/candidate_axis/null_profiles.json",
+      "release_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/profile.json",
+      "path": "analysis/house/candidate_axis/profile.json",
+      "release_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/house/flows/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
+      "pre_rename_release_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
+      "path": "analysis/house/flows/build_house_sankey.py",
+      "release_sha256": "3a072ae445b9e5e17b9bcc1983039d52fbabcfae066acf82bd2f6e49bfd54159",
+      "previous_release_sha256": "6d347743d333900086855df6f4606c77a887dde435b8ff2d0fb424abe23b1db9",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
+      "path": "analysis/house/flows/render_house_sankey.mjs",
+      "release_sha256": "c801a6be7ee1b0b765b5ffec1fd076fa2e33eb3a575f07a580aa3f43c03fef5f",
+      "previous_release_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/house/hafner/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/audit_hafner.py",
+      "path": "analysis/house/hafner/audit_hafner.py",
+      "release_sha256": "c2fa70e39e3777975cbc9e6b15c538b1a80c106b46e610d19190fff47d4e7d4d",
+      "previous_release_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/house/hafner/bullet_votes/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
+      "pre_rename_release_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
+      "path": "analysis/house/hafner/bullet_votes/analyze_bullets.py",
+      "release_sha256": "3abb7329380b0e110d17f9b5a1f94d4422c842088e1dfeea56f044c94920c582",
+      "previous_release_sha256": "13afd063807bcefd372310f6d3a8f33be3a2dc17af4b3186661e139828643aac",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "path": "analysis/house/hafner/bullet_votes/build_slide.mjs",
+      "release_sha256": "ca8c517a2ec5194218d391fc150d0d269be3500ab021b48abcb8906df1d58f69",
+      "previous_release_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_geography.py",
+      "path": "analysis/house/hafner/geography.py",
+      "release_sha256": "01db3b6c4c7e9de565581a4ead43be2b53edc9c1680427c9bef27e6d6b0860e6",
+      "previous_release_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner/run_hafner.py",
+      "path": "analysis/house/hafner/run_hafner.py",
+      "release_sha256": "f2bf7328bb8c4b745d6c1d57742debe9e8aa3da4f215894bc06ac15240ab70af",
+      "previous_release_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/house/snapshots/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/house/snapshots/nov16_check/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "path": "analysis/house/snapshots/nov16_check/analyze.py",
+      "release_sha256": "391ef759c689ff6afe867f0e518762836693e702c48cffa20eb537932e866a3b",
+      "previous_release_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "path": "analysis/house/snapshots/nov16_check/build_report.py",
+      "release_sha256": "ea7002decd91cd99dc67c3120c45218b7ce4662cd37a3d72833429f6ed946413",
+      "previous_release_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "b723fa2af8b0b4c1d60faa79ef4a3a6ea1995086bf7b5d36fb0653a6523d342c",
+      "original_source_path": "alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb",
+      "path": "analysis/reporting/Alaska_2026_Statewide_Analysis.ipynb",
+      "release_sha256": "76a5c1118b7dcd3787ae3d21bde24ac35644e7bc610030765b6a5375f918b404",
+      "previous_release_sha256": "52bbd8d4f3e8efc9130673ca4ce8f063891032e541acf05a1a43336c29651099",
+      "transformation": "Notebook outputs cleared; cell sources updated for new paths/imports, historical-solver and input-availability caveats, and report heading. Not executed in this reorganization."
+    },
+    {
+      "path": "analysis/reporting/README.md",
+      "release_sha256": "9a1fe6a5bc0618a11348a348f4396f9b31fee37197d6a8032805cf73a6d944bb",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/reporting/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
+      "pre_rename_release_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
+      "original_source_path": "alaska_2026_sam_followup_20261116/build_notebook.py",
+      "path": "analysis/reporting/build_notebook.py",
+      "release_sha256": "4ff643afaf81186fcbb87495518568cff2d25bc53c9c4de3f7cd5ade9e8ef76e",
+      "previous_release_sha256": "2e2a320878596be5384078aa88e7e05c5019f5cc3917a965b41855bc66e66b45",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
+      "pre_rename_release_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
+      "original_source_path": "alaska_2026_sam_followup_20261116/execute_notebook.py",
+      "path": "analysis/reporting/execute_notebook.py",
+      "release_sha256": "234687395ded10aea43b382200f317ed82017fae2d9562a1107a17773433629f",
+      "previous_release_sha256": "8b38f6303db6340cc04f3f42bb26e427709e2330eee477ab50560a6e727e5b6e",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
+      "original_source_path": "alaska_2026_sam_followup_20261116/hafner_notebook.py",
+      "path": "analysis/reporting/hafner_section.py",
+      "release_sha256": "054b31f9469df2fc6d29060e661893f71589b06223602471aaca5d1ebfafa317",
+      "previous_release_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
+      "pre_rename_release_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
+      "original_source_path": "alaska_2026_sam_followup_20261116/package_results.py",
+      "path": "analysis/reporting/package_results.py",
+      "release_sha256": "54d5b24fc25f42e8d3a76dd249bab0296fdc0fd7f8cc62b2bd207003118f5978",
+      "previous_release_sha256": "a4b593270750c7ef0f17c80ac98ab31bcf30395ec0adab6f193c05b2a15636c7",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
+      "original_source_path": "alaska_2026_sam_followup_20261116/presentation.py",
+      "path": "analysis/reporting/presentation.py",
+      "release_sha256": "2c103c75b29aa9be9e310bbbf8d1e1959201b4c444324c5d52ef866873eb30c7",
+      "previous_release_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/reporting/render/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
+      "pre_rename_release_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
+      "original_source_path": "alaska_2026_sam_followup_20261116/render/render_browser_view.py",
+      "path": "analysis/reporting/render/render_browser_view.py",
+      "release_sha256": "e8b1db2d8396798dcbbfd547d67703c619c3c9e60a09dfd8c7767b0bcf6eb175",
+      "previous_release_sha256": "3a0dd6a02be6475b9c7edde10a3b00c2a888b9833566105af6a115e6b0b922f7",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "original_source_path": "alaska_2026_sam_followup_20261116/requirements.txt",
+      "path": "analysis/reporting/requirements.txt",
+      "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "analysis/senate/Overview.ipynb",
+      "release_sha256": "1e9a4b39b6f0507498918c0ddd6ea61f5ac3bfb894711473656632a0dc8f9537",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/senate/README.md",
+      "release_sha256": "63950784b6e4f893ea47cd2ca0a5dda6adf9248671ffb2c43ce1fa53192843a9",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/senate/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
       "source_sha256": "92fc4c986c125b3b2b4067e906ee84c5708cee9a0f9b2e6bf32ca4cb7d544b1d",
+      "path": "analysis/senate/archive/report_20261111/Alaska_2026_Senate_Rachel_FairVote.ipynb",
       "release_sha256": "ff6d062168a63e12f3ab8bab8201ce776d0ebd46fa59bb04d8a807adf4286646",
-      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved."
+      "transformation": "Notebook outputs and execution metadata cleared; cell sources edited only as recorded in packaging history. Moved without further content changes in race reorganization."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/add_validation_note.py",
+      "path": "analysis/senate/archive/report_20261111/README.md",
+      "release_sha256": "ead9edcfbb46ac2536a1f71257a877779496b8840408e49bf7db49fd57558142",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
       "source_sha256": "5ca93c2d9d976cf1f1cec97cb358998b931728732dd5572111a3ac8b4a76ee85",
+      "path": "analysis/senate/archive/report_20261111/add_validation_note.py",
       "release_sha256": "5ca93c2d9d976cf1f1cec97cb358998b931728732dd5572111a3ac8b4a76ee85",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/apply_alaska_rule_revision.py",
       "source_sha256": "9690fed2635c74e664de11eb562b5220fa2f9cc169337b02b091d30c391ce84a",
+      "path": "analysis/senate/archive/report_20261111/apply_alaska_rule_revision.py",
       "release_sha256": "9690fed2635c74e664de11eb562b5220fa2f9cc169337b02b091d30c391ce84a",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/audit_ultra/descriptive/independent_descriptive_audit.py",
-      "source_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
-      "release_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/audit_ultra/finish_audit.py",
       "source_sha256": "b524459183245ef5aa7f030353264013a779e5c4c1635316070dae092c8b54e4",
+      "path": "analysis/senate/archive/report_20261111/audit_ultra/finish_audit.py",
       "release_sha256": "b524459183245ef5aa7f030353264013a779e5c4c1635316070dae092c8b54e4",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/audit_ultra/flows/independent_flow_audit.py",
-      "source_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
-      "release_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/audit_ultra/mds/independent_mds_audit.py",
-      "source_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
-      "release_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/build_notebook.py",
       "source_sha256": "9b49b799821e4d0acd383d93dfff88b7b1c7565f31e9c164f5d06aa61876904c",
+      "path": "analysis/senate/archive/report_20261111/build_notebook.py",
       "release_sha256": "9b49b799821e4d0acd383d93dfff88b7b1c7565f31e9c164f5d06aa61876904c",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/descriptive/descriptive_analysis.py",
-      "source_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
-      "release_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/descriptive/verify_rachel.py",
-      "source_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
-      "release_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/descriptive/verify_usable_preferences.py",
-      "source_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
-      "release_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/execute_legal_revision.py",
       "source_sha256": "08e11754a835da432c40d3c19cdf0396a326bf7e459a5a54dac96f514d62eaf0",
+      "path": "analysis/senate/archive/report_20261111/execute_legal_revision.py",
       "release_sha256": "08e11754a835da432c40d3c19cdf0396a326bf7e459a5a54dac96f514d62eaf0",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/execute_notebook.py",
       "source_sha256": "c595dfd1fb7e30e35ba4cea29222f0ae82e7c7d7c5ef6711612fff33de06a12c",
+      "path": "analysis/senate/archive/report_20261111/execute_notebook.py",
       "release_sha256": "c595dfd1fb7e30e35ba4cea29222f0ae82e7c7d7c5ef6711612fff33de06a12c",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/flows/build_flows.py",
-      "source_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
-      "release_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/flows/test_flows.py",
-      "source_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
-      "release_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/flows/validate_all_contest_benchmarks.py",
-      "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
-      "release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/flows/validate_official_scope.py",
-      "source_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
-      "release_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/check_mds.py",
-      "source_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
-      "release_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/og_axis.py",
-      "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
-      "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/ranking_rules.py",
-      "source_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
-      "release_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/run_mds.py",
-      "source_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
-      "release_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/test_rachel_rules.py",
-      "source_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
-      "release_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/package_results.py",
       "source_sha256": "c3c51788bbb9e4ae0be7c7b017eea1280b627a8e3976b9c4bdf6c615cfd3db5a",
+      "path": "analysis/senate/archive/report_20261111/package_results.py",
       "release_sha256": "c3c51788bbb9e4ae0be7c7b017eea1280b627a8e3976b9c4bdf6c615cfd3db5a",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/presentation.py",
       "source_sha256": "26e5f5741517d5a71630d9e8a787e0809f6ed6628c573885a02c032ecc50375d",
+      "path": "analysis/senate/archive/report_20261111/presentation.py",
       "release_sha256": "26e5f5741517d5a71630d9e8a787e0809f6ed6628c573885a02c032ecc50375d",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/render/render_browser_view.py",
       "source_sha256": "214182427bc7e77770c47fdd3ee5314deb6973d447c9f594453f63379acdf7d5",
+      "path": "analysis/senate/archive/report_20261111/render/render_browser_view.py",
       "release_sha256": "214182427bc7e77770c47fdd3ee5314deb6973d447c9f594453f63379acdf7d5",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/render/restyle_notebook.py",
       "source_sha256": "163a3d5af4a359043de54d552a72a10081a41a12c43a3127187790fe73029527",
+      "path": "analysis/senate/archive/report_20261111/render/restyle_notebook.py",
       "release_sha256": "163a3d5af4a359043de54d552a72a10081a41a12c43a3127187790fe73029527",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/repair_audit_findings.py",
       "source_sha256": "c3847b94d05c85556e81c8e4537b37098fc6577477e59d3f5c3a7b24967ab20c",
+      "path": "analysis/senate/archive/report_20261111/repair_audit_findings.py",
       "release_sha256": "c3847b94d05c85556e81c8e4537b37098fc6577477e59d3f5c3a7b24967ab20c",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_2026_senate_sam_rachel/requirements.txt",
       "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "path": "analysis/senate/archive/report_20261111/requirements.txt",
       "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/.build/build_deck.mjs",
-      "source_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
-      "release_sha256": "d4fb4f16a2bf781a19f5e5750fc370adafe8217a086b4a83f9a4889fa8e20240",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0"
+      "path": "analysis/senate/candidate_axis/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "alaska_presentation_20261117/.build/finalize_only.mjs",
-      "source_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
-      "release_sha256": "ccf450445b17e4d59c4206ebc1ce3f620f33abd4b7ab9cc468a8582780b5912e",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204"
+      "path": "analysis/senate/candidate_axis/audits/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "alaska_presentation_20261117/assets/build_presentation_figures.py",
-      "source_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
-      "release_sha256": "c9c02ca59dd12a914cb356d901b5a6ebf836c90c395adf45ea23480038cfe4c3",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18"
+      "source_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
+      "path": "analysis/senate/candidate_axis/audits/independent_mds_audit.py",
+      "release_sha256": "796e00e86ec46f4cb4d858ff1a9ebbb3aeef82781cd3ad72431f0fc3ebd4761d",
+      "previous_release_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/counting_rules_audit/recheck.py",
-      "source_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
-      "release_sha256": "a2436a22a6b37f438c9e86f56569181f2ca941e7243fb0ad318519d328f4b131",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51"
+      "source_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/candidate_axis.csv",
+      "path": "analysis/senate/candidate_axis/candidate_axis.csv",
+      "release_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/mds/candidate_axis.csv",
+          "source_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+          "release_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
+      "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/flow_assets/build_flow_assets.py",
+      "source_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/carryover_provenance.json",
+      "path": "analysis/senate/candidate_axis/carryover_provenance.json",
+      "release_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
+      "path": "analysis/senate/candidate_axis/check_mds.py",
+      "release_sha256": "f4c8e4e447550831e944aad0413850b665a6704fd489768f46612daaf1cbb919",
+      "previous_release_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/consistency_summary.csv",
+      "path": "analysis/senate/candidate_axis/consistency_summary.csv",
+      "release_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/dissimilarity_matrix.csv",
+      "path": "analysis/senate/candidate_axis/dissimilarity_matrix.csv",
+      "release_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_results.json",
+      "path": "analysis/senate/candidate_axis/mds_results.json",
+      "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/mds/mds_results.json",
+          "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+          "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_verification.json",
+      "path": "analysis/senate/candidate_axis/mds_verification.json",
+      "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/mds/mds_verification.json",
+          "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+          "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/method_provenance.json",
+      "path": "analysis/senate/candidate_axis/method_provenance.json",
+      "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/mds/method_provenance.json",
+          "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+          "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/profile.json",
+      "path": "analysis/senate/candidate_axis/profile.json",
+      "release_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/rachel_profile_provenance.json",
+      "path": "analysis/senate/candidate_axis/rachel_profile_provenance.json",
+      "release_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
+      "path": "analysis/senate/candidate_axis/ranking_rules.py",
+      "release_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "source_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
+      "path": "analysis/senate/candidate_axis/run_mds.py",
+      "release_sha256": "3adc55471950e1de2379467175dd998f8ef1810edf09c1e8fb33054710e47d29",
+      "previous_release_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
+      "path": "analysis/senate/candidate_axis/test_rachel_rules.py",
+      "release_sha256": "19b1ac2df5460c1ff8756abdd43ea6cbdd513b361c59894889edbeded09ad3e1",
+      "previous_release_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/senate/figures/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/senate/figures/flows/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
       "source_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
-      "release_sha256": "d7354b0f1a2bd3d7271c5d98778cb069678a681ab0a56f298bafa94a599db1da",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3"
+      "pre_rename_release_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
+      "path": "analysis/senate/figures/flows/build_flow_assets.py",
+      "release_sha256": "fb86445fa7525b929d3b6edb6f1fb39ce1f15c1df5f530a1f9223c0137b8e6d7",
+      "previous_release_sha256": "d7354b0f1a2bd3d7271c5d98778cb069678a681ab0a56f298bafa94a599db1da",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/flow_assets/build_slide_crops.py",
       "source_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
-      "release_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
-      "transformation": "Byte-for-byte copy."
+      "path": "analysis/senate/figures/flows/build_slide_crops.py",
+      "release_sha256": "ad34e7fd6b764eafaabb5f32a6f1e513b5b279ff92231b7a68a744e559f64220",
+      "previous_release_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/flow_assets/render_flow_assets.mjs",
       "source_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
-      "release_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
+      "path": "analysis/senate/figures/flows/render_flow_assets.mjs",
+      "release_sha256": "1f2100e0dde651c9d32463fd03722c89f198b818422dc90bc3b1115939171a70",
+      "previous_release_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/senate/figures/ranking_tables/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
+      "pre_rename_release_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
+      "path": "analysis/senate/figures/ranking_tables/build_tables.py",
+      "release_sha256": "da3d96e655f36c78988054358d4fa6300ef9a0ba2180b6bd8cd3aeb132862eb0",
+      "previous_release_sha256": "9cbc6deb8d9c4f41b2dd84eea24cb4641b7e9b516baf014cf9b31a06dd570a87",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "path": "analysis/senate/figures/ranking_tables/render_high_res.mjs",
+      "release_sha256": "0e8f869a850d198ce3a4738f4173c044341ac1acbdff84a20922cb2ab2ff79cd",
+      "previous_release_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
+      "original_source_path": "alaska_2026_sam_followup_20261116/completed/flows/METHODOLOGY.txt",
+      "path": "analysis/senate/flows/METHODOLOGY.txt",
+      "release_sha256": "73493f5ed14c56fd997334dd7da3fcbc7fae252bb031d6ee30ccd090dc9a40fe",
+      "previous_release_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/senate/flows/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "analysis/senate/flows/audits/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
+      "path": "analysis/senate/flows/audits/independent_flow_audit.py",
+      "release_sha256": "602ae5d68dffdc6add6de26b87b22be0ffcc363a11348bb8ad5be398e458be93",
+      "previous_release_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
+      "path": "analysis/senate/flows/build_flows.py",
+      "release_sha256": "8645efda9b48531b51138a26cbdf98622a413ab25d1f12879ec39066c228bdcc",
+      "previous_release_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
+      "path": "analysis/senate/flows/test_flows.py",
+      "release_sha256": "70020867b9d4675060f5dbce6ca2664179b6fe21d0cc82cd72977ed0e7898b74",
+      "previous_release_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/senate/rankings/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
+      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/run_confusion.py",
+      "path": "analysis/senate/rankings/run_confusion.py",
+      "release_sha256": "8ed196433df4696d1ca05ccad11d242b4eea0554ff7739d585cd7deac0479c4b",
+      "previous_release_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/confusion/verify_confusion.py",
+      "path": "analysis/senate/rankings/verify_confusion.py",
+      "release_sha256": "03dd293dc3f66da4bad9ac26880337b24acd5a7fbc892f12c662012d032ae635",
+      "previous_release_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
+      "original_source_path": "alaska_2026_sam_followup_20261116/validation/verify_peltola_routes.py",
+      "path": "analysis/senate/rankings/verify_peltola_routes.py",
+      "release_sha256": "00d5214f1870f9389b1af2cb58cf8f6cd41798c5f1e3d407804c00bdff8eebff",
+      "previous_release_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "analysis/shared/__init__.py",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/candidate_metadata.json",
+      "path": "analysis/shared/candidate_metadata.json",
+      "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/descriptive/candidate_metadata.json",
+          "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+          "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/hafner_bullet_analysis/analyze_bullets.py",
-      "source_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
-      "release_sha256": "13afd063807bcefd372310f6d3a8f33be3a2dc17af4b3186661e139828643aac",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0"
+      "source_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/data.py",
+      "path": "analysis/shared/data.py",
+      "release_sha256": "f15990212943f9471e7fe2f693af65aabc9353e8750dbd92383c6d2cf7f53769",
+      "previous_release_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/hafner_bullet_analysis/build_slide.mjs",
-      "source_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
-      "release_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "source_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
+      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/run_axes.py",
+      "path": "analysis/shared/fit_races.py",
+      "release_sha256": "f25279df894fff22729c9d2dce645f34d9ebfb56c92273da54b6f0836595c97e",
+      "previous_release_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "original_source_path": "alaska_2026_sam_followup_20261116/common/og_axis.py",
+      "path": "analysis/shared/og_axis.py",
+      "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "consolidated_sources": [
+        {
+          "path": "alaska_2026_senate_sam_rachel/mds/og_axis.py",
+          "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+          "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+          "transformation": "Byte-for-byte copy."
+        }
+      ],
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/house_sankey/build_house_sankey.py",
-      "source_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
-      "release_sha256": "6d347743d333900086855df6f4606c77a887dde435b8ff2d0fb424abe23b1db9",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3"
+      "path": "analysis/shared/paths.py",
+      "release_sha256": "1ddf6be9c8100e952dd912c76867f3ebb07375afb703b0c46ca8a9d1a43e0cdc",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "alaska_presentation_20261117/house_sankey/render_house_sankey.mjs",
-      "source_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
-      "release_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
-      "transformation": "Byte-for-byte copy."
+      "path": "docs/CHANGES_FROM_MAHSHAD.md",
+      "release_sha256": "168e9b2f1407312c168af139dbc336fbd991ae6d5094174bd3f80b2a6f7b1515",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/audit_review/reconcile_saved_math.py",
-      "source_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
-      "release_sha256": "4b9f068a29607cab9dbbcb08224f35fa3be0c4d4dba6bf78803f98d49e9241c1",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3"
+      "path": "docs/DATA.md",
+      "release_sha256": "cf41b234c0f796e6feb187c41f1cb770cf9b8ba3a821fd38f5ec7b226114fcc4",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/build_math.py",
+      "path": "docs/KNOWN_ISSUES.md",
+      "release_sha256": "dcaae04abd770d07b62b01c7d539af3faefd15e04206cf729d9445241c5ffb1d",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "docs/METHODS.md",
+      "release_sha256": "eaf0483b1b69bb587238f70a1da946fc59107998c581819661ae713e7f61085b",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "docs/ORGANIZATION.md",
+      "release_sha256": "ae0b783de23665c86ac9be1cd863073f244a74b7224b55f6f4e97d812cc67ef5",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "release_sha256": "9ad09d9868a8e5ac374018a016591266bd33065c39614fb733798fde4ed61718",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "examples/toy_profile.json",
+      "release_sha256": "c5217c3ede3c7476bd378f49516b3cc37c81095d03c13702b9c6f7eb7520a0c8",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
+      "pre_rename_release_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
+      "path": "presentations/.build/build_deck.mjs",
+      "release_sha256": "1b5ba0a8ef60e7d5cec3fd16f144b4af2fbbc49fdc8bf7f432e4cccad3cc0a84",
+      "previous_release_sha256": "d4fb4f16a2bf781a19f5e5750fc370adafe8217a086b4a83f9a4889fa8e20240",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "source_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
+      "pre_rename_release_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
+      "path": "presentations/.build/finalize_only.mjs",
+      "release_sha256": "dfbc2c7f01f4be65dbb62fa3c037ec2f3d3697a412338e397bb499cdcb80d64a",
+      "previous_release_sha256": "ccf450445b17e4d59c4206ebc1ce3f620f33abd4b7ab9cc468a8582780b5912e",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
+      "path": "presentations/README.md",
+      "release_sha256": "381c12bd0eb03cf663fdeb182db52a9e8021c3f72ef9e12169e1c2cf6f14d17d",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
+      "pre_rename_release_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
+      "path": "presentations/assets/build_presentation_figures.py",
+      "release_sha256": "ef98f555c80413cf6fcad81547dbc7c54cb0f657a93c44f52103d2fc99ae4277",
+      "previous_release_sha256": "c9c02ca59dd12a914cb356d901b5a6ebf836c90c395adf45ea23480038cfe4c3",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
+    },
+    {
       "source_sha256": "96b8255383ff07a778bd0477780b8953206ae93927b133d84aadfdd859efefd5",
+      "path": "presentations/math_qr/build_math.py",
       "release_sha256": "96b8255383ff07a778bd0477780b8953206ae93927b133d84aadfdd859efefd5",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/build_pdf.py",
       "source_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
-      "release_sha256": "dd3ad2189ef0991cdf750af19b452a8b5c590fbde79d87eeae6b3cc980b7e643",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe"
+      "pre_rename_release_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
+      "path": "presentations/math_qr/build_pdf.py",
+      "release_sha256": "844b6426ef34cf88332c169d3d65c6d46117b1cc702eb0924fe0698c10443c89",
+      "previous_release_sha256": "dd3ad2189ef0991cdf750af19b452a8b5c590fbde79d87eeae6b3cc980b7e643",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/build_qr_slide.mjs",
       "source_sha256": "d8010f27001e12b1bf728af1e546a0c122372056c4ed3bc34cd994e642e9f43b",
+      "path": "presentations/math_qr/build_qr_slide.mjs",
       "release_sha256": "d8010f27001e12b1bf728af1e546a0c122372056c4ed3bc34cd994e642e9f43b",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/v2/build_polished_pdf.py",
       "source_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
-      "release_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
-      "transformation": "Byte-for-byte copy."
+      "path": "presentations/math_qr/v2/build_polished_pdf.py",
+      "release_sha256": "b9f99fff0e225838f36c2ad9aa3dc34ae10796496362f4ce17d1b4dffcbbe473",
+      "previous_release_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
+      "transformation": "Race reorganization: updated paths/imports and documentation; centralized duplicate metadata/core; added pinned-input checks where needed. No new election fits. See docs/ORGANIZATION.md."
     },
     {
-      "path": "alaska_presentation_20261117/math_qr/v2/render_equations.py",
       "source_sha256": "8af4799652de43990b57ac18aac0c447da1e88ce15bc8b0e67d2c90ae48162a3",
+      "path": "presentations/math_qr/v2/render_equations.py",
       "release_sha256": "8af4799652de43990b57ac18aac0c447da1e88ce15bc8b0e67d2c90ae48162a3",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/narrow_density_figures/render_narrow.py",
       "source_sha256": "82eaf156557387d8d83b988eaf41d59e811593b67d1f0747a2f3d50fe3c0a6cc",
+      "path": "presentations/narrow_density_figures/render_narrow.py",
       "release_sha256": "82eaf156557387d8d83b988eaf41d59e811593b67d1f0747a2f3d50fe3c0a6cc",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/new_slides_20261117/build_six_panel.py",
       "source_sha256": "890c0ebcd2f38934ed327dee2d4055c56e0ab261d8d4054ccc4354f9b1fa1dc2",
+      "path": "presentations/new_slides_20261117/build_six_panel.py",
       "release_sha256": "890c0ebcd2f38934ed327dee2d4055c56e0ab261d8d4054ccc4354f9b1fa1dc2",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/nov16_house_check/analyze.py",
-      "source_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
-      "release_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "path": "provenance/layout_migration.json",
+      "release_sha256": "b92b8bb46b03c4793798cf80d0ad53168e6ce9729acbb59ba580f862bdc64a09",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "provenance/reorganization_baseline.json",
+      "release_sha256": "20255924022e72b33d528a2bd0e90b791e8d92d6717c730430df4ec27e7fd788",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "source_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/MDS_analysis.py",
+      "path": "provenance/upstream_methods/MDS_analysis.py",
+      "release_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/nov16_house_check/build_report.py",
-      "source_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
-      "release_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "source_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/consistency.py",
+      "path": "provenance/upstream_methods/consistency.py",
+      "release_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "alaska_presentation_20261117/ranking_tables/build_tables.py",
-      "source_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
-      "release_sha256": "9cbc6deb8d9c4f41b2dd84eea24cb4641b7e9b516baf014cf9b31a06dd570a87",
-      "transformation": "Byte-for-byte copy. Updated directory/notebook path references; numerical method unchanged.",
-      "pre_rename_release_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a"
-    },
-    {
-      "path": "alaska_presentation_20261117/ranking_tables/render_high_res.mjs",
-      "source_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
-      "release_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "source_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
+      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/rcv_distribution.py",
+      "path": "provenance/upstream_methods/rcv_distribution.py",
+      "release_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
       "transformation": "Byte-for-byte copy."
     },
     {
-      "path": "statewide_analysis/common/candidate_metadata.json",
-      "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
-      "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/common/candidate_metadata.json"
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/descriptive/candidate_metadata.json",
-      "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
-      "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "statewide_analysis/axis_models/README.txt",
-      "source_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
-      "release_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/README.txt"
-    },
-    {
-      "path": "statewide_analysis/voter_distributions/METHODOLOGY.txt",
-      "source_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
-      "release_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/voter_distributions/METHODOLOGY.txt"
-    },
-    {
-      "path": "statewide_analysis/completed/flows/METHODOLOGY.txt",
-      "source_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
-      "release_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/completed/flows/METHODOLOGY.txt"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/adjacency_matrix.csv",
-      "source_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
-      "release_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/adjacency_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/candidate_axis.csv",
-      "source_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
-      "release_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/candidate_axis.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/consistency_summary.csv",
-      "source_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
-      "release_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/consistency_summary.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/coranking_matrix.csv",
-      "source_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
-      "release_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/coranking_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/dissimilarity_matrix.csv",
-      "source_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
-      "release_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/dissimilarity_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/mds_results.json",
-      "source_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
-      "release_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_results.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/mds_verification.json",
-      "source_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
-      "release_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_verification.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/method_provenance.json",
-      "source_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
-      "release_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/method_provenance.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/null_profiles.json",
-      "source_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
-      "release_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/null_profiles.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/governor/profile.json",
-      "source_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
-      "release_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/governor/profile.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/independent_axis_audit.json",
-      "source_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
-      "release_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/independent_axis_audit.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/new_contests_consistency.csv",
-      "source_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
-      "release_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/new_contests_consistency.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/adjacency_matrix.csv",
-      "source_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
-      "release_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/adjacency_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/candidate_axis.csv",
-      "source_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
-      "release_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/candidate_axis.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/consistency_summary.csv",
-      "source_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
-      "release_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/consistency_summary.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/coranking_matrix.csv",
-      "source_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
-      "release_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/coranking_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/dissimilarity_matrix.csv",
-      "source_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
-      "release_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/dissimilarity_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/mds_results.json",
-      "source_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
-      "release_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_results.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/mds_verification.json",
-      "source_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
-      "release_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_verification.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/method_provenance.json",
-      "source_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
-      "release_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/method_provenance.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/null_profiles.json",
-      "source_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
-      "release_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/null_profiles.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_house/profile.json",
-      "source_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
-      "release_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_house/profile.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/candidate_axis.csv",
-      "source_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
-      "release_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/candidate_axis.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/carryover_provenance.json",
-      "source_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
-      "release_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/carryover_provenance.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/consistency_summary.csv",
-      "source_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
-      "release_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/consistency_summary.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/dissimilarity_matrix.csv",
-      "source_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
-      "release_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/dissimilarity_matrix.csv"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/mds_results.json",
-      "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
-      "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_results.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/mds_verification.json",
-      "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-      "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_verification.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/method_provenance.json",
-      "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-      "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/method_provenance.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/profile.json",
-      "source_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
-      "release_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/profile.json"
-    },
-    {
-      "path": "statewide_analysis/axis_models/us_senate/rachel_profile_provenance.json",
-      "source_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
-      "release_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/rachel_profile_provenance.json"
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/mds_results.json",
-      "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
-      "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/mds_verification.json",
-      "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-      "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/method_provenance.json",
-      "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-      "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "alaska_2026_senate_sam_rachel/mds/candidate_axis.csv",
-      "source_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
-      "release_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
-      "transformation": "Byte-for-byte copy."
-    },
-    {
-      "path": "statewide_analysis/references/benchmark_validation.json",
       "source_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
+      "original_source_path": "alaska_2026_sam_followup_20261116/references/benchmark_validation.json",
+      "path": "references/nov11/benchmark_validation.json",
       "release_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
-      "transformation": "Byte-for-byte copy.",
-      "original_source_path": "alaska_2026_sam_followup_20261116/references/benchmark_validation.json"
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "requirements-core.txt",
+      "release_sha256": "898d107dddf653033dce66287ea74b859d87d566ae07c508a9da0e6f98edbf4a",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "scripts/check_release.py",
+      "release_sha256": "df015842652df1c80eb39c5e8f43ec31e8ce27df2e761ddec4eed4f18b54b516",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "scripts/fit_candidate_axis.py",
+      "release_sha256": "adca28b44d9de58465ae4a88b5be5c36bf7f73b00128fdd0cee1113508c4d79f",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "scripts/package_code.py",
+      "release_sha256": "64c6c37838e44015efe881d9fa471f7b13c94c41cb0e2afffebe595d0e73fedb",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "tests/test_core.py",
+      "release_sha256": "25c101ad47356a96a83e191f699b1615cabf3a8075fed1b5db0fb8146f5f56af",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "tests/test_layout.py",
+      "release_sha256": "80f213f3d6e0227aacd91ce82322dd2e52631feb5ab5cad20630ff725778b103",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
+    },
+    {
+      "path": "tests/test_saved_results.py",
+      "release_sha256": "4cd34bf8188f977a082756271153ab1a16be279ce92437a6f1824d7640169e6f",
+      "transformation": "Repository documentation, structural check, overview notebook, or shared entry point authored for the reorganized code release."
     }
-  ],
-  "excluded": [
-    "Raw CVR files and ZIP archives",
-    "Individual ballot identifiers and linked exports",
-    "Private correspondence",
-    "Unrelated project code",
-    "node_modules and runtime caches"
-  ],
-  "reorganization": "Renamed main workflow to statewide_analysis and notebook to Alaska_2026_Statewide_Analysis.ipynb; updated references without refitting."
+  ]
 }
