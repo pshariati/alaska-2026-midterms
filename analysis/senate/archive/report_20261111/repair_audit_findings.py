@@ -3,22 +3,22 @@ from pathlib import Path
 import nbformat
 
 ROOT=Path(__file__).resolve().parent
-path=ROOT/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+path=ROOT/'Alaska_2026_Senate_FairVote.ipynb'
 nb=nbformat.read(path,as_version=4)
 for cell in nb.cells:
     source=cell.source
     if cell.cell_type=='code' and source.startswith('import descriptive_analysis'):
         if 'import verify_usable_preferences' not in source:
-            source=source.replace('    descriptive_verification=verify_rachel.main()',
-                '    descriptive_verification=verify_rachel.main()\n    import verify_usable_preferences\n    usable_verification=verify_usable_preferences.main()')
+            source=source.replace('    descriptive_verification=verify_fairvote.main()',
+                '    descriptive_verification=verify_fairvote.main()\n    import verify_usable_preferences\n    usable_verification=verify_usable_preferences.main()')
         assert 'usable_verification=verify_usable_preferences.main()' in source
     elif cell.cell_type=='code' and source.startswith('import build_flows'):
         source=source.replace('import build_flows\n','import build_flows,validate_all_contest_benchmarks\n')
         source=source.replace('with contextlib.redirect_stdout(io.StringIO()):flow=build_flows.build()',
             "with contextlib.redirect_stdout(io.StringIO()):\n    flow=build_flows.build()\n    benchmark_validation=validate_all_contest_benchmarks.main()\nassert benchmark_validation['matches']==benchmark_validation['cells']==54")
     elif cell.cell_type=='markdown' and source.startswith('## Supplementary audit'):
-        source=source.replace('Rachel’s visible rank columns reproduce the FairVote article’s Daniel subgroup totals exactly',
-            'Rachel’s visible rank columns reproduce the Daniel subgroup totals in the **archived FairVote article updated November 12, using the November 11 CVR**, exactly')
+        source=source.replace('FairVote’s visible rank columns reproduce the FairVote article’s Daniel subgroup totals exactly',
+            'FairVote’s visible rank columns reproduce the Daniel subgroup totals in the **archived FairVote article updated November 12, using the November 11 CVR**, exactly')
         if 'broader residual category' not in source:
             source+='\n\nThe article labels its residual governor group “blank.” Our matching **broader residual category** has **126 blank first ranks, 39 write-ins, 3 overvotes, and 1 absent governor row**. We preserve that distinction. The archived article and retrieval record are included; its subsequently updated live version uses newer data and is not the benchmark here.'
     elif cell.cell_type=='code' and "'All nine FairVote article subgroup cells reproduced" in source:
@@ -27,17 +27,17 @@ for cell in nb.cells:
     elif cell.cell_type=='markdown' and source.startswith('## 2 · Governor'):
         source=source.replace('Daniel J. has no listed affiliation.',
             'Daniel J. has no affiliation printed on the sampled general-election ballot (the official candidate list says Undeclared).')
-    elif cell.cell_type=='markdown' and source.startswith('The fresh Rachel-only results'):
+    elif cell.cell_type=='markdown' and source.startswith('The fresh FairVote-only results'):
         if 'Monte Carlo' not in source:
             source+='\n\nThe random mean is an estimate from **49 simulations**. Its **Monte Carlo standard error is about 0.62 percentage points** for the three-/four-name group; reporting 41.57% identifies this run’s mean, rather than that degree of population precision.'
     elif cell.cell_type=='markdown' and source.startswith('## Supplemental validation'):
-        source='''## Supplemental validation · all three Rachel contests
+        source='''## Supplemental validation · all three FairVote contests
 
-Run All reconstructs four stages directly from each Rachel CSV and compares them with the **frozen FairVote-linked RCVis pages explicitly labeled preliminary November 11**. All **54 available numeric candidate/inactive cells match**, with zero mismatches. Every source ballot is retained at each stage; matching the published newly-inactive series requires subtracting the initial inactive baseline only for that reference comparison.
+Run All reconstructs four stages directly from each FairVote CSV and compares them with the **frozen FairVote-linked RCVis pages explicitly labeled preliminary November 11**. All **54 available numeric candidate/inactive cells match**, with zero mismatches. Every source ballot is retained at each stage; matching the published newly-inactive series requires subtracting the initial inactive baseline only for that reference comparison.
 
 These archived benchmarks are different from the subsequently updated live article and from certified official results. Article comparisons refer specifically to the archived article updated **November 12, 5:30 a.m. Alaska time**, using the **November 11, 6:34 p.m. CVR**. Its nine subgroup cells are the separate supplementary visible-name comparison, not legal transfer counts. The article HTML, fetch record, reference hashes, source hashes, and all 54 comparisons are included in the package.
 
-A separate archived official first-choice summary printed **November 11 at 5:47:54 p.m.** reports **251,088 Senate/House ballots and 250,958 governor ballots**, versus Rachel’s **244,705 and 244,575** records: **6,383 fewer records in each contest**. This is a coverage comparison, not equality to official totals. DOE states its CVR excludes hand-count-only ballots; the aggregate gap alone cannot identify the exact source of every missing record. No absent votes are imputed. This comparison is reproducible with `python3 flows/validate_official_scope.py` against the preserved report.
+A separate archived official first-choice summary printed **November 11 at 5:47:54 p.m.** reports **251,088 Senate/House ballots and 250,958 governor ballots**, versus FairVote’s **244,705 and 244,575** records: **6,383 fewer records in each contest**. This is a coverage comparison, not equality to official totals. DOE states its CVR excludes hand-count-only ballots; the aggregate gap alone cannot identify the exact source of every missing record. No absent votes are imputed. This comparison is reproducible with `python3 flows/validate_official_scope.py` against the preserved report.
 
 Alaska’s overvote/skip interpretation follows the [Division of Elections’ 2026 guidance](https://www.elections.alaska.gov/election-results/e/?id=26genr). Matching these preliminary external tables does not independently verify ballot-image adjudication or establish that these CSVs cover the final certified election.'''
     elif cell.cell_type=='code' and source.startswith('expected_files='):
@@ -52,11 +52,11 @@ if not any(c.metadata.get('audit_insert')=='quality-heading' for c in nb.cells):
     index=next(i for i,c in enumerate(nb.cells) if c.cell_type=='code' and c.source.startswith('import descriptive_analysis'))+1
     heading=nbformat.v4.new_markdown_cell('''### Data quality and original rankings
 
-The full audit independently reconstructs every original source row, normalized ID, countable prefix and cross-office table. The original CSVs and all 15 supplied columns remain unchanged. The checks also cover first-rank ambiguity annotations; those annotations are retained without overriding Rachel’s rank cells or pretending to re-adjudicate ballot images.
+The full audit independently reconstructs every original source row, normalized ID, countable prefix and cross-office table. The original CSVs and all 15 supplied columns remain unchanged. The checks also cover first-rank ambiguity annotations; those annotations are retained without overriding FairVote’s rank cells or pretending to re-adjudicate ballot images.
 
 The flags below overlap. “One named cell” means exactly one visibly named cell and no overvote anywhere, including write-in as a name. It differs from one usable preference after counting barriers. Raw named-cell lengths count repeat names and names below barriers; usable named lengths collapse repeats and exclude generic write-ins only after applying the barriers.''',metadata={'presentation_group':'data','audit_insert':'quality-heading'})
     code=nbformat.v4.new_code_cell('''import importlib.util
-quality_spec=importlib.util.spec_from_file_location('rachel_quality_audit',ROOT/'audit_ultra/descriptive/independent_descriptive_audit.py')
+quality_spec=importlib.util.spec_from_file_location('fairvote_quality_audit',ROOT/'audit_ultra/descriptive/independent_descriptive_audit.py')
 quality_module=importlib.util.module_from_spec(quality_spec)
 quality_spec.loader.exec_module(quality_module)
 with contextlib.redirect_stdout(io.StringIO()):quality_module.main()

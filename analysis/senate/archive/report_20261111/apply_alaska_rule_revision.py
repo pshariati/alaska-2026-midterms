@@ -1,7 +1,7 @@
 """Promote countable preferences to the headline; preserve raw descriptions in appendix."""
 from pathlib import Path
 import nbformat,json
-R=Path(__file__).resolve().parent;p=R/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+R=Path(__file__).resolve().parent;p=R/'Alaska_2026_Senate_FairVote.ipynb'
 nb=nbformat.read(p,as_version=4)
 source=nb.cells[0].source
 source=source.replace('<div class="n">777</div>','<div class="n">765</div>').replace('Peltola above Dan S. · both explicitly named','Peltola above Dan S. · both legally usable').replace('Peltola named; Dan S. not explicitly named','Only Peltola in usable finalist rankings')
@@ -16,7 +16,7 @@ for c in nb.cells:
 
 **Daniel J. Sullivan Jr. is the outsider; Dan S. Sullivan is the incumbent senator.** The cohort remains **3,940 ballots explicitly naming Daniel J. at literal rank 1**. Keeping this cohort fixed lets us isolate the effect of applying Alaska’s counting rules to later preferences.
 
-For the headline comparison, retain only the countable prefix: **keep earlier valid preferences, stop before an overvote, cross one internal skip, and stop at two consecutive internal skips**. Repeated candidates count once. Original Rachel records stay intact; no whole ballot is discarded merely for containing a later overvote.
+For the headline comparison, retain only the countable prefix: **keep earlier valid preferences, stop before an overvote, cross one internal skip, and stop at two consecutive internal skips**. Repeated candidates count once. Original FairVote records stay intact; no whole ballot is discarded merely for containing a later overvote.
 
 **568 ballots (14.42%) have both finalists usable and place Peltola above Dan S. Sullivan.** The reverse count is **423 (10.74%)**. Another **765** have only Peltola in their usable finalist rankings, **481** have only Dan S., and **1,703** have neither finalist available in the usable prefix.
 
@@ -35,15 +35,15 @@ show.table(pd.DataFrame([
 
 **Cohort sensitivity:** the separate first-structurally-usable-choice cohort contains **3,992** Daniel ballots. Under the same countable-prefix treatment, its both-finalist counts are **574 Peltola-above** and **430 Dan-above**. We do not substitute this larger cohort for the main literal-rank-1 comparison.'''
  elif c.cell_type=='markdown' and s.startswith('## 4 · Visible'):
-  c.source=s.replace('## 4 · Visible finalist preferences and rule-based transfers are different calculations','## Supplementary audit · visible names versus countable preferences').replace('Rachel’s visible rank columns reproduce','This is a supplementary recorded-name description, not the main Alaska-rule result. Rachel’s visible rank columns reproduce')
+  c.source=s.replace('## 4 · Visible finalist preferences and rule-based transfers are different calculations','## Supplementary audit · visible names versus countable preferences').replace('FairVote’s visible rank columns reproduce','This is a supplementary recorded-name description, not the main Alaska-rule result. FairVote’s visible rank columns reproduce')
  elif c.cell_type=='markdown' and s.startswith('## 7 · Source'):
-  c.source=s.replace('- **Interpretation:** visible-name comparisons, hidden-identity sensitivity bounds and rule-based transfer availability are separate results. Rachel’s generic lower-overvote markers do not identify the candidate names hidden inside them.','- **Primary interpretation:** Alaska-countable preference prefixes are used for headline ranking comparisons, Sankey and MDS. Literal first-choice cohorts are explicitly retained/labeled; the separate first-usable-choice cohort is a sensitivity check. Visible-name comparisons and hidden-identity bounds are supplementary, not headline results.')
+  c.source=s.replace('- **Interpretation:** visible-name comparisons, hidden-identity sensitivity bounds and rule-based transfer availability are separate results. FairVote’s generic lower-overvote markers do not identify the candidate names hidden inside them.','- **Primary interpretation:** Alaska-countable preference prefixes are used for headline ranking comparisons, Sankey and MDS. Literal first-choice cohorts are explicitly retained/labeled; the separate first-usable-choice cohort is a sensitivity check. Visible-name comparisons and hidden-identity bounds are supplementary, not headline results.')
  elif c.cell_type=='code' and s.startswith('import descriptive_analysis'):
   if 'import verify_usable_preferences' not in s:
-   s=s.replace('descriptive_verification=verify_rachel.main()', 'descriptive_verification=verify_rachel.main()\n    import verify_usable_preferences\n    usable_verification=verify_usable_preferences.main()')
-nb.metadata['title']='Alaska 2026 Senate — Rachel data, Alaska counting rules'
+   s=s.replace('descriptive_verification=verify_fairvote.main()', 'descriptive_verification=verify_fairvote.main()\n    import verify_usable_preferences\n    usable_verification=verify_usable_preferences.main()')
+nb.metadata['title']='Alaska 2026 Senate — FairVote data, Alaska counting rules'
 nb.metadata['main_preference_definition']='Alaska-countable prefixes; raw visible-name descriptions supplementary only'
 nbformat.validate(nb);nbformat.write(nb,p)
 # Future template builds use the same source definition; no stale raw-mark headline returns.
-pp=R/'presentation.py';t=pp.read_text();t=t.replace("('same_rank','Tied usable ranks (not possible after overvote truncation)'),",'');pp.write_text(t)
-print('Alaska-rule main comparison installed; original Rachel source files unchanged.')
+pp=R/'display.py';t=pp.read_text();t=t.replace("('same_rank','Tied usable ranks (not possible after overvote truncation)'),",'');pp.write_text(t)
+print('Alaska-rule main comparison installed; original FairVote source files unchanged.')
