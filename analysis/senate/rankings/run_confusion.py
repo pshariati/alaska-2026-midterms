@@ -1,6 +1,6 @@
 """Operational transfer/permutation counts and conditional name-confusion ceilings.
 
-Rachel's Senate CSV is the sole ballot input. No ranking establishes voter intent.
+FairVote's Senate CSV is the sole ballot input. No ranking establishes voter intent.
 """
 from pathlib import Path
 from collections import Counter,defaultdict
@@ -233,7 +233,7 @@ def main():
     result={
         'status':'passed','source_filename':RACES['us_senate']['filename'],
         'source_sha256':RACES['us_senate']['sha256'],'source_rows':source_n,
-        'source_policy':'Only the supplied Rachel Senate CSV; original source strings retained. No original CVR or earlier ballot extracts read.',
+        'source_policy':'Only the supplied FairVote Senate CSV; original source strings retained. No original CVR or earlier ballot extracts read.',
         'cohorts':summaries,'all_source_final_destinations':dict(full_final),
         'all_source_Dan_minus_Peltola_margin':full_final['Dan S. Sullivan']-full_final['Peltola'],
         'stage_totals_and_allocations':[dict(x) for x in all_allocations],
@@ -263,7 +263,7 @@ def main():
 def write_notes(result):
     literal=result['cohorts'][COHORTS[0]]
     lines=['CONFUSION QUESTIONS: WHAT THE RANKINGS CAN AND CANNOT ESTABLISH','',
-        'Sources and cohorts','Rachel November 11 Senate CSV only; source SHA256 recorded. Earlier raw CVRs are not read.',
+        'Sources and cohorts','FairVote November 11 Senate CSV only; source SHA256 recorded. Earlier raw CVRs are not read.',
         'Main cohort: 3,940 literal-rank-1 Daniel J. Sullivan Jr. ballots. Separate first-structural-choice',
         'cohort: 3,992; after unresolved write-in exclusion, Daniel actual node: 4,055. The latter',
         'includes write-in transfers and is the relevant node for the replay Sankey.','',
@@ -305,7 +305,7 @@ def write_notes(result):
         'daniel_literal_first_ballots.csv.gz and daniel_actual_node_ballots.csv.gz preserve the',
         'entire original 15-column row plus separately derived interpretations and classifications.',
         'conditional_upper_bound_scenarios.csv: explicit, overlapping fixed-ballot hypotheticals.',
-        'Run: python3 confusion/run_confusion.py. No file outside this delivered Rachel source',
+        'Run: python3 confusion/run_confusion.py. No file outside this delivered FairVote source',
         'and pure shared parser is required.','']
     (OUT/'NOTES.txt').write_text('\n'.join(lines))
 
