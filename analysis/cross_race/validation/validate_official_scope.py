@@ -17,8 +17,8 @@ def main():
         section=text.split(title,1)[1]
         official=int(re.search(r'Times Cast\s+([\d,]+)\s*/',section)[1].replace(',',''))
         rows=source['rows'][slug]
-        values.append({'contest':slug,'Rachel_scanned_rows':rows,'official_report_times_cast':official,'official_minus_Rachel':official-rows})
-    result={'reference_role':'Coverage comparison only; not ballot input or model calibration','official_report_printed':'2026-11-11 17:47:54 Alaska time','comparisons':values,'interpretation':'Rachel records do not equal all ballots in this contemporaneous official summary. DOE states CVR excludes hand-count-only ballots; scope/timing can differ. This aggregate comparison alone cannot identify the exact reason for every missing record, and no ballot is imputed. Exact 54-cell round-table validation refers to the frozen Nov11 FairVote-linked RCVis tables, not official certified totals.'}
+        values.append({'contest':slug,'FairVote_scanned_rows':rows,'official_report_times_cast':official,'official_minus_FairVote':official-rows})
+    result={'reference_role':'Coverage comparison only; not ballot input or model calibration','official_report_printed':'2026-11-11 17:47:54 Alaska time','comparisons':values,'interpretation':'FairVote records do not equal all ballots in this contemporaneous official summary. DOE states CVR excludes hand-count-only ballots; scope/timing can differ. This aggregate comparison alone cannot identify the exact reason for every missing record, and no ballot is imputed. Exact 54-cell round-table validation refers to the frozen Nov11 FairVote-linked RCVis tables, not official certified totals.'}
     (refs/'official_scope_comparison.json').write_text(json.dumps(result,indent=2))
     return result
 

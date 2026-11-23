@@ -1,4 +1,4 @@
-"""Recheck carried-forward descriptive tables and Sankey from Rachel CSVs."""
+"""Recheck carried-forward descriptive tables and Sankey from FairVote CSVs."""
 from pathlib import Path
 from analysis.shared.paths import REPO_ROOT, INPUTS_ROOT, REFERENCES_ROOT, SHARED_ROOT, race_dir, model_dir, cross_race_dir, resolve_recorded_path
 from collections import Counter,defaultdict
@@ -58,7 +58,7 @@ def main():
   actual={(int(row['stage_from']),row['source_candidate_key'],row['target_candidate_key']):int(row['ballots']) for row in csv.DictReader(f)}
  assert actual==dict(links)
  assert all(sum(counts.values())==244705 for counts in stage_counts)
- result={'status':'passed','source_policy':'Only three package Rachel CSVs; no previous ballot profiles used',
+ result={'status':'passed','source_policy':'Only three package FairVote CSVs; no previous ballot profiles used',
   'sources':sources,'literal_senate_cohorts':dict(cohort),'main_usable_comparison':dict(q1),
   'candidate_and_party_cross_tab_cells_verified':checked,'missing_governor_rows':130,
   'flow_nodes_verified':len(nodes),'flow_links_verified':len(actual),
