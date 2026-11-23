@@ -1,4 +1,4 @@
-"""Independent Rachel-only audit. No producer module is imported and no source is modified."""
+"""Independent FairVote-only audit. No producer module is imported and no source is modified."""
 from pathlib import Path
 from analysis.shared.paths import REPO_ROOT, INPUTS_ROOT, REFERENCES_ROOT, SHARED_ROOT, race_dir, model_dir, cross_race_dir, resolve_recorded_path
 from collections import Counter,defaultdict
@@ -136,7 +136,7 @@ def main():
   for slug,q in qc.items():
    for label in ['literal_named_cell_length_distribution','distinct_visible_named_candidate_count_distribution','usable_prefix_length_including_writein_distribution','usable_prefix_length_excluding_writein_distribution']:
     for length,count in q[label].items():w.writerow([slug,label,length,count])
- (OUT/'DATA_QUALITY_REPORT.txt').write_text("""RACHEL DATA: INDEPENDENT QUALITY AUDIT — NOVEMBER 13, 2026
+ (OUT/'DATA_QUALITY_REPORT.txt').write_text("""FAIRVOTE DATA: INDEPENDENT QUALITY AUDIT — NOVEMBER 13, 2026
 
 All three supplied 15-column CSVs were read directly. No historical ballot data
 or producer parser was imported. All 733,985 original contest records and all
