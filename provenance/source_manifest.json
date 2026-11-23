@@ -1,0 +1,726 @@
+{
+  "scope": "Source packaging and saved aggregate results; no new election fits.",
+  "files": [
+    {
+      "path": "alaska_2026_sam_followup_20261116/Alaska_2026_Sam_Followup.ipynb",
+      "source_sha256": "b723fa2af8b0b4c1d60faa79ef4a3a6ea1995086bf7b5d36fb0653a6523d342c",
+      "release_sha256": "52bbd8d4f3e8efc9130673ca4ce8f063891032e541acf05a1a43336c29651099",
+      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/audit_axes.py",
+      "source_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
+      "release_sha256": "8b0a789c78e685bbc30749d8e8f9ca153268051a343c8929b0c4837cdfaf9438",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/run_axes.py",
+      "source_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
+      "release_sha256": "b85f9b91d543de1e022124ce9914946968ade7ea8752f71a93f985186abe4365",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/build_notebook.py",
+      "source_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
+      "release_sha256": "828a9c2e9f048970ddfea284df46e4b4196cc3bc5187b69a59def32d751e1453",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/common/data.py",
+      "source_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+      "release_sha256": "27021f2e3b1ec526cf045e1c53d0e9b2be7bf95847c220e91e5eeadbe70c9701",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/common/og_axis.py",
+      "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/confusion/run_confusion.py",
+      "source_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
+      "release_sha256": "f9eda3a6ae1d978710ea657825d1c259714d580567c9a42f2c066385ce2c9dff",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/confusion/verify_confusion.py",
+      "source_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
+      "release_sha256": "679b0787112e98537b472279be0720d3a7cc5b0d94f0b32e129f7fd6d2503b2e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/execute_notebook.py",
+      "source_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
+      "release_sha256": "9a2988a354a03f4e23c5c28c8dce42261c4ac9a17448706ce8eda66596fb5945",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/hafner/run_hafner.py",
+      "source_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
+      "release_sha256": "5a2906b488ab25c857daf07e79d017af31be4fbbd4e814d5b13a27212bb2043b",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/hafner_geography.py",
+      "source_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
+      "release_sha256": "acacc7c19da4605a41dd86cf17651bf6cb10c142b69ab18984ce53edf48d6a21",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/hafner_notebook.py",
+      "source_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
+      "release_sha256": "29198e37948df5048704e69a8444bffb5ebf2a39ac045ba18799f5ef66b923ff",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/package_results.py",
+      "source_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
+      "release_sha256": "57028d2b4e6fa8d15efe571692627c99a3d9a5255c817e6a5343980f5ae23321",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/presentation.py",
+      "source_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
+      "release_sha256": "cb27d4f0dfad53d15f273a7a48b90933105262ceaaa408c140566ea14a624b13",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/presentation_figures/build_axis.py",
+      "source_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
+      "release_sha256": "d8623b160776732de9ba8d7183a3168dbfc6945223ba84dfd40045f25e0c5cae",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/presentation_figures/build_vertical.py",
+      "source_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
+      "release_sha256": "4c74a413876d5ae1c82b111058f41702f5bfeac98c4b420d74316d2602e149bc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/render/render_browser_view.py",
+      "source_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
+      "release_sha256": "353ac67cd60aac4623e67c75bcc1db39aba4027f031b2173820e7c99e0382629",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/requirements.txt",
+      "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/validation/audit_hafner.py",
+      "source_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
+      "release_sha256": "030f278849b1797572c4ca91a940deb0e72b615821b952809497d4f26213ee97",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/validation/independent_voter_audit.py",
+      "source_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
+      "release_sha256": "96a9994a00d883421b75e1fca3ea44c470aba7ddac1c4fd2b4c89bff41c586e5",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/validation/validate_archived_benchmarks.py",
+      "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/validation/verify_completed.py",
+      "source_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
+      "release_sha256": "f9ccefbe1672655dfc91593c095b651fa6d94279a4e84187b7baf8cbc3f88851",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/validation/verify_peltola_routes.py",
+      "source_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
+      "release_sha256": "9cce31616397b9e68f08484fa42211b4078081640254edecd641916b69473526",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/MDS_analysis.py",
+      "source_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
+      "release_sha256": "ebede13be6464757396d3b2dfd778f82652c4cab12968eae47dfead7fb08d07e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/consistency.py",
+      "source_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
+      "release_sha256": "80fb190bef8e98913312644957b167171a3afd31150503b6eb7c3f7fc36b7d05",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/voter_distributions/method_references/rcv_distribution.py",
+      "source_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
+      "release_sha256": "5bff260827d45e1d318d7f11eea68d638877dc1d462249f55694059ea6c73061",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/voter_distributions/run_distributions.py",
+      "source_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
+      "release_sha256": "697364102a3f8b4f4fe3f9c4a87dbe1ada1a1017560db516e6fa0f378db312b5",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/Alaska_2026_Senate_Rachel_FairVote.ipynb",
+      "source_sha256": "92fc4c986c125b3b2b4067e906ee84c5708cee9a0f9b2e6bf32ca4cb7d544b1d",
+      "release_sha256": "ff6d062168a63e12f3ab8bab8201ce776d0ebd46fa59bb04d8a807adf4286646",
+      "transformation": "Notebook outputs and execution metadata cleared; cell sources preserved."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/add_validation_note.py",
+      "source_sha256": "5ca93c2d9d976cf1f1cec97cb358998b931728732dd5572111a3ac8b4a76ee85",
+      "release_sha256": "5ca93c2d9d976cf1f1cec97cb358998b931728732dd5572111a3ac8b4a76ee85",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/apply_alaska_rule_revision.py",
+      "source_sha256": "9690fed2635c74e664de11eb562b5220fa2f9cc169337b02b091d30c391ce84a",
+      "release_sha256": "9690fed2635c74e664de11eb562b5220fa2f9cc169337b02b091d30c391ce84a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/audit_ultra/descriptive/independent_descriptive_audit.py",
+      "source_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
+      "release_sha256": "91ca2d20284cf8897200c4092fda404b91ec472b5a21624b115c7a16ba4a9ee7",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/audit_ultra/finish_audit.py",
+      "source_sha256": "b524459183245ef5aa7f030353264013a779e5c4c1635316070dae092c8b54e4",
+      "release_sha256": "b524459183245ef5aa7f030353264013a779e5c4c1635316070dae092c8b54e4",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/audit_ultra/flows/independent_flow_audit.py",
+      "source_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
+      "release_sha256": "0be494976585f78504139dbd987fc4e6416d5e7fbe82c5fd03d38ef79ce471b9",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/audit_ultra/mds/independent_mds_audit.py",
+      "source_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
+      "release_sha256": "e7c0fbe7f8f95b3df9fc4eb4c6979236aee794a273976607891debb905ae5d7f",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/build_notebook.py",
+      "source_sha256": "9b49b799821e4d0acd383d93dfff88b7b1c7565f31e9c164f5d06aa61876904c",
+      "release_sha256": "9b49b799821e4d0acd383d93dfff88b7b1c7565f31e9c164f5d06aa61876904c",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/descriptive/descriptive_analysis.py",
+      "source_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
+      "release_sha256": "03938644c4688de2f8b18be8361030dce986c577cd56a019e89acbdd5ce8e5eb",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/descriptive/verify_rachel.py",
+      "source_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
+      "release_sha256": "d14e832168fb5cbfd8be649b0b44905f3e1f5c54ad4e62b43f595ec095938c18",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/descriptive/verify_usable_preferences.py",
+      "source_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
+      "release_sha256": "d003aeaaedac1c631fcbd8d4a46c2963d0f7af015e6094a182695ed4773f4123",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/execute_legal_revision.py",
+      "source_sha256": "08e11754a835da432c40d3c19cdf0396a326bf7e459a5a54dac96f514d62eaf0",
+      "release_sha256": "08e11754a835da432c40d3c19cdf0396a326bf7e459a5a54dac96f514d62eaf0",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/execute_notebook.py",
+      "source_sha256": "c595dfd1fb7e30e35ba4cea29222f0ae82e7c7d7c5ef6711612fff33de06a12c",
+      "release_sha256": "c595dfd1fb7e30e35ba4cea29222f0ae82e7c7d7c5ef6711612fff33de06a12c",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/flows/build_flows.py",
+      "source_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
+      "release_sha256": "38474362a22002495804d18a9058b40bb7825274615b9d2e68307c123f84cd11",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/flows/test_flows.py",
+      "source_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
+      "release_sha256": "6cb658e5586df5749c5b3489d6b4f717adf7b72f0d44ad35b089055c23bd7372",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/flows/validate_all_contest_benchmarks.py",
+      "source_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "release_sha256": "b32ea91c9a40216830178b8a201e48afb5d2806de2531a0572ee1381602bd09f",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/flows/validate_official_scope.py",
+      "source_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
+      "release_sha256": "44adf2833df49b940476898c46defd6b9b96335ae7fb280a14d51ab3b1ea22cc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/check_mds.py",
+      "source_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
+      "release_sha256": "4d445b2ec97124ba2a023297f73d6a329e6c977e8dbd77eb8dc2c2da7c8cc5c6",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/og_axis.py",
+      "source_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "release_sha256": "b4ef0b5f1a152e655a114570e71d88791831241994c0a04d095f37363a4d001a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/ranking_rules.py",
+      "source_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
+      "release_sha256": "88f4ce3beb2d2ed60458bcb1e45ce0ac8c44c610a2dfb7e5ff4ae45616ec25b1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/run_mds.py",
+      "source_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
+      "release_sha256": "7e0c74a4eb0c47034bd6b30909f04e35c959764a440337dd0ebf85fce51b475a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/test_rachel_rules.py",
+      "source_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
+      "release_sha256": "aa46d92701fa9a795741cc427cea38b3deb0f677b63e024e45ac2f25b39caa07",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/package_results.py",
+      "source_sha256": "c3c51788bbb9e4ae0be7c7b017eea1280b627a8e3976b9c4bdf6c615cfd3db5a",
+      "release_sha256": "c3c51788bbb9e4ae0be7c7b017eea1280b627a8e3976b9c4bdf6c615cfd3db5a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/presentation.py",
+      "source_sha256": "26e5f5741517d5a71630d9e8a787e0809f6ed6628c573885a02c032ecc50375d",
+      "release_sha256": "26e5f5741517d5a71630d9e8a787e0809f6ed6628c573885a02c032ecc50375d",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/render/render_browser_view.py",
+      "source_sha256": "214182427bc7e77770c47fdd3ee5314deb6973d447c9f594453f63379acdf7d5",
+      "release_sha256": "214182427bc7e77770c47fdd3ee5314deb6973d447c9f594453f63379acdf7d5",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/render/restyle_notebook.py",
+      "source_sha256": "163a3d5af4a359043de54d552a72a10081a41a12c43a3127187790fe73029527",
+      "release_sha256": "163a3d5af4a359043de54d552a72a10081a41a12c43a3127187790fe73029527",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/repair_audit_findings.py",
+      "source_sha256": "c3847b94d05c85556e81c8e4537b37098fc6577477e59d3f5c3a7b24967ab20c",
+      "release_sha256": "c3847b94d05c85556e81c8e4537b37098fc6577477e59d3f5c3a7b24967ab20c",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/requirements.txt",
+      "source_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "release_sha256": "a681670ff31befc8280f3c20b858577cbe617d30f142c493cb8af4a23cf2f649",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/.build/build_deck.mjs",
+      "source_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
+      "release_sha256": "b6682d0bfc077d86213820561518ccc9270b1106833fbac85c986ed2bbabcde0",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/.build/finalize_only.mjs",
+      "source_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
+      "release_sha256": "7c3b9b3a59e25906e7898186e15e4eb96cf40a64abef65a45c8821fb536d2204",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/assets/build_presentation_figures.py",
+      "source_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
+      "release_sha256": "3e47f35720f6e598e28bf553969fd99c03d1257bbb103921f4af972fbdf8ea18",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/counting_rules_audit/recheck.py",
+      "source_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
+      "release_sha256": "4e06048167c1e70e1363997d68d92a5265f5583fb681d5b1a6f278ea85357d51",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/flow_assets/build_flow_assets.py",
+      "source_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
+      "release_sha256": "07bec22a98716c7793a2c8b2137027f950eff75c44fdb88f5e3af571c703b6c3",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/flow_assets/build_slide_crops.py",
+      "source_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
+      "release_sha256": "881391ee7194b96033ddeffc869aa0be733dc2e684fd33ccaa6db5080e6478b1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/flow_assets/render_flow_assets.mjs",
+      "source_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
+      "release_sha256": "6d53c8b6e3013187e5d0da463cc23482d053b963f59529b97fb645e906024b71",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/hafner_bullet_analysis/analyze_bullets.py",
+      "source_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
+      "release_sha256": "c8367e5861cb839507d2cb54bf38738655fd4f39302876093342e0cff56cfbb0",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/hafner_bullet_analysis/build_slide.mjs",
+      "source_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "release_sha256": "b9a39c36383fb10e2d25110872d6694b696651705d301440f9f6f5eaeb4a22a7",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/house_sankey/build_house_sankey.py",
+      "source_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
+      "release_sha256": "48c0fbbcb57af9a1ab3df8788e50cfbe60cf0893073083cd55434bc17030c3f3",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/house_sankey/render_house_sankey.mjs",
+      "source_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
+      "release_sha256": "cfba12fffd7d0742a5948948d093f60f5c197f0d698c16f8821092026995efdd",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/audit_review/reconcile_saved_math.py",
+      "source_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
+      "release_sha256": "834bee181838299a07fe6c62f5228874cd1fc392247b10fbb47fdf786481fab3",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/build_math.py",
+      "source_sha256": "96b8255383ff07a778bd0477780b8953206ae93927b133d84aadfdd859efefd5",
+      "release_sha256": "96b8255383ff07a778bd0477780b8953206ae93927b133d84aadfdd859efefd5",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/build_pdf.py",
+      "source_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
+      "release_sha256": "ad806c6696a8e43d207c4ca97555655e9581de049610445eaa6034aacb68cffe",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/build_qr_slide.mjs",
+      "source_sha256": "d8010f27001e12b1bf728af1e546a0c122372056c4ed3bc34cd994e642e9f43b",
+      "release_sha256": "d8010f27001e12b1bf728af1e546a0c122372056c4ed3bc34cd994e642e9f43b",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/v2/build_polished_pdf.py",
+      "source_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
+      "release_sha256": "2a39354b5636fd7890a1b84f8d98bf684ffcc01daa3ae9dcbe427690ac70a594",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/math_qr/v2/render_equations.py",
+      "source_sha256": "8af4799652de43990b57ac18aac0c447da1e88ce15bc8b0e67d2c90ae48162a3",
+      "release_sha256": "8af4799652de43990b57ac18aac0c447da1e88ce15bc8b0e67d2c90ae48162a3",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/narrow_density_figures/render_narrow.py",
+      "source_sha256": "82eaf156557387d8d83b988eaf41d59e811593b67d1f0747a2f3d50fe3c0a6cc",
+      "release_sha256": "82eaf156557387d8d83b988eaf41d59e811593b67d1f0747a2f3d50fe3c0a6cc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/new_slides_20261117/build_six_panel.py",
+      "source_sha256": "890c0ebcd2f38934ed327dee2d4055c56e0ab261d8d4054ccc4354f9b1fa1dc2",
+      "release_sha256": "890c0ebcd2f38934ed327dee2d4055c56e0ab261d8d4054ccc4354f9b1fa1dc2",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/nov16_house_check/analyze.py",
+      "source_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "release_sha256": "d62e0d736276800e9ab5973b41cfee68c06d7741c9bb7722a3fd2c77a3c05a36",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/nov16_house_check/build_report.py",
+      "source_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "release_sha256": "8c600d8f151427d857cead5f6e565856c515f6087d01acb8e0badc099e9a15a2",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/ranking_tables/build_tables.py",
+      "source_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
+      "release_sha256": "65d6b0551856dd76f0f6aaf8bb170a31a7cadaf838fa49b1b12569c1b458033a",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_presentation_20261117/ranking_tables/render_high_res.mjs",
+      "source_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "release_sha256": "406c65c8ed96f1c16cc807a213e939abf8a74d400010938a196823fff77fe659",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/common/candidate_metadata.json",
+      "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/descriptive/candidate_metadata.json",
+      "source_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "release_sha256": "4494b0cad322a2f950895a37e8938eab9e22890d9fd6cdb23f6f4d4c588d8c84",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/README.txt",
+      "source_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
+      "release_sha256": "432446cf30f679fa88d3ee387fceafd23b96981d75d7a145fc204390b7aa1497",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/voter_distributions/METHODOLOGY.txt",
+      "source_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
+      "release_sha256": "2874e276d183aaa28dccffaab8c39939291a3965905a1ed4f8f946594606964d",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/completed/flows/METHODOLOGY.txt",
+      "source_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
+      "release_sha256": "93aaef8e0f1f318e07d36baa970333e164c50c7e5dc07d88d91bb8d27839c5e4",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/adjacency_matrix.csv",
+      "source_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
+      "release_sha256": "39634ad963c8b323ac643eea9f4b32e84cf5863a8650383352fe735d00b89339",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/candidate_axis.csv",
+      "source_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
+      "release_sha256": "ca6816d5bf29840ef84134a273e29d75a5d246a74b51e6928fbe855375ad89d9",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/consistency_summary.csv",
+      "source_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
+      "release_sha256": "991dfe6a449f1e1387fde17cd34327339c81431781416a583c59224c8c4eea6c",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/coranking_matrix.csv",
+      "source_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
+      "release_sha256": "310d4e369782a935ee860c0d88212fde7d93333b373e0a9ea2eedb49b71f781d",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/dissimilarity_matrix.csv",
+      "source_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
+      "release_sha256": "eca6598327c29fa415588f6486141f339e81254469674ffff933b1cca0b4b4d1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_results.json",
+      "source_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+      "release_sha256": "ef2714856d9da7d05f3d86465ffc271609f8642e18384ee4a161f4b206c64273",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/mds_verification.json",
+      "source_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
+      "release_sha256": "0edc8207bb871379066fc5f55c32d40e909d82bda8336b148a041cd4f89a9de1",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/method_provenance.json",
+      "source_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
+      "release_sha256": "b6d93269fb506be48ee1a9c58ec10539bace21553323f87caaa99ab6a4c18654",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/null_profiles.json",
+      "source_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
+      "release_sha256": "5c939c7dea3084d5ef4e9bfb9a56f86f4d30e24c093f82a7fdfe61d5ec2cfd54",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/governor/profile.json",
+      "source_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
+      "release_sha256": "cd9a477a797bf1af388bfe8dab5f2f4656197c54e553b5d7760816b69344c4dc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/independent_axis_audit.json",
+      "source_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
+      "release_sha256": "4bf81acc8086db16d830ec62ff991b433a0482d2581f35a358b91f30fa37bc3e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/new_contests_consistency.csv",
+      "source_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+      "release_sha256": "bcf493957787a592cd9936accbb9891acd10d38e42ca166caf61e2d53d8eb598",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/adjacency_matrix.csv",
+      "source_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
+      "release_sha256": "c5ca0effe14e8979411046a89c122c7165a9431914d90cba1b192871bd3a1c20",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/candidate_axis.csv",
+      "source_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
+      "release_sha256": "74078bb9103d3331fcc7dcf1e9302071a2fc5b51430234aac5bafefab7745b0e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/consistency_summary.csv",
+      "source_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
+      "release_sha256": "26db70587c0c057e88cdac76ea362e42a936f1336ff6e53ccadfc33e0e4f10ab",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/coranking_matrix.csv",
+      "source_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
+      "release_sha256": "d9f140eefd84106744e09e21135fc2a534429ba0916dc12307bfce0d74079c78",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/dissimilarity_matrix.csv",
+      "source_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
+      "release_sha256": "fccd0d426cfa8959d1dfa4ed2739b15352dbef547c79b61ad2a115ac281c6f8b",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_results.json",
+      "source_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+      "release_sha256": "5dcde9acd9de965ad7c66859504dbafcf4af671456b789e370a79dab9c283e68",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/mds_verification.json",
+      "source_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
+      "release_sha256": "e3575ca223cf9cfc9c3922a9b37e04061a3ed96028c854a3f07b0782bb8d4090",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/method_provenance.json",
+      "source_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
+      "release_sha256": "9211d3057c13692c9a154728e8b19958954f1b79b8b540dca20c57b20a3dc4fc",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/null_profiles.json",
+      "source_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
+      "release_sha256": "7812e52cc4dea09c5c8cf3afbb665a7ab2e3553edfcedfd102d3052b77249cc2",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_house/profile.json",
+      "source_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
+      "release_sha256": "7560c93754787d75222d48f26d05f0a5838fd243bee11d38ad64f7c8edc51b61",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/candidate_axis.csv",
+      "source_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
+      "release_sha256": "ed9a018c4182447a3c5599d9f8f7d3d3304c95fc6da222d3a7c3975d82e6774e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/carryover_provenance.json",
+      "source_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+      "release_sha256": "393e1430d4bcd0c75a3a8c7674539a758f95cbaddbdbf71949a25f32327d26db",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/consistency_summary.csv",
+      "source_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+      "release_sha256": "68b7f08ec97c00b155c7845a73494fcc9922439c6e37418fef86d3e365f21a3e",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/dissimilarity_matrix.csv",
+      "source_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
+      "release_sha256": "cea7e7c5e961016bb77b81130f1350f82af1e18b2cf5764ac23cbb9d0a810166",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_results.json",
+      "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/mds_verification.json",
+      "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/method_provenance.json",
+      "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/profile.json",
+      "source_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
+      "release_sha256": "ad670cead53acf886f275ddc943e151d15f61edcbc9bc4848a7c01e0fdfb1031",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/axis_models/us_senate/rachel_profile_provenance.json",
+      "source_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
+      "release_sha256": "82d420b13fafc06be53584b8cbdb6b4c59463ab7f11f7b1b4a638af5a7712a56",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/mds_results.json",
+      "source_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "release_sha256": "903c3b99a456be4b479d90918401a8c3eda2ccd6d457d23e19e74e50171f28be",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/mds_verification.json",
+      "source_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "release_sha256": "0d49a714b06275cfff020d748781d81a51b259624586498ef736cbd96c053879",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/method_provenance.json",
+      "source_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "release_sha256": "edc7b3666b008420a53e54b3ad15ae2a3515d29942cba91eb37cbb48d1bba871",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_senate_sam_rachel/mds/candidate_axis.csv",
+      "source_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+      "release_sha256": "6fdbd9639afb5b415dcfc85a473286fd0c470df62566e338c8f7b8b726097f23",
+      "transformation": "Byte-for-byte copy."
+    },
+    {
+      "path": "alaska_2026_sam_followup_20261116/references/benchmark_validation.json",
+      "source_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
+      "release_sha256": "e676ea59c33796c105bb9860cd7a9f1db1526520c6eeb3c7299a1ce7f07b718b",
+      "transformation": "Byte-for-byte copy."
+    }
+  ],
+  "excluded": [
+    "Raw CVR files and ZIP archives",
+    "Individual ballot identifiers and linked exports",
+    "Private correspondence",
+    "Unrelated project code",
+    "node_modules and runtime caches"
+  ]
+}
