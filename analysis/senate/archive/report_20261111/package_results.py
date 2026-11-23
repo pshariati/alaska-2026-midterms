@@ -1,4 +1,4 @@
-"""Independent original-row verification, final checksums and Rachel-only delivery."""
+"""Independent original-row verification, final checksums and FairVote-only delivery."""
 from pathlib import Path
 from contextlib import ExitStack
 from collections import Counter
@@ -13,7 +13,7 @@ def digest(p):
     return h.hexdigest()
 
 def main():
-    nbpath=R/'Alaska_2026_Senate_Rachel_FairVote.ipynb'
+    nbpath=R/'Alaska_2026_Senate_FairVote.ipynb'
     meta=json.loads((R/'notebook_execution.json').read_text());assert digest(nbpath)==meta['notebook_sha256']
     nb=json.loads(nbpath.read_text());assert meta['error_outputs']==0 and all(c['execution_count'] is not None for c in nb['cells'] if c['cell_type']=='code')
     assert not any(o.get('output_type')=='error' for c in nb['cells'] if c['cell_type']=='code' for o in c.get('outputs',[]))
@@ -39,7 +39,7 @@ def main():
         p=R/'inputs'/f'Alaska_20261103_US_{race}_11_11.csv'
         assert digest(p)==provenance['inputs'][slug]['sha256']
         original=Path('/Users/pejmonshariati/Downloads')/p.name
-        if original.exists():assert digest(original)==digest(p),'Supplied Rachel CSV changed'
+        if original.exists():assert digest(original)==digest(p),'Supplied FairVote CSV changed'
     assert digest(R/'descriptive/linked_ballots.csv.gz')==provenance['linked_gzip_sha256']
     d=json.loads((R/'descriptive/descriptive_results.json').read_text());v=json.loads((R/'descriptive/descriptive_verification.json').read_text())
     assert v['article_comparison_matches']==9
@@ -57,12 +57,12 @@ def main():
     policy=json.loads((R/'source_policy_audit.json').read_text());assert policy['old_workspace_ballot_sources_blocked']
     audit=json.loads((R/'audit_ultra/final_audit.json').read_text())
     assert audit['status']=='passed' and audit['fresh_Run_All_results_reproduced']
-    checks=dict(source_policy='Rachel CSVs only',all_original_15_column_rows_independently_verified=dict(counts),linked_ballots=n,absent_governor_rows=missing,source_CSVs_byte_identical_to_supplied_files=True,old_workspace_ballot_sources_blocked=True,all_49_randomized_models_freshly_fitted=True,supplementary_visible_Peltola_above_both_named=568,supplementary_hidden_identity_strict_Peltola_bounds=[568,574],all54frozen_Nov11_RCVis_values_match=True,all9archived_Nov12_article_cells_match_visible_finalist_definition=True,article_reference_sha256=v['article_reference_sha256'],notebook_executed=True)
+    checks=dict(source_policy='FairVote CSVs only',all_original_15_column_rows_independently_verified=dict(counts),linked_ballots=n,absent_governor_rows=missing,source_CSVs_byte_identical_to_supplied_files=True,old_workspace_ballot_sources_blocked=True,all_49_randomized_models_freshly_fitted=True,supplementary_visible_Peltola_above_both_named=568,supplementary_hidden_identity_strict_Peltola_bounds=[568,574],all54frozen_Nov11_RCVis_values_match=True,all9archived_Nov12_article_cells_match_visible_finalist_definition=True,article_reference_sha256=v['article_reference_sha256'],notebook_executed=True)
     checks.update(primary_preference_rule='Alaska-countable prefixes; visible-name descriptions supplementary',primary_cohort='3940 literal rank-1 Daniel ballots',primary_usable_categories=expected_usable,independent_rule_tests_passed=uv['regression_tests_passed'],fresh_Run_All_and_independent_audits_passed=True)
     (R/'DELIVERY_CHECKS.json').write_text(json.dumps(checks,indent=2))
     files=sorted(p for p in R.rglob('*') if p.is_file() and '__pycache__' not in p.parts and 'before_layout_fix' not in p.parts and p.name!='SHA256SUMS.json' and p.suffix not in ['.pyc','.tmp','.sqlite','.log'])
     (R/'SHA256SUMS.json').write_text(json.dumps({str(p.relative_to(R)):digest(p) for p in files},indent=2))
-    out=R.parent/'Alaska_2026_Senate_Rachel_FairVote.zip'
+    out=R.parent/'Alaska_2026_Senate_FairVote.zip'
     with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=3) as z:
         for p in files+[R/'SHA256SUMS.json']:z.write(p,str(p.relative_to(R.parent)),compress_type=zipfile.ZIP_STORED if p.suffix in ['.gz','.png'] else zipfile.ZIP_DEFLATED)
     with zipfile.ZipFile(out) as z:assert z.testzip() is None

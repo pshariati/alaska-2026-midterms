@@ -18,6 +18,6 @@
     "blank": 898,
     "overvote": 601
   },
-  "sole_ballot_source": "Rachel CSV only; no official CVR-derived ballots, profiles, axes or randomized results read",
+  "sole_ballot_source": "FairVote CSV only; no official CVR-derived ballots, profiles, axes or randomized results read",
   "candidate_id_note": "Internal lookup labels assigned to candidate-name tokens; not CSV source IDs"
 }

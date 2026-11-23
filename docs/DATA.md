@@ -1,6 +1,6 @@
 # Data versions
 
-The main statewide code uses only these unmodified Rachel/FairVote CSVs:
+The main statewide code uses only these unmodified FairVote CSVs:
 
 | File | SHA-256 |
 | --- | --- |
@@ -18,11 +18,6 @@ Saved candidate axes, consistency summaries, aggregate ranking profiles,
 randomized profiles and diagnostics in each race’s `candidate_axis/` folder are November 11
 derivatives. They contain pattern counts rather than individual ballot IDs.
 They do not make every notebook self-contained without the original inputs.
-
-The separate `analysis/house/snapshots/nov16_check/` code uses a later
-official House CVR export and a separately archived benchmark. It must not be
-mixed with the main November 11 candidate axes. Its archive path, URL and source
-hash are explicit in the script; the archive itself is not included here.
 
 Bryan's `CVR_11_18.zip` is a distinct prospective legislative data source. It is
 not included or analyzed in this release. Legislative experiments remain pending.

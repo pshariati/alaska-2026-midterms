@@ -1,11 +1,11 @@
 {
-  "role": "Previously completed Rachel-only Senate result carried forward as explicitly requested; not refitted in this follow-up.",
+  "role": "Previously completed FairVote-only Senate result carried forward as explicitly requested; not refitted in this follow-up.",
   "source_sha256": "3f0a1a946f23d2d1195f98c5ee5f123916d5f91ede334397465692d5e7f2d972",
   "current_source_profile_independently_matches_previous": true,
   "original_notebook_execution": {
     "started_utc": "2026-11-13T21:33:10.611659+00:00",
     "finished_utc": "2026-11-13T21:35:12.070860+00:00",
-    "execution": "Real Jupyter kernel; all descriptive tables, Sankey, observed MDS and all49 randomized MDS fits freshly recomputed from Rachel CSVs only",
+    "execution": "Real Jupyter kernel; all descriptive tables, Sankey, observed MDS and all49 randomized MDS fits freshly recomputed from FairVote CSVs only",
     "code_cells": 11,
     "all_cells_executed": true,
     "error_outputs": 0,

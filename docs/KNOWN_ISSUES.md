@@ -25,7 +25,7 @@ voter distributions remain model- and allocation-dependent.
 
 ## Data and interpretation
 
-Rachel's November 11 files are a snapshot, not the complete certified election.
+FairVote's November 11 files are a snapshot, not the complete certified election.
 Generic lower-rank overvotes can hide candidate names. Hidden identities are not
 reconstructed from another source. Literal first-choice groups, legally
 interpreted prefixes and replay allocations use distinct denominators.
@@ -33,11 +33,11 @@ Cross-race matching uses normalized ballot IDs rather than row order; missing
 governor records remain missing. Ballots do not establish confusion, intent,
 voter knowledge or causation. RCV replays are independent of MDS.
 
-## Code-only release
+## Included and omitted files
 
-Original CVR CSVs, individual ballot exports, the November 18 legislative ZIP,
-and most generated presentation media are excluded. Some archived scripts
-require these omitted inputs. Presentation builders using a desktop-specific
-runtime are retained as provenance and are not portable Python entry points.
+The finished presentation PDF is included under `slides/`. Original CVR CSVs,
+individual ballot exports, the November 18 legislative ZIP and most generated
+analysis media are excluded. Some archived scripts require these omitted inputs.
+Slide-deck and presentation-generation code is omitted from the current repository.
 Python modules are syntax-checked; that is not a claim that every archived stage
 has been rerun or that every external dependency is present.

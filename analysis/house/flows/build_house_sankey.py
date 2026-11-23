@@ -1,4 +1,4 @@
-"""Presentation Sankey: Rachel November11 House records, with mass checks.
+"""Presentation Sankey: FairVote November11 House records, with mass checks.
 
 No MDS, ballot source, notebook or Google Slides content is overwritten.
 """
@@ -70,11 +70,11 @@ for k,s in enumerate(stages):
         n=s['counts'][c];nodes[k,c]={'x':xs[k],'y':y,'h':n*scale,'count':n}
         y+=n*scale+gap
 
-parts=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="House ranked-choice transfer Sankey, Rachel November 11 snapshot">',
+parts=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="House ranked-choice transfer Sankey, FairVote November 11 snapshot">',
  '<rect width="1920" height="1080" fill="white"/>',
  '<style>text{font-family:Arial,sans-serif;fill:#24384F}.title{font-size:38px;font-weight:700}.sub{font-size:23px;fill:#526A80}.stage{font-size:25px;font-weight:700}.stage2{font-size:20px;fill:#526A80}.name{font-size:24px;font-weight:700;paint-order:stroke;stroke:white;stroke-width:6px;stroke-linejoin:round}.count{font-size:22px;paint-order:stroke;stroke:white;stroke-width:6px}.small{font-size:21px;font-weight:700;paint-order:stroke;stroke:white;stroke-width:6px}.foot{font-size:20px;fill:#526A80}</style>',
  '<text class="title" x="54" y="62">House: hypothetical ranked-choice transfers</text>',
- '<text class="sub" x="54" y="103">Rachel/FairVote November 11 snapshot · all 244,705 House ballot records</text>']
+ '<text class="sub" x="54" y="103">FairVote November 11 snapshot · all 244,705 House ballot records</text>']
 for k,(a,b) in enumerate([('Initial allocation*','Unresolved write-ins excluded'),('After McDermott','is eliminated'),('After Hafner','is eliminated')]):
     parts.append(f'<text class="stage" text-anchor="middle" x="{xs[k]+11}" y="164">{a}</text>')
     parts.append(f'<text class="stage2" text-anchor="middle" x="{xs[k]+11}" y="195">{b}</text>')
@@ -107,7 +107,7 @@ parts.extend([
  '<text class="foot" x="54" y="1040">Preliminary snapshot replay, not certified statewide results. Final replay: Begich 122,405 · Hill 108,917.</text>',
  '</svg>'])
 (BASE/'House_Sankey_Nov11.svg').write_text('\n'.join(parts))
-receipt={'snapshot':'Rachel/FairVote November11,2026','source':str(source_path('us_house')),
+receipt={'snapshot':'FairVote November11,2026','source':str(source_path('us_house')),
          'source_sha256':sha256(source_path('us_house')),'total_ballots':total,
          'stages':[{LABEL[c]:n for c,n in s['counts'].items()} for s in stages],
          'elimination_order':[LABEL[c] for c in losers],

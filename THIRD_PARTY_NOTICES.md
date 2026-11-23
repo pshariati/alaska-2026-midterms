@@ -15,6 +15,6 @@ upstream rights holders for reuse terms. This repository does not confer new
 rights to third-party datasets, desktop runtimes, fonts or research materials.
 
 Numerical MDS is provided by scikit-learn; this project does not claim to author
-that solver. Scientific dependencies retain their own licenses. Rachel/FairVote
+that solver. Scientific dependencies retain their own licenses. FairVote
 provided the historical statewide CSVs. Bryan/FairVote provided a separate
 prospective legislative archive; no analysis of that archive is claimed here.

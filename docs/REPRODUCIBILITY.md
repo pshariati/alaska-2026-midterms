@@ -74,6 +74,6 @@ fits by default. Its optional refitting flag must remain false if the intention
 is to rebuild the report without new MDS fitting. The earlier report under
 `analysis/senate/archive/` is frozen historical source, not a runnable entry point.
 
-Presentation Python code builds figures from generated tables. Some JavaScript
-deck builders depend on the author's desktop presentation runtime; they are
-preserved with that limitation, not presented as portable public commands.
+The finished presentation is [available as a PDF](../slides/Alaska_Midterm_Elections.pdf).
+Scientific figure and table generators remain with their analyses; slide-deck
+assembly and presentation-generation scripts are omitted from this repository.

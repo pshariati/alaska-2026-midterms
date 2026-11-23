@@ -24,7 +24,7 @@ def notebook_cells():
     return [
         md('''## 7 · Eric Hafner’s House ballots
 
-**What did Hafner’s voters actually rank, and how did they vote in the other races?** This section uses only Rachel’s unchanged **November 11** files. The main group consists of ballots that **recorded Eric Hafner in House rank 1**. It does not assume that those voters were confused, uninformed, or voting insincerely.
+**What did Hafner’s voters actually rank, and how did they vote in the other races?** This section uses only FairVote’s unchanged **November 11** files. The main group consists of ballots that **recorded Eric Hafner in House rank 1**. It does not assume that those voters were confused, uninformed, or voting insincerely.
 
 **Background.** The [U.S. Department of Justice](https://www.justice.gov/usao-nj/pr/monmouth-county-man-sentenced-20-years-prison-making-threatening-communications-and) announced that Hafner was sentenced to **20 years in federal prison on December 7, 2023**, for threatening communications and false bomb threats. [Alaska’s News Source reported in June 2026](https://www.alaskasnewssource.com/2026/06/06/prisoner-his-mom-how-are-candidates-whove-never-visited-alaska-able-run-states-federal-seats/) that he had never visited Alaska and was serving his sentence in New York. The [official 2026 candidate list](https://www.elections.alaska.gov/election-candidates/?election=26genr) listed him as a registered Democrat. These are background annotations; the linked articles supply no ballot data.'''),
         code('''from analysis.house.hafner import run_hafner,audit_hafner
@@ -75,7 +75,7 @@ All percentages below use the **17,918 literal Hafner-first ballots**, unless th
 
 
 def show_summary(result):
-    from analysis.reporting import presentation as show
+    from analysis.reporting import display as show
     q = result['cohort']
     n = q['n']
     dest = result['replay']['hafner_literal_destinations']
@@ -116,7 +116,7 @@ def show_cross_election(result):
 
 
 def show_details(result):
-    from analysis.reporting import presentation as show
+    from analysis.reporting import display as show
     n = result['cohort']['n']
     q = result['cohort']
     def counts_table(mapping, title, category='Category'):

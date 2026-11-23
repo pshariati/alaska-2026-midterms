@@ -43,7 +43,7 @@ for stem,title,subtitle,patterns,total in groups:
  d.text((88,y+21),'Total',font=font(35,True),fill=navy)
  d.text((1705,y+21),f'{total:,}  ({100*total/3940:.2f}%)',font=font(35,True),fill=navy,anchor='ra')
  d.line((64,676,1736,676),fill=line,width=2)
- d.text((64,696),'Base: 3,940 Dan J.-first ballots · Rachel/FairVote November 11 snapshot',font=font(27),fill=muted)
+ d.text((64,696),'Base: 3,940 Dan J.-first ballots · FairVote November 11 snapshot',font=font(27),fill=muted)
  im.save(BASE/(stem+'.png'))
  with (BASE/(stem+'.tsv')).open('w') as f:
   writer=csv.writer(f,delimiter='\t');writer.writerow(['Ranking','Ballots']);writer.writerows(labels);writer.writerow(['Total',total])
@@ -57,7 +57,7 @@ for stem,title,subtitle,patterns,total in groups:
  for i,(label,n) in enumerate(labels):
   y=254+i*78;el.append(f'<rect x="64" y="{y}" width="1672" height="78" fill="{pale if i%2 else "white"}"/>');txt(label,88,y+53);txt(f'{n:,}',1705,y+53,anchor='end')
  y=254+len(labels)*78;el.append(f'<rect x="64" y="{y}" width="1672" height="78" fill="#E3EBF2"/>');txt('Total',88,y+53,bold=True);txt(f'{total:,}  ({100*total/3940:.2f}%)',1705,y+53,bold=True,anchor='end')
- el.append(f'<line x1="64" y1="676" x2="1736" y2="676" stroke="{line}" stroke-width="2"/>');txt('Base: 3,940 Dan J.-first ballots · Rachel/FairVote November 11 snapshot',64,723,27,False,muted);el.append('</svg>')
+ el.append(f'<line x1="64" y1="676" x2="1736" y2="676" stroke="{line}" stroke-width="2"/>');txt('Base: 3,940 Dan J.-first ballots · FairVote November 11 snapshot',64,723,27,False,muted);el.append('</svg>')
  (BASE/(stem+'.svg')).write_text('\n'.join(el))
  manifest.append({'file':stem,'rows':labels,'total':total,'denominator':3940,'percent':100*total/3940})
 (BASE/'TABLE_VALUES.json').write_text(json.dumps(manifest,indent=2))

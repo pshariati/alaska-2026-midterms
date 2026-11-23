@@ -1,7 +1,7 @@
-"""Rank interpretation of Rachel's CSV tokens only; no prior CVR data is read.
+"""Rank interpretation of FairVote's CSV tokens only; no prior CVR data is read.
 
-The IDs in this module are analysis lookup labels assigned to Rachel's candidate
-names, not identifiers claimed to appear in Rachel's CSV.
+The IDs in this module are analysis lookup labels assigned to FairVote's candidate
+names, not identifiers claimed to appear in FairVote's CSV.
 """
 NAME_TO_INTERNAL_ID={
     'Heikes, Gerald L.':524,
@@ -14,7 +14,7 @@ NAME_TO_INTERNAL_ID={
 def interpret_tokens(tokens):
     tokens=[str(x).strip() for x in tokens]
     unknown=[x for x in tokens if x not in NAME_TO_INTERNAL_ID and x not in ['skipped','overvote','']]
-    if unknown:raise ValueError(f'Unknown Rachel CSV token(s): {unknown}')
+    if unknown:raise ValueError(f'Unknown FairVote CSV token(s): {unknown}')
     occupied=[i for i,t in enumerate(tokens,1) if t not in ['skipped','']]
     if not occupied:return [],'blank',None
     last=max(occupied);pref=[];blanks=0

@@ -115,10 +115,10 @@ def routes_and_omissions():
  {'Hypothetical usable route':'Total reaching Daniel S.','Ballots':d['final_destinations']['Dan S. Sullivan']}],
  'Recorded fallback support in the hypothetical replay; these counts do not identify confused voters')
  x=d['incumbent_visibility_status']
- table([{'Incumbent in Rachel’s source / usable rankings':'Countable incumbent preference','Ballots':x['incumbent_countable']},
- {'Incumbent in Rachel’s source / usable rankings':'Not named in any coded rank; no overvote token','Ballots':x['incumbent_not_named_in_coded_cells_no_overvote']},
- {'Incumbent in Rachel’s source / usable rankings':'Not visibly named; overvote could hide a name','Ballots':x['incumbent_not_visible_hidden_overvote_membership_unknown']},
- {'Incumbent in Rachel’s source / usable rankings':'Visibly named only beyond a counting barrier','Ballots':x['incumbent_visible_only_beyond_counting_barrier']}],
+ table([{'Incumbent in FairVote’s source / usable rankings':'Countable incumbent preference','Ballots':x['incumbent_countable']},
+ {'Incumbent in FairVote’s source / usable rankings':'Not named in any coded rank; no overvote token','Ballots':x['incumbent_not_named_in_coded_cells_no_overvote']},
+ {'Incumbent in FairVote’s source / usable rankings':'Not visibly named; overvote could hide a name','Ballots':x['incumbent_not_visible_hidden_overvote_membership_unknown']},
+ {'Incumbent in FairVote’s source / usable rankings':'Visibly named only beyond a counting barrier','Ballots':x['incumbent_visible_only_beyond_counting_barrier']}],
  '“Not countable” and “not ranked anywhere” are different source questions')
 
 def finalist_route_comparison():

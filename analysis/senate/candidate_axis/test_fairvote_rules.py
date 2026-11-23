@@ -1,4 +1,4 @@
-"""Regression cases for Rachel's tokens, independent of prior CVR files."""
+"""Regression cases for FairVote's tokens, independent of prior CVR files."""
 import unittest
 from analysis.senate.candidate_axis.ranking_rules import interpret_tokens
 H='Heikes, Gerald L.';P='Peltola, Mary';J='Sullivan, Daniel J. Jr.';D='Sullivan, Dan S.';W='Write-in';S='skipped';O='overvote'

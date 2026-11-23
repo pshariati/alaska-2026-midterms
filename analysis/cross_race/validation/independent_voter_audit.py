@@ -216,7 +216,7 @@ def main():
  assert 'not identified' in result['limitations'][0] or 'not point identified' in result['limitations'][0]
  assert 'one-name ballots' in result['singleton_sensitivity'] or 'singleton' in result['singleton_sensitivity']
  output={'status':'passed','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
-  'source_policy':'Only raw Rachel CSVs, delivered axes, and new voter outputs; producer modules not imported.',
+  'source_policy':'Only raw FairVote CSVs, delivered axes, and new voter outputs; producer modules not imported.',
   'source_hashes':source_hashes,'raw_direct_ID_join_verified':True,'missing_governor_ids':130,
   'independent_cohort_curves_checked':15,'independent_interval_records_checked':interval_count,
   'saved_finite_point_arrays_and_singleton_alternatives_exact':True,

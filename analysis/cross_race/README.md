@@ -16,7 +16,7 @@ and governor. Code and saved models specific to one election live in the sibling
 The public checkout contains code and selected aggregate model artifacts. It
 excludes individual ballot files, linked exports, archived reference HTML, and
 most generated tables and figures. Source-driven scripts require the exact
-Rachel/FairVote November 11 CSVs in `data/nov11/`; the reference checks also
+FairVote November 11 CSVs in `data/nov11/`; the reference checks also
 require the archived benchmark files in `references/nov11/`. Missing files must
 be supplied explicitly; do not substitute a newer snapshot silently.
 

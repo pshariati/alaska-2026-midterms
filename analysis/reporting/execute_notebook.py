@@ -18,7 +18,7 @@ assert all(cell.execution_count is not None for cell in code)
 assert not any(o.output_type=='error' for cell in code for o in cell.outputs)
 source_audit=json.loads((ROOT/'analysis/cross_race/validation/notebook_source_audit.json').read_text())
 record={'started_utc':start,'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
- 'execution':'Real Jupyter Run All. Completed descriptive and Sankey results revalidated from Rachel CSVs; unchanged audited spatial fits reused unless the notebook explicitly requests refitting. Voter-distribution pointsets and densities, confusion patterns and counterfactuals rebuilt. Hafner analysis freshly computed and independently audited. Source-profile and source-hash verification retained.',
+ 'execution':'Real Jupyter Run All. Completed descriptive and Sankey results revalidated from FairVote CSVs; unchanged audited spatial fits reused unless the notebook explicitly requests refitting. Voter-distribution pointsets and densities, confusion patterns and counterfactuals rebuilt. Hafner analysis freshly computed and independently audited. Source-profile and source-hash verification retained.',
  'Governor_and_House_spatial_models_refitted_in_this_run':source_audit['new_Governor_House_models_refitted'],
  'unchanged_audited_spatial_models_reused':source_audit['unchanged_audited_spatial_models_reused'],
  'hafner_analysis_recomputed':source_audit['hafner_analysis_recomputed'],

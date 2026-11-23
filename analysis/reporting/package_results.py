@@ -85,7 +85,7 @@ def main():
  assert 'Eric Hafner’s House ballots' in soup.get_text()
  assert soup.find('h3',string=lambda x:x and 'Support reaching Peltola' in x) is not None or 'Support reaching Peltola' in soup.get_text()
  assert browser['notebook_sha256']==sha(nbpath) and browser['html_sha256']==sha(htmlpath)
- checks={'status':'passed','source_inputs':'Unmodified Rachel November11CSV files only',
+ checks={'status':'passed','source_inputs':'Unmodified FairVote November11CSV files only',
   'notebook_real_Jupyter_Run_All':True,'executed_code_cells':len(code),'error_outputs':0,
   'Governor_and_House_fresh_null_fits_in_this_run':98 if source_audit['new_Governor_House_models_refitted'] else 0,
   'unchanged_audited_spatial_models_reused':source_audit['unchanged_audited_spatial_models_reused'],

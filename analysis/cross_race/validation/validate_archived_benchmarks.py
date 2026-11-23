@@ -1,8 +1,8 @@
-"""Validate all 54 published FairVote numerical cells using only Rachel's CSVs.
+"""Validate all 54 published FairVote numerical cells using only FairVote's CSVs.
 
 This is a reference replay, not a model fit. Published non-eliminated candidate
 sets identify which stage is being compared. Counts are always derived from each
-Rachel CSV's rank1-rank5. All source ballots remain in each stage's denominator;
+FairVote CSV's rank1-rank5. All source ballots remain in each stage's denominator;
 published inactive values are compared after subtracting initial inactivity.
 No original CVR, prior cleaned dataset, old ranking patterns, or old result-count
 files are read. The only external inputs are frozen published HTML benchmarks.
@@ -93,16 +93,16 @@ def main():
                 expected=values[stage]
                 if expected is None:continue
                 observed=counts[None]-initially_inactive if candidate=='Inactive Ballots' else counts[candidate]
-                checks.append(dict(contest=slug,stage=stage+1,candidate=candidate,rachel_replay=observed,published_benchmark=expected,difference=observed-expected,match=observed==expected,source_ballots=source_rows,initially_inactive=initially_inactive,comparison_basis='Newly inactive since initial allocation' if candidate=='Inactive Ballots' else 'Candidate count on full source cohort'))
+                checks.append(dict(contest=slug,stage=stage+1,candidate=candidate,fairvote_replay=observed,published_benchmark=expected,difference=observed-expected,match=observed==expected,source_ballots=source_rows,initially_inactive=initially_inactive,comparison_basis='Newly inactive since initial allocation' if candidate=='Inactive Ballots' else 'Candidate count on full source cohort'))
         records[slug]=dict(source_file=str(source.relative_to(REPO_ROOT)),source_sha256=sha256(source),source_ballots=source_rows,unique_ballot_ids=len(seen),initially_inactive=initially_inactive,pattern_count=len(prefixes),reference_file=str(benchmark.relative_to(REPO_ROOT)),reference_sha256=sha256(benchmark),stage_candidate_sets_role='Published non-eliminated sets align reference stages only; not model-fitting inputs',round_counts=round_counts,mass_conservation_passed=True)
     assert len(checks)==54,'Unexpected number of published numerical cells'
     reference_dir=REFERENCES_ROOT
     write_csv(reference_dir/'all_contests_benchmark_comparison.csv',checks)
     matches=sum(row['match'] for row in checks)
-    record=dict(source_only='All counts recomputed from the three Rachel CSV rank1-rank5 columns only.',benchmark_role='Frozen published FairVote HTML tables are external reference values, never analysis data or fitting inputs.',cells=len(checks),matches=matches,mismatches=[row for row in checks if not row['match']],all_mass_conservation_passed=True,initial_inactive_handling='Every source ballot remains in each round. The initially inactive count is subtracted only when matching the published newly-inactive series.',contests=records)
+    record=dict(source_only='All counts recomputed from the three FairVote CSV rank1-rank5 columns only.',benchmark_role='Frozen published FairVote HTML tables are external reference values, never analysis data or fitting inputs.',cells=len(checks),matches=matches,mismatches=[row for row in checks if not row['match']],all_mass_conservation_passed=True,initial_inactive_handling='Every source ballot remains in each round. The initially inactive count is subtracted only when matching the published newly-inactive series.',contests=records)
     (reference_dir/'benchmark_validation.json').write_text(json.dumps(record,indent=2)+'\n')
     print(json.dumps(dict(cells=len(checks),matches=matches,mismatches=len(record['mismatches']),source_ballots={slug:v['source_ballots'] for slug,v in records.items()}),indent=2))
-    if matches!=len(checks):raise AssertionError('Rachel replay differs from published benchmark; discrepancies retained in outputs')
+    if matches!=len(checks):raise AssertionError('FairVote replay differs from published benchmark; discrepancies retained in outputs')
     return record
 
 if __name__=='__main__':main()

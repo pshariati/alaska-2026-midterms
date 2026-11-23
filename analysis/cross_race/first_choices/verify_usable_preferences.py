@@ -1,4 +1,4 @@
-"""Independent check of the Alaska-rule headline, using Rachel's Senate CSV only."""
+"""Independent check of the Alaska-rule headline, using FairVote's Senate CSV only."""
 from pathlib import Path
 from analysis.shared.paths import REPO_ROOT, INPUTS_ROOT, REFERENCES_ROOT, SHARED_ROOT, race_dir, model_dir, cross_race_dir, resolve_recorded_path
 from collections import Counter
@@ -38,6 +38,6 @@ def main():
  result=json.loads((R/'descriptive_results.json').read_text());assert dict(counts)==result['question1_usable_prefix_categories'];assert sum(counts.values())==n==result['question1_literal_rank1_daniel_j_n']
  # This verification must remain valid after a fresh model rerun. Timing fields
  # change on rerun; model reproducibility is checked separately in the full audit.
- record={'source':'Rachel Senate CSV only','cohort_n':n,'independent_usable_counts':dict(counts),'regression_tests_passed':tests.testsRun,'status':'passed'}
+ record={'source':'FairVote Senate CSV only','cohort_n':n,'independent_usable_counts':dict(counts),'regression_tests_passed':tests.testsRun,'status':'passed'}
  (R/'usable_preference_verification.json').write_text(json.dumps(record,indent=2));print(json.dumps(record,indent=2));return record
 if __name__=='__main__':main()

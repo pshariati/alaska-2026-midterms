@@ -28,7 +28,7 @@ class LayoutTests(unittest.TestCase):
     def test_one_canonical_core_and_metadata(self):
         self.assertEqual(list(ROOT.glob('analysis/**/og_axis.py')), [ROOT/'analysis/shared/og_axis.py'])
         self.assertEqual(list(ROOT.glob('analysis/**/candidate_metadata.json')), [ROOT/'analysis/shared/candidate_metadata.json'])
-        for obsolete in ['statewide_analysis','alaska_2026_senate_sam_rachel','alaska_presentation_20261117']:
+        for obsolete in ['statewide_analysis','alaska_2026_senate_sam_fairvote','alaska_presentation_20261117']:
             self.assertFalse((ROOT/obsolete).exists())
 
     def test_local_package_import_targets(self):

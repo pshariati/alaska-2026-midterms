@@ -29,7 +29,7 @@ def cards():
     q=s['question1_usable_prefix_categories']
     strict=q.get('peltola_above_senator_both_ranked',0)
     p_only=q.get('peltola_only_explicitly_ranked',0)
-    items=[(f"{strict:,}",'Peltola above Dan S. · both in usable prefix'),(f"{p_only:,}",'Only Peltola appears in the usable finalist rankings'),(f"{100*summ['observed_consistency']:.1f}%",'Observed consistency · 3–4 named ranks'),(f"{100*summ['random_mean']:.1f}%",'Random consistency · 49 freshly fitted Rachel profiles')]
+    items=[(f"{strict:,}",'Peltola above Dan S. · both in usable prefix'),(f"{p_only:,}",'Only Peltola appears in the usable finalist rankings'),(f"{100*summ['observed_consistency']:.1f}%",'Observed consistency · 3–4 named ranks'),(f"{100*summ['random_mean']:.1f}%",'Random consistency · 49 freshly fitted FairVote profiles')]
     display(HTML('<div class="sam-cards">'+''.join(f'<div class="sam-card"><div class="n">{n}</div><div class="l">{l}</div></div>' for n,l in items)+'</div>'))
 
 def preference_table():

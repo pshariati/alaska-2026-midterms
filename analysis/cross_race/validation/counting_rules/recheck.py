@@ -1,4 +1,4 @@
-"""Read-only reconstruction from Rachel's November 11 files.
+"""Read-only reconstruction from FairVote's November 11 files.
 
 Audit output is separate from the notebook and its existing results.
 Checks independent lowest-tally eliminations, original-rank barriers,
@@ -63,25 +63,10 @@ for race,old in expected['contests'].items():
         'exclusion_of_unresolved_writeins':True,'independently_derived_eliminations':losers,
         'named_candidate_rounds':rounds,'final_tallies_match_existing_results':True}
 
-# Screenshot transcribed and checked against the exact November 16 RCVis table.
-new_counts={'Begich, Nick':[134732,134771,136814,138417],
-            'Hill, Bill':[117843,117929,120011,130450],
-            'Hafner, Eric':[22258,22282,23208,None],
-            'McDermott, James C. "Jim"':[7503,7537,None,None],
-            'Write-in':[435,None,None,None]}
-new_active=[sum(v[i] or 0 for v in new_counts.values()) for i in range(4)]
-newly_inactive=[0,252,2738,13904]
-assert all(a+b==new_active[0] for a,b in zip(new_active,newly_inactive))
-result={'archived_cells_rechecked':matches,'mismatches':0,'rachel_snapshot_only':True,
-        'races':results,'screenshot_source':'https://rcvis.com/ve/alaska-us-house-preliminary-results-as-of-11-16?vistype=tabular-candidate-by-round',
-        'screenshot_active_totals':new_active,'screenshot_final_percent_begich':100*138417/new_active[-1],
-        'screenshot_counts_match_live_FairVote_table':True,
-        'nov16_raw_ballots_independently_retallied':False,
+result={'archived_cells_rechecked':matches,'mismatches':0,'fairvote_snapshot_only':True,
+        'races':results,
         'limitation':'Coded rank cells checked; cannot independently adjudicate original paper marks or hidden overvote membership from these CSVs.'}
 assert matches==54
 (BASE/'recheck.json').write_text(json.dumps(result,indent=2))
 print(json.dumps({'archived_cells':matches,'mismatches':0,
-                  'House_Nov11_final':results['us_house']['named_candidate_rounds'][-1],
-                  'House_Nov16_final':{k:v[-1] for k,v in new_counts.items() if v[-1] is not None},
-                  'screenshot_R1_active':new_active[0],
-                  'nov16_retalleyed':False},indent=2))
+                  'House_Nov11_final':results['us_house']['named_candidate_rounds'][-1]},indent=2))

@@ -1,4 +1,4 @@
-"""Descriptive Hafner geography from Rachel's fixed November 11 House records."""
+"""Descriptive Hafner geography from FairVote's fixed November 11 House records."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, datetime, hashlib, json, re
@@ -93,7 +93,7 @@ def main(render=True):
     write_csv('geographic_precincts_share_min100.csv',meaningful)
     write_csv('counting_groups.csv',records(modes,'counting_group'))
     result={'status':'passed','generated_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        'source_filename':path.name,'source_sha256':digest,'source_version':'Rachel November 11, 2026',
+        'source_filename':path.name,'source_sha256':digest,'source_version':'FairVote November 11, 2026',
         'all_House_records':total,'Hafner_literal_first':n,'statewide_record_share_pct':100*n/total,
         'districts':ds,'geographic_districts_by_share':by_share,
         'geographic_precincts_by_count':physical,'geographic_precincts_by_share_min100':meaningful,
@@ -114,7 +114,7 @@ def main(render=True):
             'HD99 is an overseas administrative category, not a geographic stronghold.',
             'The minimum100 threshold is only a presentation filter; all small precincts remain exported.',
             'Anchorage subset comprises all records in HD10-24 and geographically identifiable non-Whittier HD9 precincts; this is a conservative area grouping, not a precise citywide tally.',
-            'H07 is a linked 2022 designation reference; exact area boundaries require the current maps. District/precinct counts themselves use only Rachel labels.',
+            'H07 is a linked 2022 designation reference; exact area boundaries require the current maps. District/precinct counts themselves use only FairVote labels.',
             'This is a dated scanned snapshot, not final statewide or complete city totals. No demographic or voter-intent inference is made.']}
     (OUT/'results.json').write_text(json.dumps(result,indent=2)+'\n')
     if render:render_figure(result)
@@ -139,7 +139,7 @@ def render_figure(result):
         ax.grid(axis='x',color='#e7edf2');ax.set_axisbelow(True)
         ax.set_xlabel('Hafner-first ballots' if field=='hafner_first' else 'Share of all district House records (%)')
     fig.suptitle('Where Eric Hafner received support',x=.035,y=.98,ha='left',fontsize=19,fontweight='bold')
-    fig.text(.035,.925,'Rachel’s November 11 snapshot · State House districts, combining all recorded voting modes',fontsize=11)
+    fig.text(.035,.925,'FairVote’s November 11 snapshot · State House districts, combining all recorded voting modes',fontsize=11)
     fig.text(.035,.04,'Counts and shares answer different questions. District 99 is an overseas administrative category and is excluded from these rankings.\nArea labels are descriptive; House districts do not always match cities. Original precinct and administrative categories remain separately exported.',fontsize=9,color='#61798e')
     fig.subplots_adjust(left=.21,right=.94,top=.84,bottom=.15,wspace=1.65)
     for ext in ['png','svg']:fig.savefig(OUT/f'hafner_district_strongholds.{ext}',dpi=180,facecolor='white')
@@ -147,18 +147,18 @@ def render_figure(result):
 
 
 def show_geography(result):
-    from analysis.reporting import presentation as show
+    from analysis.reporting import display as show
     display(Markdown('**Anchorage is the clearest concentration in these records.** The three districts with the most Hafner-first votes are **HD21 (East Anchorage), HD13 (South Midtown), and HD10 (Dimond/Oceanview)**. Across identifiable Anchorage-area records, at least **8,216 of 17,918 Hafner-first ballots (45.85%)** are represented. This conservative grouping includes HD10–24 and non-Whittier geographic precincts in HD9; pooled HD9 early/absentee records cannot be assigned precisely between Anchorage and Whittier.\n\n**Most votes and highest share are different:** HD21 has **653 Hafner-first ballots out of 6,686 House records (9.77%)**; HD18 has the highest geographic-district share, **304/2,035 (14.94%)**, followed by HD22 at **558/3,922 (14.23%)**.'))
     show.image(OUT/'hafner_district_strongholds.png',width=1250)
     rows=result['geographic_precincts_by_share_min100'][:8]
     show.table([{'Geographic precinct':r['precinct'],'Hafner first':r['hafner_first'],
                 'All House records':r['house_records'],'Hafner share':f'{r["pct_Hafner_of_house_records"]:.2f}%'} for r in rows],
                'Highest geographic-precinct shares with at least 100 source records (Election Day only)')
-    display(Markdown('The largest single geographic-precinct vote count is **East Anchorage No.3: 129/1,032 (12.50%)**. **Skagway leads the share ranking among precincts with at least 100 records: 68/368 (18.48%)**. Smaller places can have higher percentages: **Chefornak is 8/30 (26.67%)**. The threshold avoids presenting a handful of ballots as a large electoral base; all precincts remain in the exports.\n\nThese geographic-precinct rows are **Election Day only** in Rachel’s file. District-wide early, absentee and questioned batches are included in the district chart but cannot be assigned to individual towns. **HD99 has 74/130 Hafner-first records (56.92%)**, but it is an overseas administrative category, not a city. These results describe a November11 snapshot, rather than final citywide totals.'))
+    display(Markdown('The largest single geographic-precinct vote count is **East Anchorage No.3: 129/1,032 (12.50%)**. **Skagway leads the share ranking among precincts with at least 100 records: 68/368 (18.48%)**. Smaller places can have higher percentages: **Chefornak is 8/30 (26.67%)**. The threshold avoids presenting a handful of ballots as a large electoral base; all precincts remain in the exports.\n\nThese geographic-precinct rows are **Election Day only** in FairVote’s file. District-wide early, absentee and questioned batches are included in the district chart but cannot be assigned to individual towns. **HD99 has 74/130 Hafner-first records (56.92%)**, but it is an overseas administrative category, not a city. These results describe a November11 snapshot, rather than final citywide totals.'))
 
 
 def show_geography_details(result):
-    from analysis.reporting import presentation as show
+    from analysis.reporting import display as show
     def table_rows(rows, first_key, title):
         show.table([{'Location / category':str(r[first_key]),'Hafner first':f'{r["hafner_first"]:,}',
                      'All House records':f'{r["house_records"]:,}',

@@ -14,7 +14,7 @@ The Alaska mathematical core is `analysis/shared/og_axis.py`.
 | Scale | Normalize to [0, number of candidates minus one] | Normalize to [0,1]; this rescaling alone preserves distance order |
 | Gamma | Linear-programming interval feasibility with asymmetric epsilon bounds | Direct midpoint-interval feasibility with a positive-width strict-distance criterion |
 | Randomization | Multiple legacy null generators exist, including a generator using one random tail per first-choice/length stratum | Independent uniformly sampled tails with exact joint first-choice/length counts |
-| Data preparation | General upstream parser | Explicit Alaska ranking interpreter and pinned Rachel source versions |
+| Data preparation | General upstream parser | Explicit Alaska ranking interpreter and pinned FairVote source versions |
 
 The conceptual structure is retained: co-ranking-normalized adjacency,
 inverse-square-root dissimilarity, one-dimensional nonmetric MDS and modal-order

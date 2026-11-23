@@ -85,7 +85,7 @@ def observed(slug):
         'method_source':'Pure corrected OG method copied unchanged from prior audited code; no old ballot data or models used.',
         'source_filename':source['source_filename'],'source_sha256':source['source_sha256'],'source_rows':source['source_rows'],
         'candidate_ids_are_internal_lookup_labels':True,
-        'sole_ballot_source':'Rachel November11 CSV for this contest; countable-prefix transformation from common/data.py',
+        'sole_ballot_source':'FairVote November11 CSV for this contest; countable-prefix transformation from common/data.py',
         'ranking_interpreter_sha256':sha256(SHARED_ROOT/'data.py'),
         'cohort':'All nonempty Alaska-countable named prefixes; generic write-in excluded only after barriers; empty prefixes retained separately.'}
     write_json(folder/'mds_results.json',result)

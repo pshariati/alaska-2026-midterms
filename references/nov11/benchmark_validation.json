@@ -1,5 +1,5 @@
 {
-  "source_only": "All counts recomputed from the three Rachel CSV rank1-rank5 columns only.",
+  "source_only": "All counts recomputed from the three FairVote CSV rank1-rank5 columns only.",
   "benchmark_role": "Frozen published FairVote HTML tables are external reference values, never analysis data or fitting inputs.",
   "cells": 54,
   "matches": 54,

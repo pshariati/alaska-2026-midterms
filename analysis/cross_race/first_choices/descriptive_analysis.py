@@ -1,6 +1,6 @@
-"""Rachel-only linked descriptive analysis. No raw CVR/v1/v2 ballot input is read.
+"""FairVote-only linked descriptive analysis. No raw CVR/v1/v2 ballot input is read.
 
-Candidate IDs and party labels are explicit static analysis annotations; Rachel's
+Candidate IDs and party labels are explicit static analysis annotations; FairVote's
 files contain candidate names and no voter-party field. Lower-rank 'overvote'
 tokens carry no candidate identities and remain unknown throughout this analysis.
 """
@@ -86,23 +86,23 @@ def ingest(source):
   actual=digest(path)
   expected=PINNED_RACES[slug]['sha256']
   if actual!=expected:
-   raise ValueError(f'Wrong source version for {slug}: {path}. Expected SHA-256 {expected}; got {actual}. Use the exact Rachel/FairVote November 11 snapshot.')
+   raise ValueError(f'Wrong source version for {slug}: {path}. Expected SHA-256 {expected}; got {actual}. Use the exact FairVote November 11 snapshot.')
   provenance[slug]=dict(filename=path.name,sha256=actual,bytes=path.stat().st_size)
- metadata={str(k):dict(name=v[0],party_label=v[1],contest=v[2],annotation_source='Static candidate-name/party reference annotations; not a field in Rachel CSVs and not voter party registration',id_source='Stable internal analysis identifier assigned explicitly by this script') for k,v in ANNOTATIONS.items()}
+ metadata={str(k):dict(name=v[0],party_label=v[1],contest=v[2],annotation_source='Static candidate-name/party reference annotations; not a field in FairVote CSVs and not voter party registration',id_source='Stable internal analysis identifier assigned explicitly by this script') for k,v in ANNOTATIONS.items()}
  assert metadata == json.loads((SHARED_ROOT/'candidate_metadata.json').read_text()), 'Candidate annotations differ from canonical metadata'
- temp=tempfile.NamedTemporaryFile(prefix='rachel_link_',suffix='.sqlite',delete=False);dbpath=Path(temp.name);temp.close()
+ temp=tempfile.NamedTemporaryFile(prefix='fairvote_link_',suffix='.sqlite',delete=False);dbpath=Path(temp.name);temp.close()
  db=sqlite3.connect(dbpath);db.execute('PRAGMA journal_mode=OFF');db.execute('PRAGMA synchronous=OFF')
  db.execute('CREATE TABLE ballots(contest TEXT, uid TEXT, row_index INT, raw_id TEXT, record_json TEXT, tokens_json TEXT, structural_json TEXT, alaska_json TEXT, PRIMARY KEY(contest,uid))')
  for slug,race in SLUGS.items():
   p=source_files[slug];tokens_counter=Counter();n=0;modified=0
   with p.open(encoding='utf-8-sig',newline='') as f:
    reader=csv.DictReader(f);fields=reader.fieldnames
-   if fields is None or len(fields)!=15:raise ValueError('Expected Rachel15-column schema')
+   if fields is None or len(fields)!=15:raise ValueError('Expected FairVote15-column schema')
    for i,row in enumerate(reader):
     uid=normalize_id(row['ballotID']);modified+=row['ballotID']!=uid
     tokens=[row[f'rank{r}'] for r in range(1,6)]
     unknown=set(tokens)-set(BY_NAME[slug])-SPECIAL
-    if unknown:raise ValueError(f'Unknown Rachel rank tokens: {unknown!r}')
+    if unknown:raise ValueError(f'Unknown FairVote rank tokens: {unknown!r}')
     tokens_counter.update(tokens);pref,reason,stop=prefix(tokens,slug);alaska=[x for x in pref if ANNOTATIONS[x][1]!='Write-in']
     try:db.execute('INSERT INTO ballots VALUES(?,?,?,?,?,?,?,?)',(slug,uid,i,row['ballotID'],J(row),J(tokens),J(pref),J(alaska)))
     except sqlite3.IntegrityError:raise ValueError(f'Duplicate/colliding normalized ID in {slug}: {uid}')
@@ -114,13 +114,13 @@ def ingest(source):
  if senate_ids!=house_ids:raise ValueError('Senate and House ID sets differ; do not guess joins')
  if not gov_ids<=senate_ids:raise ValueError('Governor has unmatched extra IDs')
  missing=senate_ids-gov_ids
- columns=['ballot_uid','senate_source_row_index','governor_present_in_rachel_file']+[slug+'_'+field for slug in SLUGS for field in ['source_row_index','original_row_json','rank_tokens_json','structural_prefix_json','alaska_prefix_json','rank1_ambiguous_candidates','rank1_overvote_candidates']]
+ columns=['ballot_uid','senate_source_row_index','governor_present_in_fairvote_file']+[slug+'_'+field for slug in SLUGS for field in ['source_row_index','original_row_json','rank_tokens_json','structural_prefix_json','alaska_prefix_json','rank1_ambiguous_candidates','rank1_overvote_candidates']]
  query="""SELECT s.uid,s.row_index,s.record_json,s.tokens_json,s.structural_json,s.alaska_json,h.row_index,h.record_json,h.tokens_json,h.structural_json,h.alaska_json,g.row_index,g.record_json,g.tokens_json,g.structural_json,g.alaska_json FROM ballots s JOIN ballots h ON h.uid=s.uid AND h.contest='us_house' LEFT JOIN ballots g ON g.uid=s.uid AND g.contest='governor' WHERE s.contest='us_senate' ORDER BY s.row_index"""
  with gzip.open(R/'linked_ballots.csv.gz','wt',encoding='utf-8',newline='',compresslevel=1) as f:
   w=csv.DictWriter(f,fieldnames=columns);w.writeheader()
   for rec in db.execute(query):
    uid,si,srecord,stokens,spref,apref,*rest=rec
-   row=dict(ballot_uid=uid,senate_source_row_index=si,governor_present_in_rachel_file=uid not in missing)
+   row=dict(ballot_uid=uid,senate_source_row_index=si,governor_present_in_fairvote_file=uid not in missing)
    for slug,values in [('us_senate',(si,srecord,stokens,spref,apref)),('us_house',rest[:5]),('governor',rest[5:])]:
     idx,original,tokens,pref,alaska=values;originalrow=json.loads(original) if original else None
     row[slug+'_source_row_index']=idx if idx is not None else ''
@@ -129,7 +129,7 @@ def ingest(source):
     row[slug+'_rank1_overvote_candidates']=originalrow['rank1_overvote_candidates'] if originalrow else ''
    w.writerow(row)
  db.close();dbpath.unlink()
- result=dict(ballot_input_policy='ONLY the three Rachel CSVs. No old CVR, normalized CSV, linked GZ, or raw rank patterns are read.',inputs=provenance,rows=counts,id_join=dict(method='Normalize raw ballotID by stripping trailing underscores, split3decimal parts, integer-normalize each part, join with colon; join on normalized ID, not row position',senate_house_ids_identical=True,governor_subset_of_federal=True,missing_governor_rows=len(missing),normalization=normalization),rank_token_counts=token_counts,linked_gzip_sha256=digest(R/'linked_ballots.csv.gz'),script_sha256=digest(Path(__file__)),created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),original_column_preservation='Every15-column original row retained as original_row_json, plus original input CSV files. Hidden lower-overvote identities remain unknown.')
+ result=dict(ballot_input_policy='ONLY the three FairVote CSVs. No old CVR, normalized CSV, linked GZ, or raw rank patterns are read.',inputs=provenance,rows=counts,id_join=dict(method='Normalize raw ballotID by stripping trailing underscores, split3decimal parts, integer-normalize each part, join with colon; join on normalized ID, not row position',senate_house_ids_identical=True,governor_subset_of_federal=True,missing_governor_rows=len(missing),normalization=normalization),rank_token_counts=token_counts,linked_gzip_sha256=digest(R/'linked_ballots.csv.gz'),script_sha256=digest(Path(__file__)),created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),original_column_preservation='Every15-column original row retained as original_row_json, plus original input CSV files. Hidden lower-overvote identities remain unknown.')
  (R/'source_provenance.json').write_text(json.dumps(result,indent=2,ensure_ascii=False));return result
 
 def analyze():
@@ -175,7 +175,7 @@ def analyze():
    for slug in ['governor','us_house']:assert sum(n for (cid,con,x),n in counts.items() if cid==s and con==slug)==denom[s]
   write_csv(R/name,rows)
  assert sum(cohort.values())==total and sum(q1.values())==cohort[526]
- result=dict(primary_analysis='Alaska-countable preference prefixes; original visible-name statistics retained only as supplementary descriptions',question1_usable_prefix_categories=dict(legalq1),question1_structural_cohort_usable_categories=dict(legal_sensitivity),total_linked_ballots=total,literal_rank1_senate_cohorts={label(k):v for k,v in cohort.items()},structural_first_choice_senate_cohorts={label(k):v for k,v in sensitivity.items()},question1_literal_rank1_daniel_j_n=cohort[526],question1_visible_named_slot_categories=dict(q1),question1_complete_identity_categories=dict(completeq1),question1_partial_information_bounds=dict(bounds),question1_flags_and_finalist_transfers=dict(flags),question1_structural_first_choice_daniel_j_n=sensitivity[526],question1_structural_cohort_visible_named_categories=dict(sensitiveq1),question1_hidden_overvote_possible_category_frequencies=[dict(possible_categories=list(k),ballots=n) for k,n in sorted(possiblefreq.items())],definitions=dict(primary_preference_rule='Keep valid ranks before first overvote or second consecutive internal skip; collapse repeated candidates; exclude unresolved generic write-ins only after evaluating original occupied ranks. Do not discard earlier valid preferences or the ballot.',primary_cohort='The same literal Rachel rank1 Daniel J. cohort is retained for comparability; first-usable-choice cohort sensitivity is separately labeled.',first_choice='Literal Rachel rank1 named candidate; skipped and overvote remain separate categories. Main ranking cells take precedence; original ambiguity metadata remain flags, not silently interpreted votes.',hidden_overvotes='Lower overvote tokens do not identify candidates. Explicit-slot comparisons are only observed named slots; absence from those slots is not absence from hidden overvotes.',definite_comparison='Same strict both-ranked ordering holds for every projected Peltola/Dan membership consistent with hidden overvote tokens.',bounds='Enumerates only feasible finalist-membership projections of each hidden overvote, without reconstructing identities. Bounds are partial-information sensitivity, not counts of actual hidden identities.',partisanship='Static chosen-candidate party annotations, not voter party registration. Rachel files contain no voter party variable.',governor_missing='Row absent from Rachel governor CSV after ID join. Not filled from another source and not coded as an undervote.',sensitivity='Structural-prefix first choice in all3contests, promoting single skipped ranks, preserving generic Write-in; overvote tokens stop subsequent interpretation.'))
+ result=dict(primary_analysis='Alaska-countable preference prefixes; original visible-name statistics retained only as supplementary descriptions',question1_usable_prefix_categories=dict(legalq1),question1_structural_cohort_usable_categories=dict(legal_sensitivity),total_linked_ballots=total,literal_rank1_senate_cohorts={label(k):v for k,v in cohort.items()},structural_first_choice_senate_cohorts={label(k):v for k,v in sensitivity.items()},question1_literal_rank1_daniel_j_n=cohort[526],question1_visible_named_slot_categories=dict(q1),question1_complete_identity_categories=dict(completeq1),question1_partial_information_bounds=dict(bounds),question1_flags_and_finalist_transfers=dict(flags),question1_structural_first_choice_daniel_j_n=sensitivity[526],question1_structural_cohort_visible_named_categories=dict(sensitiveq1),question1_hidden_overvote_possible_category_frequencies=[dict(possible_categories=list(k),ballots=n) for k,n in sorted(possiblefreq.items())],definitions=dict(primary_preference_rule='Keep valid ranks before first overvote or second consecutive internal skip; collapse repeated candidates; exclude unresolved generic write-ins only after evaluating original occupied ranks. Do not discard earlier valid preferences or the ballot.',primary_cohort='The same literal FairVote rank1 Daniel J. cohort is retained for comparability; first-usable-choice cohort sensitivity is separately labeled.',first_choice='Literal FairVote rank1 named candidate; skipped and overvote remain separate categories. Main ranking cells take precedence; original ambiguity metadata remain flags, not silently interpreted votes.',hidden_overvotes='Lower overvote tokens do not identify candidates. Explicit-slot comparisons are only observed named slots; absence from those slots is not absence from hidden overvotes.',definite_comparison='Same strict both-ranked ordering holds for every projected Peltola/Dan membership consistent with hidden overvote tokens.',bounds='Enumerates only feasible finalist-membership projections of each hidden overvote, without reconstructing identities. Bounds are partial-information sensitivity, not counts of actual hidden identities.',partisanship='Static chosen-candidate party annotations, not voter party registration. FairVote files contain no voter party variable.',governor_missing='Row absent from FairVote governor CSV after ID join. Not filled from another source and not coded as an undervote.',sensitivity='Structural-prefix first choice in all3contests, promoting single skipped ranks, preserving generic Write-in; overvote tokens stop subsequent interpretation.'))
  assert sum(legalq1.values())==cohort[526] and sum(legal_sensitivity.values())==sensitivity[526]
  legalrows=[dict(category=k,ballots=n,pct_of_literal_daniel_cohort=100*n/cohort[526]) for k,n in sorted(legalq1.items())]
  write_csv(R/'usable_preference_comparison.csv',legalrows)

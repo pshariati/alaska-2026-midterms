@@ -18,5 +18,4 @@ runs/
 
 # Pinned source files and generated individual-ballot exports stay local.
 data/nov11/*.csv
-data/nov16/*.zip
 **/*ballots*.csv.gz

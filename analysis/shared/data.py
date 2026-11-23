@@ -50,7 +50,7 @@ def countable_tokens(tokens):
 
 def read_rows(slug):
  path=source_path(slug)
- if not path.is_file():raise FileNotFoundError('Supply the pinned Rachel/FairVote November 11 input at '+str(path)+'; see docs/DATA.md')
+ if not path.is_file():raise FileNotFoundError('Supply the pinned FairVote November 11 input at '+str(path)+'; see docs/DATA.md')
  if sha256(path)!=RACES[slug]['sha256']:raise ValueError('Supplied source version changed: '+str(path))
  allowed=set(RACES[slug]['names'])|{'Write-in','skipped','overvote'}
  with path.open(encoding='utf-8-sig',newline='') as f:

@@ -1,4 +1,4 @@
-"""Independent Rachel-only model audit; never changes published model artifacts.
+"""Independent FairVote-only model audit; never changes published model artifacts.
 
 Source parsing, dissimilarities, geometric feasibility and null profiles are
 implemented independently. Only the intended OG MDS fitting function is reused
